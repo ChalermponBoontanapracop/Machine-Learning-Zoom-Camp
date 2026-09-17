@@ -2,9 +2,7 @@
 
 Machine Learning is a process of extracting patterns from data. The data consists of **Features**, which are information about an object, and in some types of Machine Learning, a **Target**, which is the value or outcome that we want to predict.
 
-The output of Machine Learning is a **Model**. The Model learns patterns, relationships, or structures from the available data.
-
-To use the Model, we provide the Features of a new object as input. The Model then processes those Features and produces an output.
+The output of Machine Learning is a **Model**. The Model learns patterns, relationships, or structures from the available data. To use the Model, we provide the Features of a new object as input. The Model then processes those Features and produces an output.
 
 Depending on the type of Machine Learning, the output may be a **Prediction, Classification, Cluster, Pattern, or Representation**.
 
