@@ -1030,11 +1030,7 @@ If the original split was:
 
 then combining the Training and Validation Sets gives us:
 
-$$
-60\% + 20\% = 80\%
-$$
-
-of the Dataset for final Training.
+- 80% of the Dataset for final Training.
 
 We then train the Model again using the same Model type and Settings that were selected during the Model Selection process.
 
