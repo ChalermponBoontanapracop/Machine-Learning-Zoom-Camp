@@ -6,9 +6,15 @@ The result of the Machine Learning process is a **model**. The model learns patt
 
 When we want to use the model with new data, we provide the features of a new object as input. The model then processes those features and returns a prediction of the target.
 
-$$
-\text{Features} \rightarrow \text{Model} \rightarrow \text{Prediction}
-$$
+```math
+\text{Features} + \text{Target}
+\rightarrow
+\text{Training}
+\rightarrow
+\text{Model}
+\rightarrow
+\text{Prediction}
+```
 
 ## Features and Target
 
