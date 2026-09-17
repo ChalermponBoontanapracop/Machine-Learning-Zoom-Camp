@@ -1,20 +1,18 @@
 ## What is Machine Learning?
 
-Machine Learning is a process of extracting patterns or structures from data and using what has been learned to produce useful outputs.
+Machine Learning is a process of extracting patterns from data. The data consists of **Features**, which are information about an object, and in some types of Machine Learning, a **Target**, which is the value or outcome that we want to predict.
 
-Depending on the type of Machine Learning, the data may contain only **Features**, or it may contain both **Features and a Target**.
+The output of Machine Learning is a **Model**. The Model learns patterns, relationships, or structures from the available data.
 
-Features are the information or characteristics that describe an object. A Target is the value or outcome that we want the Model to predict in Supervised Learning.
+To use the Model, we provide the Features of a new object as input. The Model then processes those Features and produces an output.
 
-The result of the Machine Learning process is a **Model**. The Model learns patterns, relationships, or structures from the available data.
-
-When we use the Model with new data, we provide the Features as input. The Model then processes those Features and produces an output. Depending on the type of Machine Learning, the output may be a **Prediction, Classification, Cluster, Pattern, or Representation**.
+Depending on the type of Machine Learning, the output may be a **Prediction, Classification, Cluster, Pattern, or Representation**.
 
 ### Supervised Learning
 
-In **Supervised Learning**, the Model learns from data where both the Features and the Target are already known.
+In **Supervised Learning**, the data contains both **Features** and a known **Target**.
 
-The Model learns the relationship between the Features and the Target, and then uses that relationship to make Predictions for new data.
+The Model learns the relationship between the Features and the Target. After Training, we provide the Features of a new object to the Model and receive a Prediction of the Target.
 
 ```math
 \text{Features} + \text{Target}
