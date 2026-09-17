@@ -1,7 +1,2 @@
-# 01 - Introduction to Machine Learning
-
-This folder contains materials for the Introduction to Machine Learning section.
-
-- **ML Notes** — Summary of important Machine Learning concepts and theory.
-- **Syntax** — Important Python, NumPy, Pandas, and related syntax used in this section.
-- **Assignment** — Homework and assignment for this section.
+Introduction to Machine Learning
+What is Machine Learning? • Features and Target • Train a Model • Making Predictions • Machine Learning vs Rule-Based Systems • Supervised Machine Learning • CRISP-DM • Model Selection Process • Linear Algebra • Vector Operations • Vector-Vector Multiplication • Matrix-Vector Multiplication • Matrix-Matrix Multiplication • Identity Matrix • Inverse Matrix
