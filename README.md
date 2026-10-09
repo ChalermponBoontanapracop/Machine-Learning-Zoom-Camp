@@ -1,1 +1,1 @@
-# Machine-Learning-Zoom-Camp
+# Machine Learning Zoom Camp
