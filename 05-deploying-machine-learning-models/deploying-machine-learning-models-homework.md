@@ -89,7 +89,7 @@ I checked the `FROM` line in the Dockerfile. It uses `python:3.11.15-slim-bookwo
 
 Run the same request from Question 4 against the Docker container. Report `conversion_probability` rounded to three decimal places, with an accepted absolute error of at most `0.005`. Also verify that `GET /health` returns `status: ok` and the Model checksum recorded in `model_metadata.json`.
 
-**Answer:** Expected conversion probability: `0.770`, with `conversion: true`.
+**Answer:** Expected conversion probability: `0.769`, with `conversion: true`.
 
 This question uses the same Model and lead as Question 4, so I expect the same result. I still need to run the Docker container to confirm it.
 
