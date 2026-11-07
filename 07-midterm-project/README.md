@@ -13,7 +13,7 @@ The trained model is deployed as a **live Web Application** using Flask, Docker,
 
 ### Web Application Preview
 
-![Thailand Electricity Prediction Web Application](images/Web-App.png)
+![Thailand Electricity Prediction Web Application](images/Web-App1.png)
 
 Users can interact with the trained Machine Learning model through a web interface without installing Python or running the model locally.
 
