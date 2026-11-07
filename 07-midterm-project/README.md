@@ -1,5 +1,5 @@
 # Thailand Electricity Consumption Prediction
-### Machine Learning Regression | Flask REST API | Docker | Render Cloud | Web Application
+### Machine Learning (Linear Regression/Random Forest) | Flask REST API | Docker | Render Cloud | Web Application
 
 An end-to-end Machine Learning project that predicts annual electricity consumption across five major electricity sectors in Thailand using historical provincial electricity data.
 
