@@ -4,7 +4,11 @@ A machine learning project that predicts **annual electricity consumption (kWh)*
 
 The project covers data preparation, exploratory data analysis (EDA), regression modeling, model evaluation, and deployment through a Flask REST API packaged with Docker.
 
-The final selected algorithm is a **Tuned Random Forest Regressor**.
+The final selected algorithm is a **Tuned Random Forest Regressor**, deployed locally, through Docker, and on Render Cloud.
+
+**Live Prediction API:** https://thailand-electricity-api.onrender.com
+
+**GitHub Project:** https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp/tree/main/07-midterm-project
 
 ---
 
@@ -71,18 +75,20 @@ The dataset was obtained from the **Ministry of Energy, Thailand — OPS MOEN Da
 
 **Official Dataset:** https://gdcatalog.energy.go.th/dataset/dataset_41_07
 
-The dataset provides annual provincial electricity statistics sourced from the Provincial Electricity Authority (PEA) and Metropolitan Electricity Authority (MEA).
+The project uses annual provincial electricity statistics from the published electricity data, including information originating from the Provincial Electricity Authority (PEA) and Metropolitan Electricity Authority (MEA).
 
-For this project, two categories of data were used:
+Two categories of data were used:
 
 1. **Number of Electricity Users (จำนวนผู้ใช้ไฟฟ้ารายจังหวัดรายสาขา):** Annual electricity-user counts by province and sector.
 2. **Electricity Consumption (ปริมาณการใช้ไฟฟ้ารายจังหวัดรายสาขา):** Annual electricity consumption by province and sector, measured in kWh.
 
-The analysis covers **2018–2023 (B.E. 2561–2566)**, using six annual Excel files for each data category, totaling 12 annual files. A separate province-name mapping file is used to standardize province names in English.
+The analysis covers **2018–2023 (B.E. 2561–2566)**, using six annual Excel files for each data category, totaling 12 annual files.
+
+A separate province-name mapping file is used to standardize province names in English.
 
 The original Excel files are combined, cleaned, transformed, and prepared for regression modeling. The resulting dataset contains **2,310 province–year–sector observations** across the five selected sectors.
 
-The source dataset is publicly accessible through the official data catalog. The project's `raw data` directory contains the data files used for training and reproducibility.
+The official data catalog provides the public source reference. The project's `raw data` directory contains the files used for the analysis and model training. Users should consult the original catalog for applicable data reuse conditions.
 
 ### Selected Sectors and Electricity Consumption
 
@@ -105,7 +111,7 @@ Historical data may contain incomplete observations, and these totals should not
 
 ## 3. Features and Target Variable
 
-The machine learning model uses the following input variables:
+The machine learning model uses the following input and target variables:
 
 | Variable | Type | Description |
 |---|---|---|
@@ -696,11 +702,7 @@ This confirms that the updated model artifact can be loaded and used successfull
 
 ### Stop the Container
 
-Press:
-
-```text
-Ctrl+C
-```
+Press `Ctrl+C` in the terminal running the container.
 
 ---
 
@@ -844,11 +846,184 @@ These results confirm that the project's training and local prediction workflows
 51322265deb3d4ac61ec4d6ba5581899a93c18e8
 ```
 
-This commit identifies the repository version used during the successful fresh-clone test.
+This commit identifies the repository version used during the successful fresh-clone test. Subsequent README updates and cloud deployment documentation may belong to later commits.
 
 ---
 
-## 18. Limitations
+## 18. Cloud Deployment — Render
+
+The final machine learning model was successfully deployed to **Render Cloud** using Docker, Flask, and Waitress.
+
+The deployment provides a public HTTPS API that allows external users and applications to request annual electricity consumption predictions without installing Python, Docker, or the model locally.
+
+### Cloud Service Information
+
+| Configuration | Details |
+|---|---|
+| Cloud Platform | Render |
+| Service Name | `thailand-electricity-api` |
+| Deployment Source | GitHub Repository |
+| Branch | `main` |
+| Root Directory | `07-midterm-project` |
+| Runtime | Docker |
+| Web Framework | Flask |
+| WSGI Server | Waitress |
+| Health Check Path | `/ping` |
+| Instance Type | Free |
+| Deployment Status | Successfully deployed and tested |
+
+**Public API URL:** https://thailand-electricity-api.onrender.com
+
+### Cloud Deployment Architecture
+
+```text
+GitHub Repository
+       |
+       v
+Render Cloud Deployment
+       |
+       v
+Docker Image Build
+       |
+       v
+Flask API + Waitress
+       |
+       v
+Tuned Random Forest Model
+       |
+       v
+Public HTTPS API
+       |
+       v
+Electricity Consumption Prediction
+```
+
+Render builds the Docker image from the GitHub repository and runs the Flask prediction service with the saved `model.bin` artifact.
+
+### Render Configuration
+
+The cloud deployment uses the following configuration:
+
+| Setting | Value |
+|---|---|
+| Language | Docker |
+| Branch | `main` |
+| Root Directory | `07-midterm-project` |
+| Docker Build Context | `.` relative to the configured root directory |
+| Dockerfile | `Dockerfile` within the project directory |
+| Health Check | `/ping` |
+| Auto-Deploy | On Commit |
+| Compute | Free instance |
+
+The existing project Dockerfile is used for deployment. No separate Kubernetes cluster is required.
+
+### Public API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/ping` | Check API availability |
+| POST | `/predict` | Predict annual electricity consumption |
+
+### Cloud Health Check Verification
+
+The deployed service was tested through its public HTTPS endpoint using Windows PowerShell.
+
+```powershell
+Invoke-RestMethod -Uri "https://thailand-electricity-api.onrender.com/ping" -Method GET
+```
+
+**Verified Response:**
+
+```json
+{
+  "message": "PONG"
+}
+```
+
+The successful response confirmed that the deployed API was accessible through the internet at the time of testing.
+
+### Cloud Prediction Verification
+
+The prediction endpoint was tested using the following input:
+
+```json
+{
+  "province_en": "Chiang Mai",
+  "sector": "residential",
+  "number_of_users": 500000
+}
+```
+
+**PowerShell Test:**
+
+```powershell
+$inputData = @{
+    province_en = "Chiang Mai"
+    sector = "residential"
+    number_of_users = 500000
+} | ConvertTo-Json
+
+Invoke-RestMethod `
+    -Uri "https://thailand-electricity-api.onrender.com/predict" `
+    -Method POST `
+    -ContentType "application/json" `
+    -Body $inputData
+```
+
+**Verified Prediction Response:**
+
+```json
+{
+  "number_of_users": 500000.0,
+  "predicted_electricity_kwh": 1240984762.1780288,
+  "province_en": "Chiang Mai",
+  "sector": "residential"
+}
+```
+
+### Cloud Prediction Results
+
+| Field | Value |
+|---|---|
+| Province | Chiang Mai |
+| Sector | Residential |
+| Number of Electricity Users | 500,000 |
+| Predicted Annual Consumption | 1,240,984,762.18 kWh |
+| Prediction Status | Passed |
+
+The prediction returned by Render Cloud matched the results obtained through the local Flask API and Docker container.
+
+### Deployment Verification Summary
+
+| Deployment Environment | Health Check | Prediction | Status |
+|---|---|---|---|
+| Local Flask API | Passed | Passed | Verified |
+| Local Docker Container | Passed | Passed | Verified |
+| Render Cloud | Passed | Passed | Verified |
+
+These tests confirm that the saved Random Forest model can be served consistently across local and cloud environments for the verified example request.
+
+### Cloud Deployment Limitations
+
+The application uses Render's Free instance, which may automatically spin down after periods of inactivity. Consequently, the first request after an inactive period may take longer to respond.
+
+The API is intended as an educational machine learning deployment demonstration and is not currently designed for high-traffic or production-critical electricity-demand forecasting.
+
+Service availability may depend on the cloud provider's resource limits, ongoing service status, and platform policies.
+
+The public API also does not currently implement user authentication or rate limiting. It should therefore not be used to process confidential data or support sensitive operational decisions.
+
+### Cloud Deployment Outcome
+
+The project successfully demonstrates an end-to-end machine learning deployment workflow:
+
+**Data Preparation → Model Training → Model Serialization → Flask API → Docker → Render Cloud → Public Prediction API**
+
+The cloud deployment extends the project beyond local inference by making the trained model accessible through a public HTTPS endpoint.
+
+---
+
+## 19. Limitations
 
 ### Limited Time Coverage
 
@@ -889,15 +1064,19 @@ Performance on historical observations does not guarantee equivalent accuracy fo
 
 The 2023 test results are reported from the saved notebook. Because this period may have been examined during earlier development, the results should not be represented as a fully untouched independent test without further verification.
 
-### Local Deployment
+### Cloud Service Availability
 
-The Flask API currently runs locally or inside Docker.
+The prediction API is deployed to Render Cloud and accessible through a public HTTPS endpoint.
 
-Running a Docker container on a personal computer does not automatically make the API publicly accessible over the internet.
+Because the service uses a Free instance, it may experience delayed responses after periods of inactivity, and continued availability is not guaranteed.
+
+### Public API Security
+
+The deployed API is intended for demonstration purposes. Additional security, monitoring, and operational controls would be required for production use.
 
 ---
 
-## 19. Future Improvements
+## 20. Future Improvements
 
 Potential improvements include:
 
@@ -906,13 +1085,15 @@ Potential improvements include:
 3. Compare additional regression algorithms.
 4. Evaluate rolling or expanding-window cross-validation.
 5. Investigate alternative approaches to historical anomaly handling.
-6. Develop cloud deployment for remote API access.
+6. Improve cloud deployment monitoring and reliability.
 7. Build an optional web interface for interactive predictions.
 8. Improve prediction explainability and model monitoring.
+9. Add authentication and rate limiting for wider public API usage.
+10. Explore Kubernetes deployment as a future MLOps learning exercise.
 
 ---
 
-## 20. Project Repository
+## 21. Project Repository
 
 **GitHub Repository**
 
@@ -922,16 +1103,38 @@ https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp
 
 https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp/tree/main/07-midterm-project
 
+**Public Cloud API**
+
+https://thailand-electricity-api.onrender.com
+
+**Health Check Endpoint**
+
+https://thailand-electricity-api.onrender.com/ping
+
+**Prediction Endpoint**
+
+https://thailand-electricity-api.onrender.com/predict
+
 ---
 
-## 21. Conclusion
+## 22. Conclusion
 
 This project demonstrates an end-to-end machine learning workflow for predicting annual electricity consumption across five major sectors in Thailand.
 
-The work includes dataset preparation, exploratory analysis, feature engineering, regression model comparison, hyperparameter tuning, evaluation, and deployment.
+The work includes dataset preparation, exploratory analysis, feature engineering, regression model comparison, hyperparameter tuning, evaluation, reproducible training, and deployment.
 
 The selected Tuned Random Forest achieved a validation RMSE of approximately **113.16 million kWh**, with an R² of approximately **0.9907** on the 2022 validation dataset.
 
-The final model can be served through a Flask REST API and packaged using Docker.
+The final model was successfully deployed through three environments:
+
+- Local Flask API
+- Docker Container
+- Render Cloud
+
+The model's prediction endpoint was verified across all three environments, producing consistent results for the tested example request.
+
+A fresh-clone reproducibility test also confirmed that the training and local prediction workflows could be executed using files downloaded from the GitHub repository.
 
 Separating the training workflow from the prediction service supports reproducibility and makes the project easier to maintain, test, and extend.
+
+The Render deployment demonstrates how a trained machine learning model can be made accessible to external applications through a public HTTPS API, completing the project's end-to-end machine learning development and deployment workflow.
