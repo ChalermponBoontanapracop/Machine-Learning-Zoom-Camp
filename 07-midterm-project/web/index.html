@@ -4,30 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thailand Electricity Prediction</title>
+
+  <title>Thailand Electricity Analytics & Prediction</title>
 
   <style>
+    :root {
+      --navy: #17365d;
+      --blue: #1769b5;
+      --green: #087c64;
+      --background: #f3f6fb;
+      --border: #dce4ee;
+      --muted: #657489;
+      --text: #172a43;
+    }
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      background: #f3f6fb;
-      color: #172a43;
+      background: var(--background);
+      color: var(--text);
       font-family: "Segoe UI", Arial, sans-serif;
     }
 
     header {
-      background: #17365d;
+      background: var(--navy);
       color: white;
-      padding: 32px 20px;
+      padding: 34px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0 0 10px;
-      font-size: clamp(23px, 4vw, 32px);
+      font-size: clamp(24px, 4vw, 32px);
     }
 
     header p {
@@ -37,62 +48,99 @@
     }
 
     main {
-      max-width: 760px;
-      margin: 32px auto;
+      max-width: 1050px;
+      margin: 30px auto;
       padding: 0 16px;
     }
 
     .card {
       background: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 6px 25px #152f5010;
+      padding: 26px;
+      border-radius: 15px;
+      box-shadow: 0 5px 22px #17365d0c;
       margin-bottom: 20px;
     }
 
     h2 {
-      margin: 0 0 18px;
+      margin: 0 0 15px;
       font-size: 21px;
     }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 17px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* Tabs */
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--navy);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background: var(--navy);
+      color: white;
+    }
+
+    /* Forms */
 
     label {
       display: block;
       font-weight: 600;
-      margin: 18px 0 8px;
+      font-size: 14px;
+      margin: 14px 0 7px;
     }
 
-    input,
-    select {
+    select,
+    input {
       width: 100%;
-      padding: 13px;
+      padding: 12px;
       border: 1px solid #cdd7e5;
       border-radius: 8px;
-      font: inherit;
       background: white;
-      color: #172a43;
+      color: var(--text);
+      font: inherit;
     }
 
-    input:focus,
-    select:focus {
+    select:focus,
+    input:focus {
       outline: 2px solid #8cb8ed;
-      border-color: #2468af;
     }
 
     button {
-      width: 100%;
       border: none;
       border-radius: 8px;
-      background: #1769b5;
-      color: white;
+      padding: 12px 18px;
       font: inherit;
       font-weight: 600;
-      padding: 15px;
-      margin-top: 24px;
       cursor: pointer;
-    }
-
-    button:hover {
-      background: #115392;
     }
 
     button:disabled {
@@ -100,72 +148,203 @@
       cursor: not-allowed;
     }
 
-    .muted {
-      color: #657489;
-      font-size: 14px;
-      line-height: 1.6;
+    .primary {
+      background: var(--blue);
+      color: white;
     }
 
-    .hidden {
-      display: none;
+    .secondary {
+      background: #e7f0fa;
+      color: var(--navy);
+    }
+
+    .danger {
+      background: #fff0f0;
+      color: #b42318;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
 
     .error {
       color: #b42318;
-      margin-top: 14px;
       font-size: 14px;
+      margin-top: 15px;
     }
 
-    .result {
-      border-left: 5px solid #1a9b76;
+    .notice {
+      background: #fff8eb;
+      border-left: 4px solid #d9a441;
+      padding: 14px;
+      margin-top: 18px;
+      border-radius: 7px;
+      color: #77541d;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* Summary cards */
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .metric {
+      padding: 18px;
+      border: 1px solid #d1eee2;
       background: #f0faf6;
-      padding: 22px;
-      border-radius: 10px;
+      border-radius: 11px;
+      min-width: 0;
     }
 
-    .result small {
+    .metric small {
       color: #527265;
     }
 
-    .value {
-      font-size: clamp(25px, 5vw, 36px);
-      font-weight: 750;
-      color: #12654e;
+    .metric strong {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: clamp(20px, 3vw, 27px);
+      color: var(--green);
       overflow-wrap: anywhere;
-      margin: 12px 0;
     }
 
-    .details {
-      margin-top: 20px;
-      border-top: 1px solid #e3e9f1;
-      padding-top: 12px;
+    /* Tables */
+
+    .table-wrap {
+      overflow-x: auto;
     }
 
-    .detail-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 9px 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
     }
 
-    .detail-row span {
-      color: #657489;
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      font-size: 14px;
     }
 
-    .detail-row strong {
+    th {
+      background: #f7f9fc;
+    }
+
+    .numeric {
       text-align: right;
+    }
+
+    /* Bar charts */
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 185px 1fr 125px;
+      gap: 12px;
+      align-items: center;
+      margin: 17px 0;
+    }
+
+    .bar-label {
+      font-size: 14px;
+    }
+
+    .bar-track {
+      background: #edf2f8;
+      height: 24px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .bar {
+      background: #2680c2;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .bar-value {
+      text-align: right;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* Line chart */
+
+    .chart-shell {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    #historyChart {
+      display: block;
+      width: 100%;
+      min-width: 500px;
+      height: auto;
+    }
+
+    /* Multi-sector rows */
+
+    .scenario-row {
+      display: grid;
+      grid-template-columns: 38px 1.5fr 1fr auto;
+      gap: 12px;
+      align-items: end;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .scenario-number {
+      align-self: center;
+      font-weight: bold;
+      color: var(--muted);
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
     }
 
     footer {
       text-align: center;
-      padding: 12px 20px 32px;
-      color: #64748b;
+      padding: 22px;
+      color: var(--muted);
       font-size: 13px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 700px) {
       .card {
-        padding: 21px;
+        padding: 18px;
+      }
+
+      .metrics,
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+
+      .scenario-row {
+        grid-template-columns: 30px 1fr;
+      }
+
+      .scenario-row .field,
+      .scenario-row .remove-button {
+        grid-column: 2;
+      }
+
+      .bar-row {
+        grid-template-columns: 1fr 90px;
+      }
+
+      .bar-label {
+        grid-column: 1 / -1;
       }
     }
   </style>
@@ -173,330 +352,1440 @@
 
 <body>
 
-  <!-- Header -->
+  <!-- ============================================== -->
+  <!-- HEADER -->
+  <!-- ============================================== -->
+
   <header>
-    <h1>⚡ Thailand Electricity Prediction</h1>
+    <h1>⚡ Thailand Electricity Analytics</h1>
     <p>
-      Annual Electricity Consumption Prediction
-      Using Machine Learning
+      Historical Electricity Consumption &
+      Machine Learning Prediction
     </p>
   </header>
 
   <main>
 
-    <!-- Prediction Form -->
-    <section class="card">
+    <!-- ============================================ -->
+    <!-- NAVIGATION TABS -->
+    <!-- ============================================ -->
 
-      <h2>Prediction Inputs</h2>
+    <div class="tabs">
+      <button id="historyTab" class="tab active" type="button">
+        Historical Analytics
+      </button>
 
-      <p class="muted">
-        Select a province, choose an electricity sector,
-        and enter the number of electricity users to
-        estimate annual electricity consumption.
-      </p>
+      <button id="predictionTab" class="tab" type="button">
+        ML Prediction
+      </button>
+    </div>
 
-      <form id="predictionForm">
 
-        <!-- Province Dropdown -->
-        <label for="province">Province</label>
+    <!-- ============================================ -->
+    <!-- TAB 1: HISTORICAL ANALYTICS -->
+    <!-- ============================================ -->
 
-        <select id="province" required disabled>
-          <option value="">Loading provinces...</option>
-        </select>
+    <section id="historyPanel">
+
+      <!-- Historical Filters -->
+
+      <div class="card">
+
+        <h2>Historical Electricity Data</h2>
 
         <p class="muted">
-          Province names are loaded from the trained model.
+          Explore historical electricity consumption
+          across Thailand's provinces and sectors.
+          Data coverage: 2018–2023.
         </p>
 
-        <!-- Electricity Sector -->
-        <label for="sector">Electricity Sector</label>
+        <div class="toolbar">
 
-        <select id="sector" required>
-          <option value="residential">Residential</option>
-          <option value="small_business">Small Business</option>
-          <option value="medium_business">Medium Business</option>
-          <option value="large_business">Large Business</option>
-          <option value="specific_business">Specific Business</option>
-        </select>
+          <div>
+            <label for="historyProvince">Province</label>
+            <select id="historyProvince" disabled>
+              <option value="">
+                Loading provinces...
+              </option>
+            </select>
+          </div>
 
-        <!-- Number of Users -->
-        <label for="users">Number of Electricity Users</label>
+          <div>
+            <label for="historySector">
+              Electricity Sector
+            </label>
 
-        <input id="users" type="number" min="1" step="1" value="500000" required>
+            <select id="historySector">
+              <option value="all">
+                All Sectors
+              </option>
+            </select>
+          </div>
 
-        <!-- Prediction Button -->
-        <button type="submit" id="predictButton" disabled>
-          Predict Electricity Consumption
-        </button>
+        </div>
 
-      </form>
+        <p id="historyError" class="error hidden" role="alert"></p>
 
-      <p id="error" class="error hidden" role="alert"></p>
+      </div>
+
+
+      <!-- Historical Summary -->
+
+      <div id="historyResults" class="hidden">
+
+        <div class="card">
+
+          <h2>Historical Overview</h2>
+
+          <div class="metrics">
+
+            <div class="metric">
+              <small>
+                Latest Annual Consumption
+              </small>
+              <strong id="historyTotal">—</strong>
+              <small id="historyLatestYear">—</small>
+            </div>
+
+            <div class="metric">
+              <small>
+                Number of Electricity Users
+              </small>
+              <strong id="historyUsers">—</strong>
+              <small>Latest available year</small>
+            </div>
+
+            <div class="metric">
+              <small>Year-over-Year Growth</small>
+              <strong id="historyGrowth">—</strong>
+              <small>Annual consumption change</small>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Historical Trend Chart -->
+
+        <div class="card">
+
+          <h2>Annual Electricity Consumption</h2>
+
+          <p class="muted">
+            Historical electricity consumption
+            by year (GWh).
+          </p>
+
+          <div class="chart-shell">
+
+            <svg id="historyChart" viewBox="0 0 760 290" role="img"
+              aria-label="Historical electricity consumption chart"></svg>
+
+          </div>
+
+        </div>
+
+
+        <!-- Sector Breakdown -->
+
+        <div class="card">
+
+          <h2>Electricity Sector Breakdown</h2>
+
+          <p id="breakdownSubtitle" class="muted"></p>
+
+          <div id="historyBreakdown"></div>
+
+        </div>
+
+
+        <!-- Historical Table -->
+
+        <div class="card">
+
+          <h2>Historical Data Table</h2>
+
+          <div class="table-wrap">
+
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th class="numeric">Users</th>
+                  <th class="numeric">
+                    Consumption (kWh)
+                  </th>
+                  <th class="numeric">
+                    YoY Growth
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody id="historyTable"></tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+        <p class="muted">
+          Source: Processed historical electricity
+          dataset used in this project.
+          Historical observations are not ML predictions.
+        </p>
+
+      </div>
 
     </section>
 
 
-    <!-- Prediction Result -->
-    <section class="card hidden" id="resultCard" aria-live="polite">
+    <!-- ============================================ -->
+    <!-- TAB 2: MACHINE LEARNING PREDICTION -->
+    <!-- ============================================ -->
 
-      <h2>Prediction Result</h2>
+    <section id="predictionPanel" class="hidden">
 
-      <div class="result">
+      <!-- Prediction Inputs -->
 
-        <small>
-          Estimated Annual Electricity Consumption
-        </small>
+      <div class="card">
 
-        <div id="predictionValue" class="value">
-          —
-        </div>
+        <h2>Multi-Sector Prediction</h2>
 
-        <strong>kWh / year</strong>
+        <p class="muted">
+          Select a province and configure multiple
+          electricity consumption scenarios.
+        </p>
+
+        <form id="predictionForm">
+
+          <label for="predictionProvince">
+            Province
+          </label>
+
+          <select id="predictionProvince" required disabled>
+            <option value="">
+              Loading provinces...
+            </option>
+          </select>
+
+          <h3 style="margin-top: 26px">
+            Prediction Scenarios
+          </h3>
+
+          <div id="scenarioRows"></div>
+
+          <div class="actions">
+
+            <button id="addScenario" class="secondary" type="button" disabled>
+              + Add Scenario
+            </button>
+
+            <button id="predictButton" class="primary" type="submit" disabled>
+              Generate Predictions
+            </button>
+
+          </div>
+
+        </form>
+
+        <p id="predictionError" class="error hidden" role="alert"></p>
 
       </div>
 
-      <div class="details">
 
-        <div class="detail-row">
-          <span>Province</span>
-          <strong id="resultProvince">—</strong>
+      <!-- Prediction Results -->
+
+      <div id="predictionResults" class="hidden">
+
+        <!-- Summary -->
+
+        <div class="card">
+
+          <h2>Prediction Summary</h2>
+
+          <div class="metrics">
+
+            <div class="metric">
+              <small>
+                Sum of Predictions
+              </small>
+              <strong id="predictionTotal">—</strong>
+              <small>kWh / year</small>
+            </div>
+
+            <div class="metric">
+              <small>
+                Prediction Scenarios
+              </small>
+              <strong id="scenarioCount">—</strong>
+            </div>
+
+            <div class="metric">
+              <small>Province</small>
+              <strong id="predictionLocation">—</strong>
+            </div>
+
+          </div>
+
+          <div id="repeatWarning" class="notice hidden">
+            Some scenarios use the same sector.
+            Their predictions are summed for comparison
+            only. Repeated scenarios may represent
+            overlapping electricity users and should
+            not be interpreted as total provincial
+            consumption.
+          </div>
+
         </div>
 
-        <div class="detail-row">
-          <span>Electricity Sector</span>
-          <strong id="resultSector">—</strong>
+
+        <!-- Prediction Comparison -->
+
+        <div class="card">
+
+          <h2>Prediction Comparison</h2>
+
+          <p class="muted">
+            Estimated annual electricity consumption
+            for each scenario.
+          </p>
+
+          <div id="predictionChart"></div>
+
         </div>
 
-        <div class="detail-row">
-          <span>Number of Users</span>
-          <strong id="resultUsers">—</strong>
+
+        <!-- Prediction Table -->
+
+        <div class="card">
+
+          <h2>Detailed Prediction Results</h2>
+
+          <div class="table-wrap">
+
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Scenario</th>
+                  <th>Electricity Sector</th>
+                  <th class="numeric">Users</th>
+                  <th class="numeric">
+                    Predicted kWh
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody id="predictionTable"></tbody>
+
+            </table>
+
+          </div>
+
         </div>
+
+
+        <!-- Prediction by Sector -->
+
+        <div class="card">
+
+          <h2>Predicted Consumption by Sector</h2>
+
+          <div id="predictionBreakdown"></div>
+
+        </div>
+
+        <p class="muted">
+          Predictions are generated using a trained
+          Random Forest regression model.
+          Results are estimates, not official
+          electricity demand forecasts.
+        </p>
 
       </div>
-
-      <p class="muted">
-        This is a machine learning estimate based on
-        historical electricity consumption data.
-        It is not an official electricity demand forecast.
-      </p>
 
     </section>
 
   </main>
 
 
-  <!-- Footer -->
+  <!-- ============================================== -->
+  <!-- FOOTER -->
+  <!-- ============================================== -->
+
   <footer>
-    Thailand Electricity Consumption Prediction
+    Thailand Electricity Analytics & Prediction
     <p>
-      Random Forest Regression · Flask API · Render Cloud
+      Random Forest · Flask API · Docker · Render Cloud
     </p>
   </footer>
 
 
   <script>
 
-    // HTML elements
-    const form = document.getElementById("predictionForm");
-    const provinceSelect = document.getElementById("province");
-    const sectorSelect = document.getElementById("sector");
-    const usersInput = document.getElementById("users");
-    const button = document.getElementById("predictButton");
-    const errorBox = document.getElementById("error");
-    const resultCard = document.getElementById("resultCard");
+    // ==============================================
+    // 1. Shared Utilities
+    // ==============================================
 
+    const $ = id => document.getElementById(id);
 
-    // Display error message
-    function showError(message) {
-      errorBox.textContent = message;
-      errorBox.classList.remove("hidden");
+    const formatNumber = value =>
+      Number(value).toLocaleString("en-US", {
+        maximumFractionDigits: 2
+      });
+
+    const formatKwh = value =>
+      Number(value).toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
+    const formatGwh = value =>
+      `${formatNumber(Number(value) / 1000000)} GWh`;
+
+    const sectorLabel = sector =>
+      String(sector)
+        .split("_")
+        .map(word =>
+          word.charAt(0).toUpperCase() + word.slice(1)
+        )
+        .join(" ");
+
+    function showError(id, message = "") {
+      $(id).textContent = message;
+
+      $(id).classList.toggle(
+        "hidden",
+        !message
+      );
+    }
+
+    function setSelectOptions(element, values) {
+
+      element.replaceChildren();
+
+      values.forEach(value => {
+
+        const option = document.createElement("option");
+
+        option.value = value;
+
+        option.textContent =
+          value === "all"
+            ? "All Sectors"
+            : sectorLabel(value);
+
+        element.appendChild(option);
+
+      });
+
     }
 
 
-    // Load provinces from Flask API
-    async function loadProvinces() {
+    // ==============================================
+    // 2. Navigation Tabs
+    // ==============================================
 
-      provinceSelect.disabled = true;
-      button.disabled = true;
+    function switchTab(tab) {
+
+      const showHistory = tab === "history";
+
+      $("historyPanel").classList.toggle(
+        "hidden",
+        !showHistory
+      );
+
+      $("predictionPanel").classList.toggle(
+        "hidden",
+        showHistory
+      );
+
+      $("historyTab").classList.toggle(
+        "active",
+        showHistory
+      );
+
+      $("predictionTab").classList.toggle(
+        "active",
+        !showHistory
+      );
+
+    }
+
+    $("historyTab").addEventListener(
+      "click",
+      () => switchTab("history")
+    );
+
+    $("predictionTab").addEventListener(
+      "click",
+      () => switchTab("prediction")
+    );
+
+
+    // ==============================================
+    // 3. Horizontal Bar Chart
+    // ==============================================
+
+    function renderBars(containerId, items) {
+
+      const container = $(containerId);
+
+      container.replaceChildren();
+
+      if (items.length === 0) {
+        container.textContent = "No data available.";
+        return;
+      }
+
+      const maxValue = Math.max(
+        1,
+        ...items.map(item =>
+          Math.max(0, item.value)
+        )
+      );
+
+      items.forEach(item => {
+
+        const row = document.createElement("div");
+        row.className = "bar-row";
+
+        const name = document.createElement("div");
+        name.className = "bar-label";
+        name.textContent = item.label;
+
+        const track = document.createElement("div");
+        track.className = "bar-track";
+
+        const bar = document.createElement("div");
+        bar.className = "bar";
+
+        bar.style.width =
+          `${Math.max(0, item.value) / maxValue * 100}%`;
+
+        track.appendChild(bar);
+
+        const value = document.createElement("div");
+        value.className = "bar-value";
+
+        value.textContent = formatGwh(item.value);
+
+        row.append(name, track, value);
+
+        container.appendChild(row);
+
+      });
+
+    }
+
+
+    // ==============================================
+    // 4. Historical Analytics
+    // ==============================================
+
+    let historicalData = null;
+    let historyRequestVersion = 0;
+
+    async function loadHistoricalData() {
+
+      const requestVersion = ++historyRequestVersion;
+
+      const province = $("historyProvince").value;
+
+      $("historyResults").classList.add("hidden");
+
+      showError("historyError");
 
       try {
 
+        const response = await fetch(
+          `/historical?province=${encodeURIComponent(province)}`
+        );
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            data.error || "Unable to load historical data."
+          );
+        }
+
+        if (requestVersion !== historyRequestVersion) {
+          return;
+        }
+
+        historicalData = data;
+
+        setSelectOptions(
+          $("historySector"),
+          ["all", ...data.sectors]
+        );
+
+        $("historySector").value = "all";
+
+        renderHistoricalDashboard();
+
+      } catch (error) {
+
+        if (requestVersion === historyRequestVersion) {
+          showError("historyError", error.message);
+        }
+
+      }
+
+    }
+
+
+    // Aggregate consumption and users by year
+    function aggregateByYear(records) {
+
+      const yearly = new Map();
+
+      records.forEach(record => {
+
+        const year = Number(record.year);
+
+        if (!yearly.has(year)) {
+
+          yearly.set(year, {
+            year: year,
+            electricity_kwh: 0,
+            number_of_users: 0
+          });
+
+        }
+
+        const current = yearly.get(year);
+
+        current.electricity_kwh +=
+          Number(record.electricity_kwh);
+
+        current.number_of_users +=
+          Number(record.number_of_users);
+
+      });
+
+      return [...yearly.values()].sort(
+        (a, b) => a.year - b.year
+      );
+
+    }
+
+
+    function renderHistoricalDashboard() {
+
+      if (!historicalData) {
+        return;
+      }
+
+      const selectedSector =
+        $("historySector").value;
+
+      const records = historicalData.records.filter(
+        record =>
+          selectedSector === "all" ||
+          record.sector === selectedSector
+      );
+
+      const yearly = aggregateByYear(records);
+
+      if (yearly.length === 0) {
+
+        $("historyResults").classList.add("hidden");
+
+        return;
+
+      }
+
+      // Latest year
+      const latest = yearly[yearly.length - 1];
+
+      // Previous year
+      const previous = yearly.length > 1
+        ? yearly[yearly.length - 2]
+        : null;
+
+      // Year-over-Year Growth
+      const growth = (
+        previous &&
+        latest.year - previous.year === 1 &&
+        previous.electricity_kwh > 0
+      )
+        ? (
+          latest.electricity_kwh /
+          previous.electricity_kwh - 1
+        ) * 100
+        : null;
+
+      // Summary
+      $("historyTotal").textContent =
+        formatGwh(latest.electricity_kwh);
+
+      $("historyUsers").textContent =
+        formatNumber(latest.number_of_users);
+
+      $("historyGrowth").textContent =
+        growth === null
+          ? "N/A"
+          : `${growth >= 0 ? "+" : ""}${growth.toFixed(2)}%`;
+
+      $("historyLatestYear").textContent =
+        `Year ${latest.year}`;
+
+      // Draw trend chart
+      renderHistoricalLineChart(yearly);
+
+      // Latest year breakdown
+      const latestRecords = records.filter(
+        record => Number(record.year) === latest.year
+      );
+
+      $("breakdownSubtitle").textContent =
+        `Actual electricity consumption by sector, ${latest.year}`;
+
+      renderBars(
+        "historyBreakdown",
+        latestRecords.map(record => ({
+          label: sectorLabel(record.sector),
+          value: Number(record.electricity_kwh)
+        }))
+      );
+
+      // Historical table
+      const table = $("historyTable");
+
+      table.replaceChildren();
+
+      yearly.forEach((record, index) => {
+
+        const previousRecord =
+          index > 0 ? yearly[index - 1] : null;
+
+        const yearGrowth = (
+          previousRecord &&
+          record.year - previousRecord.year === 1 &&
+          previousRecord.electricity_kwh > 0
+        )
+          ? (
+            record.electricity_kwh /
+            previousRecord.electricity_kwh - 1
+          ) * 100
+          : null;
+
+        const values = [
+          record.year,
+          formatNumber(record.number_of_users),
+          formatKwh(record.electricity_kwh),
+          yearGrowth === null
+            ? "—"
+            : `${yearGrowth >= 0 ? "+" : ""}${yearGrowth.toFixed(2)}%`
+        ];
+
+        const row = document.createElement("tr");
+
+        values.forEach((value, index) => {
+
+          const cell = document.createElement("td");
+
+          cell.textContent = value;
+
+          if (index > 0) {
+            cell.className = "numeric";
+          }
+
+          row.appendChild(cell);
+
+        });
+
+        table.appendChild(row);
+
+      });
+
+      $("historyResults").classList.remove("hidden");
+
+    }
+
+
+    // ==============================================
+    // 5. Historical Line Chart (SVG)
+    // ==============================================
+
+    function renderHistoricalLineChart(yearly) {
+
+      const svg = $("historyChart");
+
+      svg.replaceChildren();
+
+      const NS = "http://www.w3.org/2000/svg";
+
+      const width = 760;
+      const height = 290;
+
+      const left = 78;
+      const right = 25;
+      const top = 25;
+      const bottom = 45;
+
+      const plotWidth = width - left - right;
+      const plotHeight = height - top - bottom;
+
+      const values = yearly.map(
+        record => record.electricity_kwh / 1000000
+      );
+
+      const maximum = Math.max(1, ...values) * 1.1;
+
+      function createSVG(tag, attributes, text = null) {
+
+        const element = document.createElementNS(
+          NS,
+          tag
+        );
+
+        Object.entries(attributes).forEach(
+          ([key, value]) => {
+            element.setAttribute(key, value);
+          }
+        );
+
+        if (text !== null) {
+          element.textContent = text;
+        }
+
+        svg.appendChild(element);
+
+        return element;
+
+      }
+
+      function x(index) {
+
+        if (yearly.length === 1) {
+          return left + plotWidth / 2;
+        }
+
+        return left +
+          index / (yearly.length - 1) * plotWidth;
+
+      }
+
+      function y(value) {
+
+        return top +
+          plotHeight -
+          (value / maximum * plotHeight);
+
+      }
+
+      // Horizontal gridlines
+      for (let i = 0; i <= 4; i++) {
+
+        const tick = maximum * i / 4;
+        const yPosition = y(tick);
+
+        createSVG("line", {
+          x1: left,
+          y1: yPosition,
+          x2: width - right,
+          y2: yPosition,
+          stroke: "#e5ecf3"
+        });
+
+        createSVG("text", {
+          x: left - 10,
+          y: yPosition + 4,
+          "text-anchor": "end",
+          fill: "#63758a",
+          "font-size": "12"
+        }, formatNumber(tick));
+
+      }
+
+      // Trend line
+      const points = values.map(
+        (value, index) =>
+          `${x(index)},${y(value)}`
+      ).join(" ");
+
+      createSVG("polyline", {
+        points: points,
+        fill: "none",
+        stroke: "#1769b5",
+        "stroke-width": "3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+      });
+
+      // Data points
+      yearly.forEach((record, index) => {
+
+        const circle = createSVG("circle", {
+          cx: x(index),
+          cy: y(values[index]),
+          r: 5,
+          fill: "#1769b5",
+          stroke: "white",
+          "stroke-width": 2
+        });
+
+        // Tooltip
+        const title = document.createElementNS(
+          NS,
+          "title"
+        );
+
+        title.textContent =
+          `${record.year}: ${formatNumber(values[index])} GWh`;
+
+        circle.appendChild(title);
+
+        // Year labels
+        createSVG("text", {
+          x: x(index),
+          y: height - 16,
+          "text-anchor": "middle",
+          fill: "#63758a",
+          "font-size": "12"
+        }, String(record.year));
+
+      });
+
+    }
+
+
+    $("historyProvince").addEventListener(
+      "change",
+      loadHistoricalData
+    );
+
+    $("historySector").addEventListener(
+      "change",
+      renderHistoricalDashboard
+    );
+
+
+    // ==============================================
+    // 6. Multi-Sector Prediction Inputs
+    // ==============================================
+
+    let sectors = [];
+
+    let scenarios = [
+      {
+        id: 1,
+        sector: "residential",
+        users: 500000
+      },
+      {
+        id: 2,
+        sector: "residential",
+        users: 25000
+      },
+      {
+        id: 3,
+        sector: "residential",
+        users: 1200
+      }
+    ];
+
+    let nextScenarioId = 4;
+
+    function hidePredictionResults() {
+
+      $("predictionResults").classList.add("hidden");
+
+    }
+
+
+    function renderScenarioInputs() {
+
+      const container = $("scenarioRows");
+
+      container.replaceChildren();
+
+      scenarios.forEach((scenario, index) => {
+
+        const row = document.createElement("div");
+        row.className = "scenario-row";
+
+        const number = document.createElement("span");
+        number.className = "scenario-number";
+        number.textContent = `#${index + 1}`;
+
+
+        // Sector field
+        const sectorField = document.createElement("div");
+        sectorField.className = "field";
+
+        const sectorText = document.createElement("label");
+        sectorText.textContent = "Electricity Sector";
+
+        const sectorSelect = document.createElement("select");
+
+        setSelectOptions(sectorSelect, sectors);
+
+        sectorSelect.value = scenario.sector;
+
+        sectorSelect.addEventListener("change", () => {
+
+          scenario.sector = sectorSelect.value;
+
+          hidePredictionResults();
+
+        });
+
+        sectorField.append(
+          sectorText,
+          sectorSelect
+        );
+
+
+        // Number of Users
+        const usersField = document.createElement("div");
+        usersField.className = "field";
+
+        const usersText = document.createElement("label");
+        usersText.textContent = "Number of Users";
+
+        const usersInput = document.createElement("input");
+
+        usersInput.type = "number";
+        usersInput.min = "1";
+        usersInput.step = "1";
+        usersInput.required = true;
+        usersInput.value = scenario.users;
+
+        usersInput.addEventListener("input", () => {
+
+          scenario.users = usersInput.value;
+
+          hidePredictionResults();
+
+        });
+
+        usersField.append(
+          usersText,
+          usersInput
+        );
+
+
+        // Remove button
+        const removeButton = document.createElement("button");
+
+        removeButton.type = "button";
+        removeButton.className = "danger remove-button";
+        removeButton.textContent = "Remove";
+
+        removeButton.disabled =
+          scenarios.length === 1;
+
+        removeButton.addEventListener("click", () => {
+
+          scenarios = scenarios.filter(
+            item => item.id !== scenario.id
+          );
+
+          renderScenarioInputs();
+
+          hidePredictionResults();
+
+        });
+
+        row.append(
+          number,
+          sectorField,
+          usersField,
+          removeButton
+        );
+
+        container.appendChild(row);
+
+      });
+
+    }
+
+
+    $("addScenario").addEventListener("click", () => {
+
+      scenarios.push({
+        id: nextScenarioId++,
+        sector: sectors[0],
+        users: 1000
+      });
+
+      renderScenarioInputs();
+
+      hidePredictionResults();
+
+    });
+
+    $("predictionProvince").addEventListener(
+      "change",
+      hidePredictionResults
+    );
+
+
+    // ==============================================
+    // 7. Prediction API
+    // ==============================================
+
+    async function predictScenario(
+      province,
+      scenario,
+      index
+    ) {
+
+      const response = await fetch("/predict", {
+
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+          province_en: province,
+          sector: scenario.sector,
+          number_of_users: Number(scenario.users)
+        })
+
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+
+        throw new Error(
+          `Scenario ${index + 1}: ` +
+          (data.error || "Prediction failed")
+        );
+
+      }
+
+      const prediction = Number(
+        data.predicted_electricity_kwh
+      );
+
+      if (!Number.isFinite(prediction)) {
+
+        throw new Error(
+          `Scenario ${index + 1}: Invalid prediction`
+        );
+
+      }
+
+      return {
+        number: index + 1,
+        sector: scenario.sector,
+        users: Number(scenario.users),
+        predicted: prediction
+      };
+
+    }
+
+
+    // ==============================================
+    // 8. Submit Multi-Sector Prediction
+    // ==============================================
+
+    $("predictionForm").addEventListener(
+      "submit",
+      async event => {
+
+        event.preventDefault();
+
+        showError("predictionError");
+
+        hidePredictionResults();
+
+        const province =
+          $("predictionProvince").value;
+
+        // Validate scenarios
+        for (const scenario of scenarios) {
+
+          const users = Number(scenario.users);
+
+          if (
+            !Number.isSafeInteger(users) ||
+            users <= 0 ||
+            !sectors.includes(scenario.sector)
+          ) {
+
+            showError(
+              "predictionError",
+              "Please enter a valid positive whole number " +
+              "of electricity users for each scenario."
+            );
+
+            return;
+
+          }
+
+        }
+
+        const button = $("predictButton");
+
+        button.disabled = true;
+        button.textContent = "Generating Predictions...";
+
+        try {
+
+          const predictions = await Promise.all(
+
+            scenarios.map(
+              (scenario, index) =>
+                predictScenario(
+                  province,
+                  scenario,
+                  index
+                )
+            )
+
+          );
+
+          renderPredictionResults(
+            province,
+            predictions
+          );
+
+        } catch (error) {
+
+          showError(
+            "predictionError",
+            error.message
+          );
+
+        } finally {
+
+          button.disabled = false;
+
+          button.textContent =
+            "Generate Predictions";
+
+        }
+
+      }
+    );
+
+
+    // ==============================================
+    // 9. Display Prediction Results
+    // ==============================================
+
+    function renderPredictionResults(
+      province,
+      predictions
+    ) {
+
+      const total = predictions.reduce(
+        (sum, item) => sum + item.predicted,
+        0
+      );
+
+      // Summary
+      $("predictionTotal").textContent =
+        formatKwh(total);
+
+      $("scenarioCount").textContent =
+        predictions.length;
+
+      $("predictionLocation").textContent =
+        province;
+
+
+      // Repeated-sector warning
+      const uniqueSectors = new Set(
+        predictions.map(item => item.sector)
+      );
+
+      $("repeatWarning").classList.toggle(
+        "hidden",
+        uniqueSectors.size === predictions.length
+      );
+
+
+      // Detailed table
+      const table = $("predictionTable");
+
+      table.replaceChildren();
+
+      predictions.forEach(item => {
+
+        const row = document.createElement("tr");
+
+        const values = [
+          `Scenario ${item.number}`,
+          sectorLabel(item.sector),
+          formatNumber(item.users),
+          formatKwh(item.predicted)
+        ];
+
+        values.forEach((value, index) => {
+
+          const cell = document.createElement("td");
+
+          cell.textContent = value;
+
+          if (index >= 2) {
+            cell.className = "numeric";
+          }
+
+          row.appendChild(cell);
+
+        });
+
+        table.appendChild(row);
+
+      });
+
+
+      // Scenario comparison
+      renderBars(
+        "predictionChart",
+        predictions.map(item => ({
+          label:
+            `#${item.number} ${sectorLabel(item.sector)}`,
+          value: item.predicted
+        }))
+      );
+
+
+      // Group by sector
+      const sectorTotals = new Map();
+
+      predictions.forEach(item => {
+
+        sectorTotals.set(
+          item.sector,
+          (sectorTotals.get(item.sector) || 0)
+          + item.predicted
+        );
+
+      });
+
+      renderBars(
+        "predictionBreakdown",
+        [...sectorTotals].map(
+          ([sector, value]) => ({
+            label: sectorLabel(sector),
+            value: value
+          })
+        )
+      );
+
+      $("predictionResults").classList.remove("hidden");
+
+    }
+
+
+    // ==============================================
+    // 10. Initialize Web Application
+    // ==============================================
+
+    async function initializeApplication() {
+
+      try {
+
+        // Load province and sector options
         const response = await fetch("/options");
 
         if (!response.ok) {
-          throw new Error("Cannot load province options.");
+
+          throw new Error(
+            "Unable to load model options."
+          );
+
         }
 
         const data = await response.json();
 
         if (
           !Array.isArray(data.provinces) ||
-          data.provinces.length === 0
+          !Array.isArray(data.sectors) ||
+          data.provinces.length === 0 ||
+          data.sectors.length === 0
         ) {
-          throw new Error("No provinces were returned by the API.");
+
+          throw new Error(
+            "No provinces or sectors available."
+          );
+
         }
 
-        // Clear previous dropdown options
-        provinceSelect.replaceChildren();
+        sectors = data.sectors;
 
-        // Add each province
-        data.provinces.forEach(province => {
 
-          const option = document.createElement("option");
+        // Province dropdowns
+        setSelectOptions(
+          $("historyProvince"),
+          data.provinces
+        );
 
-          option.value = province;
-          option.textContent = province;
-
-          provinceSelect.appendChild(option);
-
-        });
+        setSelectOptions(
+          $("predictionProvince"),
+          data.provinces
+        );
 
         // Default province
-        if (data.provinces.includes("Chiang Mai")) {
-          provinceSelect.value = "Chiang Mai";
-        }
+        const defaultProvince =
+          data.provinces.includes("Chiang Mai")
+            ? "Chiang Mai"
+            : data.provinces[0];
 
-        // Enable form
-        provinceSelect.disabled = false;
-        button.disabled = false;
+        $("historyProvince").value =
+          defaultProvince;
 
-        errorBox.classList.add("hidden");
+        $("predictionProvince").value =
+          defaultProvince;
+
+
+        // Validate default scenario sectors
+        scenarios.forEach(scenario => {
+
+          if (!sectors.includes(scenario.sector)) {
+            scenario.sector = sectors[0];
+          }
+
+        });
+
+
+        // Enable controls
+        $("historyProvince").disabled = false;
+
+        $("predictionProvince").disabled = false;
+
+        $("addScenario").disabled = false;
+
+        $("predictButton").disabled = false;
+
+
+        // Render prediction inputs
+        renderScenarioInputs();
+
+        // Load real historical data
+        await loadHistoricalData();
 
       } catch (error) {
 
-        provinceSelect.replaceChildren();
-
-        const option = document.createElement("option");
-        option.value = "";
-        option.textContent = "Unable to load provinces";
-
-        provinceSelect.appendChild(option);
-
         showError(
-          "Unable to load province data. " +
-          "Please check that the Flask API is running."
+          "historyError",
+          error.message
         );
 
-        console.error(error);
+        showError(
+          "predictionError",
+          error.message
+        );
+
       }
+
     }
 
-
-    // Submit prediction request
-    form.addEventListener("submit", async (event) => {
-
-      event.preventDefault();
-
-      const province = provinceSelect.value;
-      const sector = sectorSelect.value;
-      const users = Number(usersInput.value);
-
-      errorBox.classList.add("hidden");
-      resultCard.classList.add("hidden");
-
-      // Validate user inputs
-      if (
-        !province ||
-        !Number.isSafeInteger(users) ||
-        users <= 0
-      ) {
-
-        showError(
-          "Please select a province and enter a " +
-          "valid positive whole number of users."
-        );
-
-        return;
-      }
-
-      button.disabled = true;
-      button.textContent = "Predicting...";
-
-      try {
-
-        // Send data to Flask Prediction API
-        const response = await fetch("/predict", {
-
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json"
-          },
-
-          body: JSON.stringify({
-            province_en: province,
-            sector: sector,
-            number_of_users: users
-          })
-
-        });
-
-        const data = await response.json();
-
-        if (!response.ok) {
-          throw new Error(
-            data.error ||
-            data.message ||
-            "Prediction request failed."
-          );
-        }
-
-        // Read prediction
-        const prediction = Number(
-          data.predicted_electricity_kwh
-        );
-
-        if (!Number.isFinite(prediction)) {
-          throw new Error("Invalid prediction returned by API.");
-        }
-
-        // Display prediction value
-        document.getElementById("predictionValue")
-          .textContent = prediction.toLocaleString(
-            "en-US",
-            {
-              minimumFractionDigits: 2,
-              maximumFractionDigits: 2
-            }
-          );
-
-        // Display input details
-        document.getElementById("resultProvince")
-          .textContent = province;
-
-        document.getElementById("resultSector")
-          .textContent =
-          sectorSelect.options[
-            sectorSelect.selectedIndex
-          ].textContent;
-
-        document.getElementById("resultUsers")
-          .textContent = users.toLocaleString("en-US");
-
-        // Show result card
-        resultCard.classList.remove("hidden");
-
-        resultCard.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest"
-        });
-
-      } catch (error) {
-
-        showError(error.message);
-
-      } finally {
-
-        button.disabled = false;
-        button.textContent =
-          "Predict Electricity Consumption";
-
-      }
-    });
-
-
-    // Load provinces when the page opens
-    loadProvinces();
+    initializeApplication();
 
   </script>
 

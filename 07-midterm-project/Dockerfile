@@ -14,11 +14,14 @@ COPY Pipfile Pipfile.lock ./
 # Install dependencies inside the container
 RUN pipenv sync --system
 
-# Copy application and trained model
-COPY predict.py model.bin ./
+# Copy Flask application, Historical API and trained model
+COPY predict.py historical.py model.bin ./
 
 # Copy Web Interface
 COPY web/ ./web/
+
+# Copy Historical Electricity Dataset
+COPY data/ ./data/
 
 # Expose API port
 EXPOSE 5000

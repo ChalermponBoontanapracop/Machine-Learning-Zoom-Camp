@@ -1,0 +1,2311 @@
+﻿province_en,year,sector,number_of_users,electricity_kwh
+Bangkok,2018,large_business,1508.0,11195235904.0
+Bangkok,2018,medium_business,16844.0,6286464447.0
+Bangkok,2018,residential,2272163.0,9629942709.0
+Bangkok,2018,small_business,376343.0,6262296182.0
+Bangkok,2018,specific_business,2726.0,2029925394.0
+Bangkok,2019,large_business,1562.0,11442094844.0
+Bangkok,2019,medium_business,17100.0,6381023962.0
+Bangkok,2019,residential,2342354.0,10364812123.0
+Bangkok,2019,small_business,376979.0,6448127178.0
+Bangkok,2019,specific_business,2948.0,2109419490.0
+Bangkok,2020,large_business,1395.0,10273637836.0
+Bangkok,2020,medium_business,16071.0,5759143484.0
+Bangkok,2020,residential,2526275.0,11312004735.0
+Bangkok,2020,small_business,244050.0,5542700797.0
+Bangkok,2020,specific_business,2972.0,1526537077.0
+Bangkok,2021,large_business,1578.0,10031686498.0
+Bangkok,2021,medium_business,16699.0,5364038944.0
+Bangkok,2021,residential,2596490.0,11287289475.0
+Bangkok,2021,small_business,248454.0,5074172447.0
+Bangkok,2021,specific_business,2783.0,1363891339.0
+Bangkok,2022,large_business,1608.0,10727410582.0
+Bangkok,2022,medium_business,16666.0,5755020369.0
+Bangkok,2022,residential,2637636.0,11025773549.0
+Bangkok,2022,small_business,248336.0,5347811010.0
+Bangkok,2022,specific_business,2666.0,1661512000.0
+Bangkok,2023,large_business,1637.0,11131271080.0
+Bangkok,2023,medium_business,16863.0,6065548506.0
+Bangkok,2023,residential,2697320.0,11938107549.0
+Bangkok,2023,small_business,250921.0,5769709301.0
+Bangkok,2023,specific_business,2739.0,1931826247.0
+Samut Prakan,2018,large_business,677.0,5831289539.0
+Samut Prakan,2018,medium_business,4317.0,1788290082.0
+Samut Prakan,2018,residential,441578.0,1559809399.0
+Samut Prakan,2018,small_business,59592.0,961353522.0
+Samut Prakan,2018,specific_business,344.0,103511747.0
+Samut Prakan,2019,large_business,691.0,5194874060.0
+Samut Prakan,2019,medium_business,4541.0,1811872386.0
+Samut Prakan,2019,residential,459532.0,1723746935.0
+Samut Prakan,2019,small_business,60988.0,1000064138.0
+Samut Prakan,2019,specific_business,361.0,111119571.0
+Samut Prakan,2020,large_business,879.0,4851046947.0
+Samut Prakan,2020,medium_business,5590.0,1728157608.0
+Samut Prakan,2020,residential,521354.0,1899751420.0
+Samut Prakan,2020,small_business,51552.0,956284676.0
+Samut Prakan,2020,specific_business,398.0,89978125.0
+Samut Prakan,2021,large_business,719.0,4990533230.0
+Samut Prakan,2021,medium_business,4739.0,1779083271.0
+Samut Prakan,2021,residential,499303.0,1959256325.0
+Samut Prakan,2021,small_business,56022.0,955313208.0
+Samut Prakan,2021,specific_business,347.0,87247770.0
+Samut Prakan,2022,large_business,732.0,5107727194.0
+Samut Prakan,2022,medium_business,4871.0,1899213189.0
+Samut Prakan,2022,residential,515719.0,1970209213.0
+Samut Prakan,2022,small_business,55163.0,1003990418.0
+Samut Prakan,2022,specific_business,333.0,87606810.0
+Samut Prakan,2023,large_business,733.0,4889489622.0
+Samut Prakan,2023,medium_business,5022.0,1874275168.0
+Samut Prakan,2023,residential,532274.0,2095756777.0
+Samut Prakan,2023,small_business,55819.0,1042302440.0
+Samut Prakan,2023,specific_business,330.0,93364769.0
+Nonthaburi,2018,large_business,201.0,1481179193.0
+Nonthaburi,2018,medium_business,2153.0,720466467.0
+Nonthaburi,2018,residential,527097.0,1944110501.0
+Nonthaburi,2018,small_business,73542.0,732682903.0
+Nonthaburi,2018,specific_business,115.0,41394985.0
+Nonthaburi,2019,large_business,211.0,1540570025.0
+Nonthaburi,2019,medium_business,2215.0,782405323.0
+Nonthaburi,2019,residential,539841.0,2207801778.0
+Nonthaburi,2019,small_business,78568.0,818642557.0
+Nonthaburi,2019,specific_business,130.0,40786600.0
+Nonthaburi,2020,large_business,219.0,1447072295.0
+Nonthaburi,2020,medium_business,2404.0,753249157.0
+Nonthaburi,2020,residential,606734.0,2481980772.0
+Nonthaburi,2020,small_business,45003.0,704401675.0
+Nonthaburi,2020,specific_business,154.0,38832796.0
+Nonthaburi,2021,large_business,219.0,1402920894.0
+Nonthaburi,2021,medium_business,2327.0,743507079.0
+Nonthaburi,2021,residential,607003.0,2525537812.0
+Nonthaburi,2021,small_business,43873.0,713868770.0
+Nonthaburi,2021,specific_business,136.0,37893698.0
+Nonthaburi,2022,large_business,231.0,1537913194.0
+Nonthaburi,2022,medium_business,2416.0,791975846.0
+Nonthaburi,2022,residential,619486.0,2491043560.0
+Nonthaburi,2022,small_business,42743.0,744733113.0
+Nonthaburi,2022,specific_business,132.0,39442821.0
+Nonthaburi,2023,large_business,239.0,1520759599.0
+Nonthaburi,2023,medium_business,2394.0,807185913.0
+Nonthaburi,2023,residential,619351.0,2583963589.0
+Nonthaburi,2023,small_business,41776.0,756334962.0
+Nonthaburi,2023,specific_business,127.0,40779293.0
+Pathum Thani,2018,large_business,416.0,3866731353.0
+Pathum Thani,2018,medium_business,4070.0,1243793226.0
+Pathum Thani,2018,residential,458156.0,1537667225.0
+Pathum Thani,2018,small_business,43107.0,557401964.0
+Pathum Thani,2018,specific_business,641.0,164793920.0
+Pathum Thani,2019,large_business,424.0,3915368269.0
+Pathum Thani,2019,medium_business,4256.0,1292405072.0
+Pathum Thani,2019,residential,476158.0,1723439576.0
+Pathum Thani,2019,small_business,43996.0,591934349.0
+Pathum Thani,2019,specific_business,727.0,181993954.0
+Pathum Thani,2020,large_business,432.0,3629352149.8299994
+Pathum Thani,2020,medium_business,4397.0,1277122769.14
+Pathum Thani,2020,residential,494054.0,1871406361.1399999
+Pathum Thani,2020,small_business,45015.0,596606029.9200001
+Pathum Thani,2020,specific_business,738.0,169043268.43
+Pathum Thani,2021,large_business,452.0,3448189322.06
+Pathum Thani,2021,medium_business,4463.0,1288233825.95
+Pathum Thani,2021,residential,514246.0,1938971225.41
+Pathum Thani,2021,small_business,46341.0,602929811.9300001
+Pathum Thani,2021,specific_business,702.0,146833842.33
+Pathum Thani,2022,large_business,466.0,3612299766.0
+Pathum Thani,2022,medium_business,4668.0,1346041564.0
+Pathum Thani,2022,residential,527131.0,1938899633.0
+Pathum Thani,2022,small_business,47715.0,637100384.0
+Pathum Thani,2022,specific_business,714.0,168902128.0
+Pathum Thani,2023,large_business,485.0,3560965807.0
+Pathum Thani,2023,medium_business,5000.0,1407865440.0
+Pathum Thani,2023,residential,545580.0,2120460279.0
+Pathum Thani,2023,small_business,49206.0,653242293.0
+Pathum Thani,2023,specific_business,841.0,197697815.0
+Phra Nakhon Si Ayutthaya,2018,large_business,312.0,3785677543.0
+Phra Nakhon Si Ayutthaya,2018,medium_business,2160.0,684814730.0
+Phra Nakhon Si Ayutthaya,2018,residential,248766.0,701086158.0
+Phra Nakhon Si Ayutthaya,2018,small_business,30226.0,303947133.0
+Phra Nakhon Si Ayutthaya,2018,specific_business,274.0,63209080.0
+Phra Nakhon Si Ayutthaya,2019,large_business,322.0,3358130998.0
+Phra Nakhon Si Ayutthaya,2019,medium_business,2245.0,693398332.0
+Phra Nakhon Si Ayutthaya,2019,residential,253775.0,773723061.0
+Phra Nakhon Si Ayutthaya,2019,small_business,30304.0,319073962.0
+Phra Nakhon Si Ayutthaya,2019,specific_business,303.0,68223687.0
+Phra Nakhon Si Ayutthaya,2020,large_business,321.0,3195847892.3699994
+Phra Nakhon Si Ayutthaya,2020,medium_business,2313.0,661134826.73
+Phra Nakhon Si Ayutthaya,2020,residential,260253.0,830880046.68
+Phra Nakhon Si Ayutthaya,2020,small_business,31216.0,322581095.8000001
+Phra Nakhon Si Ayutthaya,2020,specific_business,310.0,63990043.14
+Phra Nakhon Si Ayutthaya,2021,large_business,332.0,3535191816.1400003
+Phra Nakhon Si Ayutthaya,2021,medium_business,2333.0,670481727.2199999
+Phra Nakhon Si Ayutthaya,2021,residential,266166.0,851952831.92
+Phra Nakhon Si Ayutthaya,2021,small_business,32135.0,325237004.46999997
+Phra Nakhon Si Ayutthaya,2021,specific_business,294.0,60579011.539999984
+Phra Nakhon Si Ayutthaya,2022,large_business,333.0,3556701377.0
+Phra Nakhon Si Ayutthaya,2022,medium_business,2354.0,682585281.0
+Phra Nakhon Si Ayutthaya,2022,residential,270111.0,844953421.0
+Phra Nakhon Si Ayutthaya,2022,small_business,32771.0,334645193.0
+Phra Nakhon Si Ayutthaya,2022,specific_business,299.0,63915993.0
+Phra Nakhon Si Ayutthaya,2023,large_business,345.0,3188673850.0
+Phra Nakhon Si Ayutthaya,2023,medium_business,2548.0,699615316.0
+Phra Nakhon Si Ayutthaya,2023,residential,274724.0,906596353.0
+Phra Nakhon Si Ayutthaya,2023,small_business,33461.0,345024779.0
+Phra Nakhon Si Ayutthaya,2023,specific_business,327.0,67280489.0
+Ang Thong,2018,large_business,15.0,227899543.0
+Ang Thong,2018,medium_business,363.0,84022468.0
+Ang Thong,2018,residential,86437.0,181205454.0
+Ang Thong,2018,small_business,8092.0,59130754.0
+Ang Thong,2018,specific_business,12.0,1283689.0
+Ang Thong,2019,large_business,18.0,226724749.0
+Ang Thong,2019,medium_business,373.0,84436477.0
+Ang Thong,2019,residential,87487.0,196672841.0
+Ang Thong,2019,small_business,8289.0,63222515.0
+Ang Thong,2019,specific_business,15.0,1307545.0
+Ang Thong,2020,large_business,21.0,193705224.76
+Ang Thong,2020,medium_business,371.0,76344136.05
+Ang Thong,2020,residential,89225.0,213316830.17000002
+Ang Thong,2020,small_business,8532.0,64457141.02
+Ang Thong,2020,specific_business,13.0,1112141.28
+Ang Thong,2021,large_business,22.0,199503719.8
+Ang Thong,2021,medium_business,375.0,73619224.15
+Ang Thong,2021,residential,90774.0,218754045.24
+Ang Thong,2021,small_business,9203.0,65248759.89
+Ang Thong,2021,specific_business,9.0,813960.63
+Ang Thong,2022,large_business,23.0,197950144.0
+Ang Thong,2022,medium_business,378.0,76947943.0
+Ang Thong,2022,residential,91463.0,215589727.0
+Ang Thong,2022,small_business,9508.0,65668855.0
+Ang Thong,2022,specific_business,14.0,934604.0
+Ang Thong,2023,large_business,23.0,224988375.0
+Ang Thong,2023,medium_business,411.0,81868848.0
+Ang Thong,2023,residential,92155.0,229123315.0
+Ang Thong,2023,small_business,9561.0,66398612.0
+Ang Thong,2023,specific_business,13.0,1273042.0
+Lop Buri,2018,large_business,111.0,1307215176.0
+Lop Buri,2018,medium_business,1061.0,346520745.0
+Lop Buri,2018,residential,221633.0,447192526.0
+Lop Buri,2018,small_business,24058.0,183908587.0
+Lop Buri,2018,specific_business,89.0,12771735.0
+Lop Buri,2019,large_business,113.0,1348614745.0
+Lop Buri,2019,medium_business,1102.0,367072179.0
+Lop Buri,2019,residential,223265.0,494847927.0
+Lop Buri,2019,small_business,24183.0,195046027.0
+Lop Buri,2019,specific_business,91.0,13324448.0
+Lop Buri,2020,large_business,115.0,1269310536.87
+Lop Buri,2020,medium_business,1141.0,371052277.53999996
+Lop Buri,2020,residential,228167.0,531600879.9799999
+Lop Buri,2020,small_business,24359.0,194408453.01
+Lop Buri,2020,specific_business,90.0,11418227.920000002
+Lop Buri,2021,large_business,117.0,1297995468.9899998
+Lop Buri,2021,medium_business,1154.0,374589730.22
+Lop Buri,2021,residential,232580.0,543391752.5100001
+Lop Buri,2021,small_business,24514.0,189068432.74
+Lop Buri,2021,specific_business,85.0,10177191.81
+Lop Buri,2022,large_business,117.0,1309231847.0
+Lop Buri,2022,medium_business,1165.0,369746407.0
+Lop Buri,2022,residential,235611.0,525576725.0
+Lop Buri,2022,small_business,24951.0,188843149.0
+Lop Buri,2022,specific_business,76.0,10509062.0
+Lop Buri,2023,large_business,119.0,1230805796.0
+Lop Buri,2023,medium_business,1242.0,395331680.0
+Lop Buri,2023,residential,236617.0,566760436.0
+Lop Buri,2023,small_business,24993.0,196594995.0
+Lop Buri,2023,specific_business,93.0,11617650.0
+Sing Buri,2018,large_business,54.0,372231644.0
+Sing Buri,2018,medium_business,326.0,88004998.0
+Sing Buri,2018,residential,67128.0,135395961.0
+Sing Buri,2018,small_business,7423.0,56330999.0
+Sing Buri,2018,specific_business,14.0,3173330.0
+Sing Buri,2019,large_business,56.0,355226710.0
+Sing Buri,2019,medium_business,349.0,87510940.0
+Sing Buri,2019,residential,67956.0,147551231.0
+Sing Buri,2019,small_business,7433.0,57855966.0
+Sing Buri,2019,specific_business,18.0,3402127.0
+Sing Buri,2020,large_business,54.0,346915198.83
+Sing Buri,2020,medium_business,369.0,83012455.48
+Sing Buri,2020,residential,69904.0,161443631.89000002
+Sing Buri,2020,small_business,7295.0,57345181.06
+Sing Buri,2020,specific_business,17.0,2967414.8300000005
+Sing Buri,2021,large_business,52.0,358473891.9
+Sing Buri,2021,medium_business,369.0,81290959.21
+Sing Buri,2021,residential,71500.0,168962883.43
+Sing Buri,2021,small_business,7719.0,57798707.919999994
+Sing Buri,2021,specific_business,15.0,2305158.56
+Sing Buri,2022,large_business,53.0,373600788.0
+Sing Buri,2022,medium_business,352.0,79826739.0
+Sing Buri,2022,residential,72031.0,161775707.0
+Sing Buri,2022,small_business,8398.0,58553143.0
+Sing Buri,2022,specific_business,16.0,2646161.0
+Sing Buri,2023,large_business,53.0,309080519.0
+Sing Buri,2023,medium_business,377.0,82939752.0
+Sing Buri,2023,residential,72124.0,171551622.0
+Sing Buri,2023,small_business,8880.0,59702437.0
+Sing Buri,2023,specific_business,16.0,2957626.0
+Chai Nat,2018,large_business,30.0,162009163.0
+Chai Nat,2018,medium_business,385.0,96997978.0
+Chai Nat,2018,residential,101261.0,173621014.0
+Chai Nat,2018,small_business,10386.0,76832344.0
+Chai Nat,2018,specific_business,18.0,3061313.0
+Chai Nat,2019,large_business,31.0,135849807.0
+Chai Nat,2019,medium_business,424.0,101576251.0
+Chai Nat,2019,residential,102575.0,190770365.0
+Chai Nat,2019,small_business,10448.0,82144183.0
+Chai Nat,2019,specific_business,18.0,3105504.0
+Chai Nat,2020,large_business,32.0,117877608.8
+Chai Nat,2020,medium_business,442.0,102480654.8
+Chai Nat,2020,residential,105082.0,209434833.73000002
+Chai Nat,2020,small_business,10400.0,82370361.57
+Chai Nat,2020,specific_business,20.0,2709680.49
+Chai Nat,2021,large_business,31.0,142644009.3
+Chai Nat,2021,medium_business,435.0,107391289.6
+Chai Nat,2021,residential,107111.0,218687966.93
+Chai Nat,2021,small_business,10795.0,83374865.62
+Chai Nat,2021,specific_business,21.0,2667978.71
+Chai Nat,2022,large_business,33.0,169957938.0
+Chai Nat,2022,medium_business,463.0,109347912.0
+Chai Nat,2022,residential,108214.0,210817377.0
+Chai Nat,2022,small_business,11045.0,82748475.0
+Chai Nat,2022,specific_business,21.0,3242913.0
+Chai Nat,2023,large_business,37.0,183608292.0
+Chai Nat,2023,medium_business,492.0,120158658.0
+Chai Nat,2023,residential,109006.0,230693731.0
+Chai Nat,2023,small_business,11387.0,87806376.0
+Chai Nat,2023,specific_business,20.0,3389006.0
+Saraburi,2018,large_business,199.0,253850068.0
+Saraburi,2018,medium_business,1589.0,136300481.0
+Saraburi,2018,residential,202761.0,255433479.0
+Saraburi,2018,small_business,19316.0,97216772.0
+Saraburi,2018,specific_business,151.0,6763718.0
+Saraburi,2019,large_business,205.0,2922628763.0
+Saraburi,2019,medium_business,1615.0,523389980.0
+Saraburi,2019,residential,206327.0,603178056.0
+Saraburi,2019,small_business,19786.0,193219030.0
+Saraburi,2019,specific_business,158.0,24521041.0
+Saraburi,2020,large_business,218.0,2814450645.82
+Saraburi,2020,medium_business,1671.0,505338831.23
+Saraburi,2020,residential,211902.0,647131477.9699999
+Saraburi,2020,small_business,20317.0,195155360.86000004
+Saraburi,2020,specific_business,159.0,21828980.65
+Saraburi,2021,large_business,228.0,2823983487.8199997
+Saraburi,2021,medium_business,1701.0,507982775.35999995
+Saraburi,2021,residential,216761.0,656725275.27
+Saraburi,2021,small_business,20885.0,195342415.52
+Saraburi,2021,specific_business,154.0,20687009.47
+Saraburi,2022,large_business,226.0,2916237348.0
+Saraburi,2022,medium_business,1706.0,509885038.0
+Saraburi,2022,residential,219462.0,638669205.0
+Saraburi,2022,small_business,21137.0,198998533.0
+Saraburi,2022,specific_business,154.0,20992688.0
+Saraburi,2023,large_business,238.0,2735725454.0
+Saraburi,2023,medium_business,1802.0,520985035.0
+Saraburi,2023,residential,222959.0,682762220.0
+Saraburi,2023,small_business,21408.0,205255625.0
+Saraburi,2023,specific_business,171.0,23447025.0
+Chonburi,2018,large_business,789.0,6351394472.0
+Chonburi,2018,medium_business,6322.0,2198510285.0
+Chonburi,2018,residential,639104.0,2034562171.0
+Chonburi,2018,small_business,69085.0,958177804.0
+Chonburi,2018,specific_business,1707.0,769125656.0
+Chonburi,2019,large_business,831.0,6454190673.0
+Chonburi,2019,medium_business,6683.0,2285319506.0
+Chonburi,2019,residential,662552.0,2243586478.0
+Chonburi,2019,small_business,69633.0,1009663097.0
+Chonburi,2019,specific_business,1890.0,825563623.0
+Chonburi,2020,large_business,866.0,6325864504.64
+Chonburi,2020,medium_business,6762.0,2081926273.93
+Chonburi,2020,residential,688320.0,2303282555.3599997
+Chonburi,2020,small_business,70835.0,932572154.4800001
+Chonburi,2020,specific_business,1863.0,517899610.39
+Chonburi,2021,large_business,896.0,7305566890.48
+Chonburi,2021,medium_business,6748.0,2131592447.7800004
+Chonburi,2021,residential,708555.0,2318523169.09
+Chonburi,2021,small_business,71935.0,892032575.04
+Chonburi,2021,specific_business,1586.0,404813087.1500001
+Chonburi,2022,large_business,934.0,7408985831.0
+Chonburi,2022,medium_business,6912.0,2245930926.0
+Chonburi,2022,residential,725593.0,2379281080.0
+Chonburi,2022,small_business,72561.0,961654699.0
+Chonburi,2022,specific_business,1716.0,591363984.0
+Chonburi,2023,large_business,967.0,7470351463.0
+Chonburi,2023,medium_business,7497.0,2355556373.0
+Chonburi,2023,residential,746121.0,2681645726.0
+Chonburi,2023,small_business,75106.0,1055134395.0
+Chonburi,2023,specific_business,2030.0,792126440.0
+Rayong,2018,large_business,537.0,8081211743.0
+Rayong,2018,medium_business,2651.0,989524927.0
+Rayong,2018,residential,358799.0,899518206.0
+Rayong,2018,small_business,27703.0,304378265.0
+Rayong,2018,specific_business,413.0,119280978.0
+Rayong,2019,large_business,538.0,8005221700.0
+Rayong,2019,medium_business,2821.0,1024008374.0
+Rayong,2019,residential,372728.0,992960337.0
+Rayong,2019,small_business,27768.0,329268266.0
+Rayong,2019,specific_business,463.0,131244514.0
+Rayong,2020,large_business,559.0,7246858170.11
+Rayong,2020,medium_business,2921.0,995408572.5200001
+Rayong,2020,residential,388338.0,1057879633.32
+Rayong,2020,small_business,28787.0,328709390.65
+Rayong,2020,specific_business,448.0,106765264.63999999
+Rayong,2021,large_business,588.0,8019072732.7300005
+Rayong,2021,medium_business,2949.0,1043459943.3100001
+Rayong,2021,residential,405957.0,1101421851.48
+Rayong,2021,small_business,30673.0,333289971.73
+Rayong,2021,specific_business,417.0,97038671.65
+Rayong,2022,large_business,599.0,8033748216.0
+Rayong,2022,medium_business,3048.0,1023710289.0
+Rayong,2022,residential,418485.0,1117489434.0
+Rayong,2022,small_business,32096.0,356094418.0
+Rayong,2022,specific_business,449.0,113289328.0
+Rayong,2023,large_business,606.0,7904276853.0
+Rayong,2023,medium_business,3276.0,1054554425.0
+Rayong,2023,residential,431187.0,1220023217.0
+Rayong,2023,small_business,33591.0,377152725.0
+Rayong,2023,specific_business,496.0,132457003.0
+Chanthaburi,2018,large_business,59.0,238123932.0
+Chanthaburi,2018,medium_business,1080.0,242746142.0
+Chanthaburi,2018,residential,224318.0,507877568.0
+Chanthaburi,2018,small_business,20337.0,165742573.0
+Chanthaburi,2018,specific_business,151.0,27666933.0
+Chanthaburi,2019,large_business,58.0,242521274.0
+Chanthaburi,2019,medium_business,1140.0,255224757.0
+Chanthaburi,2019,residential,230740.0,582910938.0
+Chanthaburi,2019,small_business,20624.0,181091018.0
+Chanthaburi,2019,specific_business,169.0,30837638.0
+Chanthaburi,2020,large_business,61.0,241186970.89000002
+Chanthaburi,2020,medium_business,1238.0,234070528.75999996
+Chanthaburi,2020,residential,238583.0,623282752.2
+Chanthaburi,2020,small_business,21824.0,183147681.92000002
+Chanthaburi,2020,specific_business,175.0,25493555.77
+Chanthaburi,2021,large_business,59.0,238799003.35000002
+Chanthaburi,2021,medium_business,1369.0,236267092.66000003
+Chanthaburi,2021,residential,243221.0,619271040.2900001
+Chanthaburi,2021,small_business,24683.0,182637901.56
+Chanthaburi,2021,specific_business,168.0,19990972.1
+Chanthaburi,2022,large_business,59.0,253066385.0
+Chanthaburi,2022,medium_business,1346.0,241944634.0
+Chanthaburi,2022,residential,246232.0,618278267.0
+Chanthaburi,2022,small_business,28462.0,193374018.0
+Chanthaburi,2022,specific_business,182.0,28454427.0
+Chanthaburi,2023,large_business,57.0,222168984.0
+Chanthaburi,2023,medium_business,1518.0,274957452.0
+Chanthaburi,2023,residential,248477.0,681646938.0
+Chanthaburi,2023,small_business,32870.0,214385124.0
+Chanthaburi,2023,specific_business,183.0,31010450.0
+Trat,2018,large_business,19.0,65517585.0
+Trat,2018,medium_business,513.0,141301771.0
+Trat,2018,residential,75025.0,170001670.0
+Trat,2018,small_business,10901.0,87080362.0
+Trat,2018,specific_business,169.0,97687542.0
+Trat,2019,large_business,20.0,59492842.0
+Trat,2019,medium_business,519.0,130263252.0
+Trat,2019,residential,76377.0,184369780.0
+Trat,2019,small_business,11212.0,94262755.0
+Trat,2019,specific_business,173.0,105629737.0
+Trat,2020,large_business,20.0,58071902.33
+Trat,2020,medium_business,534.0,127548801.71
+Trat,2020,residential,77785.0,193554511.76
+Trat,2020,small_business,12005.0,94457767.21999998
+Trat,2020,specific_business,173.0,98074535.2
+Trat,2021,large_business,20.0,60123846.690000005
+Trat,2021,medium_business,532.0,117467072.30999999
+Trat,2021,residential,78913.0,192367700.15
+Trat,2021,small_business,13095.0,89133879.1
+Trat,2021,specific_business,162.0,82699383.53000002
+Trat,2022,large_business,21.0,57074005.0
+Trat,2022,medium_business,534.0,118773406.0
+Trat,2022,residential,79946.0,191972936.0
+Trat,2022,small_business,14233.0,93048176.0
+Trat,2022,specific_business,166.0,78718121.0
+Trat,2023,large_business,22.0,56662295.0
+Trat,2023,medium_business,579.0,116189371.0
+Trat,2023,residential,80869.0,206002206.0
+Trat,2023,small_business,15549.0,102084446.0
+Trat,2023,specific_business,178.0,72660199.0
+Chachoengsao,2018,large_business,401.0,3332486856.0
+Chachoengsao,2018,medium_business,2305.0,815655979.0
+Chachoengsao,2018,residential,213401.0,592897055.0
+Chachoengsao,2018,small_business,29117.0,291838362.0
+Chachoengsao,2018,specific_business,152.0,25187552.0
+Chachoengsao,2019,large_business,409.0,3297751392.0
+Chachoengsao,2019,medium_business,2433.0,848454775.0
+Chachoengsao,2019,residential,219891.0,652230356.0
+Chachoengsao,2019,small_business,30388.0,316153793.0
+Chachoengsao,2019,specific_business,175.0,29037347.0
+Chachoengsao,2020,large_business,418.0,3041385456.4100003
+Chachoengsao,2020,medium_business,2497.0,815215755.5700002
+Chachoengsao,2020,residential,227901.0,693432851.4499999
+Chachoengsao,2020,small_business,31090.0,313481478.02000004
+Chachoengsao,2020,specific_business,170.0,27256262.330000002
+Chachoengsao,2021,large_business,430.0,3316184979.13
+Chachoengsao,2021,medium_business,2536.0,848311193.7799999
+Chachoengsao,2021,residential,234950.0,720273912.35
+Chachoengsao,2021,small_business,32582.0,319843398.56999993
+Chachoengsao,2021,specific_business,176.0,26314228.580000002
+Chachoengsao,2022,large_business,437.0,3423877700.0
+Chachoengsao,2022,medium_business,2560.0,859388329.0
+Chachoengsao,2022,residential,241461.0,723701138.0
+Chachoengsao,2022,small_business,33340.0,334442523.0
+Chachoengsao,2022,specific_business,170.0,28417410.0
+Chachoengsao,2023,large_business,450.0,3356725028.0
+Chachoengsao,2023,medium_business,2658.0,864494281.0
+Chachoengsao,2023,residential,249571.0,776339332.0
+Chachoengsao,2023,small_business,34308.0,341015307.0
+Chachoengsao,2023,specific_business,193.0,32360142.0
+Prachin Buri,2018,large_business,120.0,1293348587.0
+Prachin Buri,2018,medium_business,1024.0,320054976.0
+Prachin Buri,2018,residential,155104.0,335791441.0
+Prachin Buri,2018,small_business,16325.0,146625264.0
+Prachin Buri,2018,specific_business,117.0,29115775.0
+Prachin Buri,2019,large_business,126.0,1257792182.0
+Prachin Buri,2019,medium_business,1079.0,341143776.0
+Prachin Buri,2019,residential,159749.0,373000173.0
+Prachin Buri,2019,small_business,16792.0,157373337.0
+Prachin Buri,2019,specific_business,127.0,31012983.0
+Prachin Buri,2020,large_business,130.0,1153787128.92
+Prachin Buri,2020,medium_business,1101.0,341577172.21000004
+Prachin Buri,2020,residential,166423.0,404679764.13
+Prachin Buri,2020,small_business,17129.0,162399588.05999997
+Prachin Buri,2020,specific_business,125.0,27973732.880000003
+Prachin Buri,2021,large_business,130.0,1551007183.8700001
+Prachin Buri,2021,medium_business,1150.0,367359159.43999994
+Prachin Buri,2021,residential,171947.0,423079765.79
+Prachin Buri,2021,small_business,17400.0,165377471.21999997
+Prachin Buri,2021,specific_business,130.0,27128495.72
+Prachin Buri,2022,large_business,129.0,2098885998.0
+Prachin Buri,2022,medium_business,1204.0,388184021.0
+Prachin Buri,2022,residential,176275.0,420704330.0
+Prachin Buri,2022,small_business,17393.0,165407533.0
+Prachin Buri,2022,specific_business,123.0,27961354.0
+Prachin Buri,2023,large_business,127.0,2423360310.0
+Prachin Buri,2023,medium_business,1275.0,411453414.0
+Prachin Buri,2023,residential,180880.0,451077903.0
+Prachin Buri,2023,small_business,17687.0,171873060.0
+Prachin Buri,2023,specific_business,134.0,29739437.0
+Nakhon Nayok,2018,large_business,32.0,175612316.0
+Nakhon Nayok,2018,medium_business,432.0,120379786.0
+Nakhon Nayok,2018,residential,79517.0,176355917.0
+Nakhon Nayok,2018,small_business,9544.0,68013244.0
+Nakhon Nayok,2018,specific_business,115.0,20327743.0
+Nakhon Nayok,2019,large_business,32.0,176732422.0
+Nakhon Nayok,2019,medium_business,448.0,125988096.0
+Nakhon Nayok,2019,residential,81272.0,194066996.0
+Nakhon Nayok,2019,small_business,9998.0,73125401.0
+Nakhon Nayok,2019,specific_business,130.0,22761222.0
+Nakhon Nayok,2020,large_business,31.0,167422077.31
+Nakhon Nayok,2020,medium_business,462.0,128150378.80000001
+Nakhon Nayok,2020,residential,83692.0,210186794.82000002
+Nakhon Nayok,2020,small_business,10271.0,75859612.36000001
+Nakhon Nayok,2020,specific_business,133.0,18520528.700000003
+Nakhon Nayok,2021,large_business,35.0,170901555.07999998
+Nakhon Nayok,2021,medium_business,464.0,123844087.36999997
+Nakhon Nayok,2021,residential,85935.0,220899745.39
+Nakhon Nayok,2021,small_business,10500.0,76535398.51999998
+Nakhon Nayok,2021,specific_business,127.0,15258680.949999997
+Nakhon Nayok,2022,large_business,36.0,178511978.0
+Nakhon Nayok,2022,medium_business,487.0,128277806.0
+Nakhon Nayok,2022,residential,88195.0,221626011.0
+Nakhon Nayok,2022,small_business,10555.0,78382130.0
+Nakhon Nayok,2022,specific_business,131.0,20415732.0
+Nakhon Nayok,2023,large_business,36.0,189348068.0
+Nakhon Nayok,2023,medium_business,538.0,134527208.0
+Nakhon Nayok,2023,residential,90074.0,238408304.0
+Nakhon Nayok,2023,small_business,10592.0,80376880.0
+Nakhon Nayok,2023,specific_business,148.0,23938181.0
+Sa Kaeo,2018,large_business,43.0,3066436361.0
+Sa Kaeo,2018,medium_business,577.0,519534254.0
+Sa Kaeo,2018,residential,150605.0,549570489.0
+Sa Kaeo,2018,small_business,15748.0,180783544.0
+Sa Kaeo,2018,specific_business,49.0,24609091.0
+Sa Kaeo,2019,large_business,46.0,287300910.0
+Sa Kaeo,2019,medium_business,606.0,148876719.0
+Sa Kaeo,2019,residential,153695.0,278727914.0
+Sa Kaeo,2019,small_business,16157.0,104920361.0
+Sa Kaeo,2019,specific_business,55.0,7561156.0
+Sa Kaeo,2020,large_business,46.0,263859716.39999998
+Sa Kaeo,2020,medium_business,626.0,151509902.64
+Sa Kaeo,2020,residential,158193.0,299276944.46999997
+Sa Kaeo,2020,small_business,16627.0,106279700.27000001
+Sa Kaeo,2020,specific_business,55.0,5837961.5200000005
+Sa Kaeo,2021,large_business,52.0,256359745.04999998
+Sa Kaeo,2021,medium_business,648.0,159390031.45999998
+Sa Kaeo,2021,residential,162136.0,311345665.98
+Sa Kaeo,2021,small_business,16973.0,109125018.64
+Sa Kaeo,2021,specific_business,47.0,5384712.830000001
+Sa Kaeo,2022,large_business,54.0,307371069.0
+Sa Kaeo,2022,medium_business,672.0,164824340.0
+Sa Kaeo,2022,residential,165454.0,310802390.0
+Sa Kaeo,2022,small_business,17136.0,111235523.0
+Sa Kaeo,2022,specific_business,44.0,5053214.0
+Sa Kaeo,2023,large_business,53.0,245698425.0
+Sa Kaeo,2023,medium_business,699.0,174506321.0
+Sa Kaeo,2023,residential,166767.0,334117683.0
+Sa Kaeo,2023,small_business,17257.0,115576535.0
+Sa Kaeo,2023,specific_business,58.0,6071376.0
+Nakhon Ratchasima,2018,large_business,291.0,3261366920.0
+Nakhon Ratchasima,2018,medium_business,2868.0,828223251.0
+Nakhon Ratchasima,2018,residential,765479.0,1352829722.0
+Nakhon Ratchasima,2018,small_business,64717.0,491532194.0
+Nakhon Ratchasima,2018,specific_business,470.0,94031367.0
+Nakhon Ratchasima,2019,large_business,293.0,3160090503.0
+Nakhon Ratchasima,2019,medium_business,2991.0,841842292.0
+Nakhon Ratchasima,2019,residential,780515.0,1480313292.0
+Nakhon Ratchasima,2019,small_business,65336.0,520224349.0
+Nakhon Ratchasima,2019,specific_business,552.0,102949863.0
+Nakhon Ratchasima,2020,large_business,301.0,3008199158.9300003
+Nakhon Ratchasima,2020,medium_business,2986.0,781885171.61
+Nakhon Ratchasima,2020,residential,800483.0,1561548695.86
+Nakhon Ratchasima,2020,small_business,66107.0,516781295.41999996
+Nakhon Ratchasima,2020,specific_business,528.0,85815352.15
+Nakhon Ratchasima,2021,large_business,307.0,3161527845.68
+Nakhon Ratchasima,2021,medium_business,3051.0,787140340.81
+Nakhon Ratchasima,2021,residential,819214.0,1616990939.1799998
+Nakhon Ratchasima,2021,small_business,67658.0,528841817.9
+Nakhon Ratchasima,2021,specific_business,504.0,79465428.04
+Nakhon Ratchasima,2022,large_business,305.0,3140135077.0
+Nakhon Ratchasima,2022,medium_business,3175.0,818198871.0
+Nakhon Ratchasima,2022,residential,832889.0,1600352357.0
+Nakhon Ratchasima,2022,small_business,67549.0,542197198.0
+Nakhon Ratchasima,2022,specific_business,505.0,91545088.0
+Nakhon Ratchasima,2023,large_business,322.0,3006037333.0
+Nakhon Ratchasima,2023,medium_business,3447.0,860141328.0
+Nakhon Ratchasima,2023,residential,843707.0,1731727683.0
+Nakhon Ratchasima,2023,small_business,68282.0,566325567.0
+Nakhon Ratchasima,2023,specific_business,571.0,103939182.0
+Buri Ram,2018,large_business,51.0,174824412.0
+Buri Ram,2018,medium_business,929.0,227761207.0
+Buri Ram,2018,residential,381155.0,516202913.0
+Buri Ram,2018,small_business,31726.0,185535798.0
+Buri Ram,2018,specific_business,109.0,15731738.0
+Buri Ram,2019,large_business,53.0,179650422.0
+Buri Ram,2019,medium_business,981.0,237810822.0
+Buri Ram,2019,residential,389287.0,559460284.0
+Buri Ram,2019,small_business,32326.0,196904213.0
+Buri Ram,2019,specific_business,121.0,18324907.0
+Buri Ram,2020,large_business,55.0,181590111.46
+Buri Ram,2020,medium_business,1017.0,237542780.77000004
+Buri Ram,2020,residential,397446.0,596506966.92
+Buri Ram,2020,small_business,32354.0,198193177.76
+Buri Ram,2020,specific_business,101.0,12728327.08
+Buri Ram,2021,large_business,54.0,193741429.38
+Buri Ram,2021,medium_business,1015.0,250999386.12999997
+Buri Ram,2021,residential,405329.0,627755124.74
+Buri Ram,2021,small_business,33497.0,203372494.72
+Buri Ram,2021,specific_business,106.0,12000490.879999999
+Buri Ram,2022,large_business,54.0,209116852.0
+Buri Ram,2022,medium_business,1056.0,246617921.0
+Buri Ram,2022,residential,412923.0,621118194.0
+Buri Ram,2022,small_business,33259.0,208603749.0
+Buri Ram,2022,specific_business,104.0,15688893.0
+Buri Ram,2023,large_business,57.0,212967124.0
+Buri Ram,2023,medium_business,1129.0,264395226.0
+Buri Ram,2023,residential,416534.0,664973513.0
+Buri Ram,2023,small_business,33071.0,218437312.0
+Buri Ram,2023,specific_business,117.0,16845378.0
+Surin,2018,large_business,42.0,121811396.0
+Surin,2018,medium_business,681.0,161934910.0
+Surin,2018,residential,327762.0,418733343.0
+Surin,2018,small_business,24164.0,150790200.0
+Surin,2018,specific_business,52.0,8993903.0
+Surin,2019,large_business,42.0,124281064.0
+Surin,2019,medium_business,700.0,169576850.0
+Surin,2019,residential,333918.0,449373896.0
+Surin,2019,small_business,24838.0,163731794.0
+Surin,2019,specific_business,60.0,9602019.0
+Surin,2020,large_business,41.0,112974876.88000001
+Surin,2020,medium_business,710.0,170674089.92000002
+Surin,2020,residential,342717.0,482919319.13
+Surin,2020,small_business,24854.0,168599181.61
+Surin,2020,specific_business,49.0,7286904.8
+Surin,2021,large_business,41.0,112977144.6
+Surin,2021,medium_business,708.0,176214407.71
+Surin,2021,residential,350772.0,511704507.28
+Surin,2021,small_business,24826.0,174063079.67000002
+Surin,2021,specific_business,47.0,6075548.2700000005
+Surin,2022,large_business,42.0,117483191.0
+Surin,2022,medium_business,746.0,178204473.0
+Surin,2022,residential,357957.0,507555420.0
+Surin,2022,small_business,24892.0,176621882.0
+Surin,2022,specific_business,50.0,7180152.0
+Surin,2023,large_business,45.0,101983696.0
+Surin,2023,medium_business,863.0,197411369.0
+Surin,2023,residential,360006.0,535808829.0
+Surin,2023,small_business,25007.0,183392486.0
+Surin,2023,specific_business,58.0,8733872.0
+Si Sa Ket,2018,large_business,28.0,85405261.0
+Si Sa Ket,2018,medium_business,576.0,121917357.0
+Si Sa Ket,2018,residential,415326.0,428927024.0
+Si Sa Ket,2018,small_business,29126.0,163011616.0
+Si Sa Ket,2018,specific_business,32.0,5452312.0
+Si Sa Ket,2019,large_business,28.0,86220080.0
+Si Sa Ket,2019,medium_business,623.0,127031943.0
+Si Sa Ket,2019,residential,424999.0,466838374.0
+Si Sa Ket,2019,small_business,30027.0,175390261.0
+Si Sa Ket,2019,specific_business,33.0,5500333.0
+Si Sa Ket,2020,large_business,29.0,88514674.4
+Si Sa Ket,2020,medium_business,644.0,125919371.85999998
+Si Sa Ket,2020,residential,440442.0,506062238.91999996
+Si Sa Ket,2020,small_business,30544.0,179797218.76
+Si Sa Ket,2020,specific_business,33.0,4801132.12
+Si Sa Ket,2021,large_business,28.0,87743225.25
+Si Sa Ket,2021,medium_business,656.0,133317735.57999998
+Si Sa Ket,2021,residential,453843.0,544550468.13
+Si Sa Ket,2021,small_business,31974.0,188858059.07
+Si Sa Ket,2021,specific_business,28.0,3984657.6899999995
+Si Sa Ket,2022,large_business,29.0,92980409.0
+Si Sa Ket,2022,medium_business,698.0,139203313.0
+Si Sa Ket,2022,residential,463484.0,531252651.0
+Si Sa Ket,2022,small_business,33155.0,192649168.0
+Si Sa Ket,2022,specific_business,39.0,5346808.0
+Si Sa Ket,2023,large_business,30.0,105258908.0
+Si Sa Ket,2023,medium_business,769.0,152411483.0
+Si Sa Ket,2023,residential,467588.0,560166863.0
+Si Sa Ket,2023,small_business,38111.0,208632445.0
+Si Sa Ket,2023,specific_business,33.0,5590613.0
+Ubon Ratchathani,2018,large_business,69.0,296163980.0
+Ubon Ratchathani,2018,medium_business,1061.0,260409490.0
+Ubon Ratchathani,2018,residential,523687.0,632497821.0
+Ubon Ratchathani,2018,small_business,40189.0,267375581.0
+Ubon Ratchathani,2018,specific_business,141.0,37941207.0
+Ubon Ratchathani,2019,large_business,72.0,301233343.0
+Ubon Ratchathani,2019,medium_business,1101.0,269398026.0
+Ubon Ratchathani,2019,residential,536059.0,695048862.0
+Ubon Ratchathani,2019,small_business,40030.0,284047580.0
+Ubon Ratchathani,2019,specific_business,163.0,39204490.0
+Ubon Ratchathani,2020,large_business,78.0,286720858.69000006
+Ubon Ratchathani,2020,medium_business,1153.0,273368966.6
+Ubon Ratchathani,2020,residential,574668.0,777670392.23
+Ubon Ratchathani,2020,small_business,41810.0,294259010.67999995
+Ubon Ratchathani,2020,specific_business,137.0,30862058.849999998
+Ubon Ratchathani,2021,large_business,76.0,292526935.80999994
+Ubon Ratchathani,2021,medium_business,1173.0,273268587.39
+Ubon Ratchathani,2021,residential,592055.0,836630920.05
+Ubon Ratchathani,2021,small_business,42838.0,305276877.22999996
+Ubon Ratchathani,2021,specific_business,130.0,28293437.84
+Ubon Ratchathani,2022,large_business,74.0,286892885.0
+Ubon Ratchathani,2022,medium_business,1192.0,274852235.0
+Ubon Ratchathani,2022,residential,585067.0,791639963.0
+Ubon Ratchathani,2022,small_business,40744.0,302005974.0
+Ubon Ratchathani,2022,specific_business,134.0,30879002.0
+Ubon Ratchathani,2023,large_business,77.0,261117107.0
+Ubon Ratchathani,2023,medium_business,1298.0,302809404.0
+Ubon Ratchathani,2023,residential,591208.0,840641704.0
+Ubon Ratchathani,2023,small_business,45445.0,319804952.0
+Ubon Ratchathani,2023,specific_business,157.0,35506911.0
+Yasothon,2018,large_business,11.0,27927571.0
+Yasothon,2018,medium_business,314.0,74761857.0
+Yasothon,2018,residential,152248.0,168005699.0
+Yasothon,2018,small_business,11126.0,65187954.0
+Yasothon,2018,specific_business,15.0,3157012.0
+Yasothon,2019,large_business,13.0,25107314.0
+Yasothon,2019,medium_business,331.0,76221211.0
+Yasothon,2019,residential,155506.0,184133802.0
+Yasothon,2019,small_business,11353.0,70177791.0
+Yasothon,2019,specific_business,14.0,3285259.0
+Yasothon,2020,large_business,13.0,25541848.0
+Yasothon,2020,medium_business,342.0,75023080.65
+Yasothon,2020,residential,159815.0,200121878.72000003
+Yasothon,2020,small_business,10919.0,71767015.5
+Yasothon,2020,specific_business,15.0,2615257.2399999998
+Yasothon,2021,large_business,15.0,28862110.8
+Yasothon,2021,medium_business,351.0,76246780.47000001
+Yasothon,2021,residential,164473.0,215701854.23
+Yasothon,2021,small_business,10894.0,73020852.26000002
+Yasothon,2021,specific_business,14.0,2134706.73
+Yasothon,2022,large_business,16.0,27448897.0
+Yasothon,2022,medium_business,363.0,80513506.0
+Yasothon,2022,residential,167942.0,209625018.0
+Yasothon,2022,small_business,10885.0,73654960.0
+Yasothon,2022,specific_business,13.0,2366026.0
+Yasothon,2023,large_business,19.0,42803640.0
+Yasothon,2023,medium_business,399.0,85564469.0
+Yasothon,2023,residential,168987.0,222709630.0
+Yasothon,2023,small_business,11470.0,78621760.0
+Yasothon,2023,specific_business,17.0,2894624.0
+Chaiyaphum,2018,large_business,28.0,157868803.0
+Chaiyaphum,2018,medium_business,670.0,131859454.0
+Chaiyaphum,2018,residential,301251.0,359196031.0
+Chaiyaphum,2018,small_business,24408.0,138768108.0
+Chaiyaphum,2018,specific_business,35.0,4475614.0
+Chaiyaphum,2019,large_business,35.0,163248363.0
+Chaiyaphum,2019,medium_business,699.0,142732647.0
+Chaiyaphum,2019,residential,307615.0,398088002.0
+Chaiyaphum,2019,small_business,24979.0,147854702.0
+Chaiyaphum,2019,specific_business,32.0,4592327.0
+Chaiyaphum,2020,large_business,31.0,136334651.69
+Chaiyaphum,2020,medium_business,719.0,139477184.89
+Chaiyaphum,2020,residential,316496.0,425575611.26
+Chaiyaphum,2020,small_business,24980.0,147528958.52
+Chaiyaphum,2020,specific_business,34.0,3799770.56
+Chaiyaphum,2021,large_business,30.0,141242232.10999998
+Chaiyaphum,2021,medium_business,751.0,139070729.26
+Chaiyaphum,2021,residential,322899.0,440979351.03
+Chaiyaphum,2021,small_business,24799.0,148780764.9
+Chaiyaphum,2021,specific_business,30.0,3485341.1999999997
+Chaiyaphum,2022,large_business,35.0,142815551.0
+Chaiyaphum,2022,medium_business,790.0,151263898.0
+Chaiyaphum,2022,residential,329508.0,434959147.0
+Chaiyaphum,2022,small_business,25086.0,151484977.0
+Chaiyaphum,2022,specific_business,36.0,3834729.0
+Chaiyaphum,2023,large_business,35.0,130608360.0
+Chaiyaphum,2023,medium_business,853.0,162843311.0
+Chaiyaphum,2023,residential,332871.0,469424355.0
+Chaiyaphum,2023,small_business,25551.0,161830649.0
+Chaiyaphum,2023,specific_business,34.0,4511689.0
+Amnat Charoen,2018,large_business,5.0,12441176.0
+Amnat Charoen,2018,medium_business,219.0,42831406.0
+Amnat Charoen,2018,residential,96583.0,101345501.0
+Amnat Charoen,2018,small_business,9402.0,47619579.0
+Amnat Charoen,2018,specific_business,7.0,775477.0
+Amnat Charoen,2019,large_business,7.0,15389714.0
+Amnat Charoen,2019,medium_business,236.0,46971004.0
+Amnat Charoen,2019,residential,98393.0,111210288.0
+Amnat Charoen,2019,small_business,9527.0,51737390.0
+Amnat Charoen,2019,specific_business,9.0,815957.0
+Amnat Charoen,2020,large_business,8.0,19442341.020000003
+Amnat Charoen,2020,medium_business,226.0,43948891.96
+Amnat Charoen,2020,residential,91282.0,110227420.85999998
+Amnat Charoen,2020,small_business,8432.0,47592590.69
+Amnat Charoen,2020,specific_business,10.0,681896.3800000001
+Amnat Charoen,2021,large_business,7.0,26066183.569999997
+Amnat Charoen,2021,medium_business,240.0,45057762.7
+Amnat Charoen,2021,residential,93868.0,119098476.05999999
+Amnat Charoen,2021,small_business,8583.0,50373227.29000001
+Amnat Charoen,2021,specific_business,10.0,738883.4199999999
+Amnat Charoen,2022,large_business,9.0,35195726.0
+Amnat Charoen,2022,medium_business,253.0,49359817.0
+Amnat Charoen,2022,residential,107030.0,127969544.0
+Amnat Charoen,2022,small_business,9657.0,56006334.0
+Amnat Charoen,2022,specific_business,10.0,1009579.0
+Amnat Charoen,2023,large_business,7.0,27383278.0
+Amnat Charoen,2023,medium_business,268.0,51507442.0
+Amnat Charoen,2023,residential,107708.0,136734518.0
+Amnat Charoen,2023,small_business,9990.0,59392325.0
+Amnat Charoen,2023,specific_business,11.0,929422.0
+Bueng Kan,2018,large_business,8.0,66587646.0
+Bueng Kan,2018,medium_business,187.0,40294804.0
+Bueng Kan,2018,residential,112903.0,134838260.0
+Bueng Kan,2018,small_business,5661.0,40910158.0
+Bueng Kan,2018,specific_business,17.0,2110647.0
+Bueng Kan,2019,large_business,10.0,70620940.0
+Bueng Kan,2019,medium_business,204.0,42952749.0
+Bueng Kan,2019,residential,115105.0,144963677.0
+Bueng Kan,2019,small_business,5843.0,44407817.0
+Bueng Kan,2019,specific_business,19.0,2361990.0
+Bueng Kan,2020,large_business,9.0,55000037.769999996
+Bueng Kan,2020,medium_business,92.0,17813746.849999998
+Bueng Kan,2020,residential,25347.0,38819110.91
+Bueng Kan,2020,small_business,1758.0,15875270.2
+Bueng Kan,2020,specific_business,14.0,1811922.98
+Bueng Kan,2021,large_business,9.0,55599415.39999999
+Bueng Kan,2021,medium_business,94.0,19948607.63
+Bueng Kan,2021,residential,25932.0,43003453.7
+Bueng Kan,2021,small_business,1814.0,16849616.63
+Bueng Kan,2021,specific_business,11.0,1728691.5
+Bueng Kan,2022,large_business,14.0,79204322.0
+Bueng Kan,2022,medium_business,227.0,48114337.0
+Bueng Kan,2022,residential,122551.0,169617411.0
+Bueng Kan,2022,small_business,6355.0,50887321.0
+Bueng Kan,2022,specific_business,18.0,2293284.0
+Bueng Kan,2023,large_business,13.0,68273402.0
+Bueng Kan,2023,medium_business,258.0,52825371.0
+Bueng Kan,2023,residential,124176.0,178625530.0
+Bueng Kan,2023,small_business,6368.0,53335865.0
+Bueng Kan,2023,specific_business,20.0,2266752.0
+Nong Bua Lam Phu,2018,large_business,11.0,17919144.0
+Nong Bua Lam Phu,2018,medium_business,240.0,62760565.0
+Nong Bua Lam Phu,2018,residential,129027.0,143700184.0
+Nong Bua Lam Phu,2018,small_business,10683.0,57053473.0
+Nong Bua Lam Phu,2018,specific_business,4.0,781821.0
+Nong Bua Lam Phu,2019,large_business,12.0,19380441.0
+Nong Bua Lam Phu,2019,medium_business,246.0,64764804.0
+Nong Bua Lam Phu,2019,residential,131642.0,158185775.0
+Nong Bua Lam Phu,2019,small_business,10950.0,62306179.0
+Nong Bua Lam Phu,2019,specific_business,5.0,893836.0
+Nong Bua Lam Phu,2020,large_business,14.0,22219054.669999998
+Nong Bua Lam Phu,2020,medium_business,261.0,63075749.33
+Nong Bua Lam Phu,2020,residential,135699.0,171043806.08999997
+Nong Bua Lam Phu,2020,small_business,11080.0,63508128.99999999
+Nong Bua Lam Phu,2020,specific_business,5.0,692533.42
+Nong Bua Lam Phu,2021,large_business,15.0,27690964.880000003
+Nong Bua Lam Phu,2021,medium_business,257.0,60198454.03999999
+Nong Bua Lam Phu,2021,residential,138830.0,180808649.06
+Nong Bua Lam Phu,2021,small_business,11438.0,66040730.46
+Nong Bua Lam Phu,2021,specific_business,7.0,646822.96
+Nong Bua Lam Phu,2022,large_business,15.0,26921049.0
+Nong Bua Lam Phu,2022,medium_business,286.0,61372537.0
+Nong Bua Lam Phu,2022,residential,141235.0,178039164.0
+Nong Bua Lam Phu,2022,small_business,11364.0,65826090.0
+Nong Bua Lam Phu,2022,specific_business,6.0,744939.0
+Nong Bua Lam Phu,2023,large_business,15.0,28175840.0
+Nong Bua Lam Phu,2023,medium_business,302.0,66329570.0
+Nong Bua Lam Phu,2023,residential,141660.0,192094561.0
+Nong Bua Lam Phu,2023,small_business,11261.0,68727317.0
+Nong Bua Lam Phu,2023,specific_business,7.0,842090.0
+Khon Kaen,2018,large_business,117.0,714146375.0
+Khon Kaen,2018,medium_business,1679.0,396932852.0
+Khon Kaen,2018,residential,511165.0,810148250.0
+Khon Kaen,2018,small_business,41444.0,306129856.0
+Khon Kaen,2018,specific_business,340.0,62495157.0
+Khon Kaen,2019,large_business,122.0,739952278.0
+Khon Kaen,2019,medium_business,1759.0,415548950.0
+Khon Kaen,2019,residential,523238.0,909780575.0
+Khon Kaen,2019,small_business,41837.0,330739517.0
+Khon Kaen,2019,specific_business,400.0,69343991.0
+Khon Kaen,2020,large_business,126.0,675154940.1900002
+Khon Kaen,2020,medium_business,1829.0,399706645.07
+Khon Kaen,2020,residential,538876.0,960133229.3399999
+Khon Kaen,2020,small_business,41941.0,326804268.78000003
+Khon Kaen,2020,specific_business,352.0,53158113.169999994
+Khon Kaen,2021,large_business,130.0,680461106.33
+Khon Kaen,2021,medium_business,1814.0,407814026.87000006
+Khon Kaen,2021,residential,552750.0,1010688771.53
+Khon Kaen,2021,small_business,42507.0,338370298.96
+Khon Kaen,2021,specific_business,332.0,50261343.56
+Khon Kaen,2022,large_business,132.0,725637190.0
+Khon Kaen,2022,medium_business,1920.0,425281650.0
+Khon Kaen,2022,residential,562978.0,996720930.0
+Khon Kaen,2022,small_business,42690.0,344656253.0
+Khon Kaen,2022,specific_business,337.0,57514649.0
+Khon Kaen,2023,large_business,137.0,718355068.0
+Khon Kaen,2023,medium_business,2088.0,455998167.0
+Khon Kaen,2023,residential,573237.0,1081642841.0
+Khon Kaen,2023,small_business,43111.0,356144552.0
+Khon Kaen,2023,specific_business,396.0,66948480.0
+Udon Thani,2018,large_business,61.0,258421764.0
+Udon Thani,2018,medium_business,1156.0,253797595.0
+Udon Thani,2018,residential,423016.0,626844007.0
+Udon Thani,2018,small_business,35091.0,243197357.0
+Udon Thani,2018,specific_business,167.0,35935187.0
+Udon Thani,2019,large_business,60.0,263068876.0
+Udon Thani,2019,medium_business,1215.0,267361799.0
+Udon Thani,2019,residential,431521.0,686549959.0
+Udon Thani,2019,small_business,35434.0,260178460.0
+Udon Thani,2019,specific_business,181.0,39749320.0
+Udon Thani,2020,large_business,72.0,256646351.89999998
+Udon Thani,2020,medium_business,1261.0,268140893.26000002
+Udon Thani,2020,residential,442643.0,732185822.2900001
+Udon Thani,2020,small_business,35379.0,254780669.64000002
+Udon Thani,2020,specific_business,163.0,28000803.290000007
+Udon Thani,2021,large_business,73.0,260515394.37
+Udon Thani,2021,medium_business,1293.0,268412679.94
+Udon Thani,2021,residential,452431.0,784465551.5500001
+Udon Thani,2021,small_business,35826.0,262201988.89999998
+Udon Thani,2021,specific_business,138.0,22497677.980000004
+Udon Thani,2022,large_business,73.0,267745765.0
+Udon Thani,2022,medium_business,1371.0,277044618.0
+Udon Thani,2022,residential,460511.0,768349755.0
+Udon Thani,2022,small_business,36043.0,264613964.0
+Udon Thani,2022,specific_business,141.0,28866051.0
+Udon Thani,2023,large_business,75.0,271790183.0
+Udon Thani,2023,medium_business,1486.0,299495690.0
+Udon Thani,2023,residential,465496.0,832717638.0
+Udon Thani,2023,small_business,36004.0,272320277.0
+Udon Thani,2023,specific_business,180.0,34874292.0
+Loei,2018,large_business,21.0,81741815.0
+Loei,2018,medium_business,437.0,70457822.0
+Loei,2018,residential,175108.0,217156625.0
+Loei,2018,small_business,15896.0,92453017.0
+Loei,2018,specific_business,65.0,6799964.0
+Loei,2019,large_business,22.0,77450594.0
+Loei,2019,medium_business,440.0,78333659.0
+Loei,2019,residential,177766.0,234048831.0
+Loei,2019,small_business,16458.0,100882278.0
+Loei,2019,specific_business,60.0,7090204.0
+Loei,2020,large_business,32.0,83638234.47999999
+Loei,2020,medium_business,456.0,77530259.46
+Loei,2020,residential,181465.0,250678827.78
+Loei,2020,small_business,16636.0,102626461.75
+Loei,2020,specific_business,68.0,6505782.4
+Loei,2021,large_business,32.0,92013143.11000001
+Loei,2021,medium_business,469.0,79330222.24
+Loei,2021,residential,184636.0,265051581.6
+Loei,2021,small_business,16770.0,105702258.95000002
+Loei,2021,specific_business,62.0,5839409.2700000005
+Loei,2022,large_business,29.0,91502092.0
+Loei,2022,medium_business,468.0,85280187.0
+Loei,2022,residential,187429.0,265578208.0
+Loei,2022,small_business,16826.0,107413841.0
+Loei,2022,specific_business,65.0,6850200.0
+Loei,2023,large_business,35.0,90573083.0
+Loei,2023,medium_business,542.0,92333997.0
+Loei,2023,residential,189206.0,282610144.0
+Loei,2023,small_business,16775.0,111099346.0
+Loei,2023,specific_business,75.0,7733700.0
+Nong Khai,2018,large_business,18.0,49725165.0
+Nong Khai,2018,medium_business,368.0,82917241.0
+Nong Khai,2018,residential,144771.0,221049701.0
+Nong Khai,2018,small_business,8685.0,68435931.0
+Nong Khai,2018,specific_business,61.0,9250547.0
+Nong Khai,2019,large_business,18.0,51972529.0
+Nong Khai,2019,medium_business,398.0,88785079.0
+Nong Khai,2019,residential,148209.0,240827961.0
+Nong Khai,2019,small_business,8506.0,72060581.0
+Nong Khai,2019,specific_business,69.0,9740760.0
+Nong Khai,2020,large_business,22.0,64502220.86
+Nong Khai,2020,medium_business,520.0,111490613.65999998
+Nong Khai,2020,residential,244718.0,372080953.05
+Nong Khai,2020,small_business,12999.0,100933659.47
+Nong Khai,2020,specific_business,67.0,7866983.57
+Nong Khai,2021,large_business,24.0,63219652.599999994
+Nong Khai,2021,medium_business,522.0,113163034.45
+Nong Khai,2021,residential,250777.0,404077820.06
+Nong Khai,2021,small_business,13126.0,105938212.66
+Nong Khai,2021,specific_business,64.0,6079833.300000001
+Nong Khai,2022,large_business,25.0,59261414.0
+Nong Khai,2022,medium_business,427.0,85170017.0
+Nong Khai,2022,residential,158783.0,269997339.0
+Nong Khai,2022,small_business,8678.0,73771129.0
+Nong Khai,2022,specific_business,55.0,6840361.0
+Nong Khai,2023,large_business,24.0,54790456.0
+Nong Khai,2023,medium_business,458.0,92735532.0
+Nong Khai,2023,residential,161479.0,288965366.0
+Nong Khai,2023,small_business,8736.0,76976788.0
+Nong Khai,2023,specific_business,56.0,7168041.0
+Maha Sarakham,2018,large_business,31.0,124176020.0
+Maha Sarakham,2018,medium_business,522.0,118754132.0
+Maha Sarakham,2018,residential,262487.0,315281551.0
+Maha Sarakham,2018,small_business,25629.0,151167357.0
+Maha Sarakham,2018,specific_business,131.0,16978474.0
+Maha Sarakham,2019,large_business,34.0,127773790.0
+Maha Sarakham,2019,medium_business,555.0,129315343.0
+Maha Sarakham,2019,residential,268921.0,350984353.0
+Maha Sarakham,2019,small_business,26176.0,161989546.0
+Maha Sarakham,2019,specific_business,140.0,19387202.0
+Maha Sarakham,2020,large_business,40.0,132800883.31000002
+Maha Sarakham,2020,medium_business,574.0,125981511.38000001
+Maha Sarakham,2020,residential,277423.0,378206067.11
+Maha Sarakham,2020,small_business,25668.0,160925587.74
+Maha Sarakham,2020,specific_business,128.0,16177616.190000001
+Maha Sarakham,2021,large_business,41.0,132988909.71000001
+Maha Sarakham,2021,medium_business,588.0,130642024.22999999
+Maha Sarakham,2021,residential,285359.0,405912345.06
+Maha Sarakham,2021,small_business,25784.0,162571762.79999998
+Maha Sarakham,2021,specific_business,116.0,14591510.06
+Maha Sarakham,2022,large_business,43.0,131636659.0
+Maha Sarakham,2022,medium_business,611.0,133771663.0
+Maha Sarakham,2022,residential,290856.0,399579321.0
+Maha Sarakham,2022,small_business,26069.0,165116740.0
+Maha Sarakham,2022,specific_business,139.0,17188351.0
+Maha Sarakham,2023,large_business,45.0,136921300.0
+Maha Sarakham,2023,medium_business,684.0,148125760.0
+Maha Sarakham,2023,residential,293417.0,431235061.0
+Maha Sarakham,2023,small_business,27736.0,173396030.0
+Maha Sarakham,2023,specific_business,150.0,21175350.0
+Roi Et,2018,large_business,29.0,110213988.0
+Roi Et,2018,medium_business,590.0,152172306.0
+Roi Et,2018,residential,345053.0,419092375.0
+Roi Et,2018,small_business,31907.0,177314092.0
+Roi Et,2018,specific_business,39.0,7709886.0
+Roi Et,2019,large_business,33.0,109178112.0
+Roi Et,2019,medium_business,647.0,160585923.0
+Roi Et,2019,residential,351301.0,460232296.0
+Roi Et,2019,small_business,32541.0,192872577.0
+Roi Et,2019,specific_business,46.0,7660282.0
+Roi Et,2020,large_business,35.0,108986281.60000001
+Roi Et,2020,medium_business,658.0,155066426.67
+Roi Et,2020,residential,362238.0,498952128.31
+Roi Et,2020,small_business,32874.0,195529342.84
+Roi Et,2020,specific_business,52.0,7294159.2700000005
+Roi Et,2021,large_business,35.0,106062824.0
+Roi Et,2021,medium_business,679.0,157285437.76
+Roi Et,2021,residential,371400.0,538168027.4300001
+Roi Et,2021,small_business,33732.0,202371572.28
+Roi Et,2021,specific_business,54.0,7365145.76
+Roi Et,2022,large_business,36.0,109874958.0
+Roi Et,2022,medium_business,719.0,161256185.0
+Roi Et,2022,residential,379282.0,519283759.0
+Roi Et,2022,small_business,33946.0,198847409.0
+Roi Et,2022,specific_business,55.0,8156646.0
+Roi Et,2023,large_business,35.0,113056742.0
+Roi Et,2023,medium_business,836.0,177688579.0
+Roi Et,2023,residential,382575.0,555800403.0
+Roi Et,2023,small_business,36251.0,210939103.0
+Roi Et,2023,specific_business,59.0,9392405.0
+Kalasin,2018,large_business,22.0,156321762.0
+Kalasin,2018,medium_business,547.0,112864825.0
+Kalasin,2018,residential,256743.0,307510977.0
+Kalasin,2018,small_business,20249.0,113373973.0
+Kalasin,2018,specific_business,29.0,4366594.0
+Kalasin,2019,large_business,27.0,178104829.0
+Kalasin,2019,medium_business,582.0,123122870.0
+Kalasin,2019,residential,260981.0,336492446.0
+Kalasin,2019,small_business,20521.0,121985683.0
+Kalasin,2019,specific_business,33.0,4746033.0
+Kalasin,2020,large_business,27.0,162181347.86
+Kalasin,2020,medium_business,589.0,121337725.97
+Kalasin,2020,residential,257277.0,351738997.85
+Kalasin,2020,small_business,19563.0,118181447.13
+Kalasin,2020,specific_business,30.0,3545884.87
+Kalasin,2021,large_business,27.0,176345590.15999997
+Kalasin,2021,medium_business,621.0,126838393.36000001
+Kalasin,2021,residential,263564.0,381565138.19
+Kalasin,2021,small_business,19303.0,122302891.53999999
+Kalasin,2021,specific_business,33.0,3303394.68
+Kalasin,2022,large_business,28.0,185876278.0
+Kalasin,2022,medium_business,672.0,138223783.0
+Kalasin,2022,residential,279833.0,383804304.0
+Kalasin,2022,small_business,20021.0,126346407.0
+Kalasin,2022,specific_business,29.0,3443695.0
+Kalasin,2023,large_business,30.0,176883682.0
+Kalasin,2023,medium_business,743.0,150324947.0
+Kalasin,2023,residential,281590.0,411232671.0
+Kalasin,2023,small_business,20812.0,132867140.0
+Kalasin,2023,specific_business,31.0,3882449.0
+Sakon Nakhon,2018,large_business,17.0,55767821.0
+Sakon Nakhon,2018,medium_business,591.0,126450769.0
+Sakon Nakhon,2018,residential,316252.0,362293004.0
+Sakon Nakhon,2018,small_business,20779.0,127666064.0
+Sakon Nakhon,2018,specific_business,62.0,7468041.0
+Sakon Nakhon,2019,large_business,17.0,67759034.0
+Sakon Nakhon,2019,medium_business,619.0,135735444.0
+Sakon Nakhon,2019,residential,323977.0,395588061.0
+Sakon Nakhon,2019,small_business,21316.0,139536758.0
+Sakon Nakhon,2019,specific_business,71.0,8294962.0
+Sakon Nakhon,2020,large_business,22.0,68047955.35
+Sakon Nakhon,2020,medium_business,650.0,133289367.28
+Sakon Nakhon,2020,residential,334168.0,421997584.57000005
+Sakon Nakhon,2020,small_business,21568.0,139350649.46
+Sakon Nakhon,2020,specific_business,62.0,6971667.869999999
+Sakon Nakhon,2021,large_business,24.0,74019281.21000001
+Sakon Nakhon,2021,medium_business,653.0,133092617.44999999
+Sakon Nakhon,2021,residential,343692.0,455977171.79999995
+Sakon Nakhon,2021,small_business,22013.0,146359324.45
+Sakon Nakhon,2021,specific_business,57.0,5811355.68
+Sakon Nakhon,2022,large_business,27.0,87136556.0
+Sakon Nakhon,2022,medium_business,681.0,136463507.0
+Sakon Nakhon,2022,residential,350938.0,448159756.0
+Sakon Nakhon,2022,small_business,22251.0,146957075.0
+Sakon Nakhon,2022,specific_business,61.0,6414805.0
+Sakon Nakhon,2023,large_business,26.0,88085354.0
+Sakon Nakhon,2023,medium_business,761.0,148706070.0
+Sakon Nakhon,2023,residential,353423.0,480890399.0
+Sakon Nakhon,2023,small_business,22127.0,152630448.0
+Sakon Nakhon,2023,specific_business,67.0,8206382.0
+Nakhon Phanom,2018,large_business,11.0,2274036853.0
+Nakhon Phanom,2018,medium_business,377.0,1006570426.0
+Nakhon Phanom,2018,residential,200426.0,845471769.0
+Nakhon Phanom,2018,small_business,13324.0,402174003.0
+Nakhon Phanom,2018,specific_business,37.0,75345863.0
+Nakhon Phanom,2019,large_business,12.0,34654921.0
+Nakhon Phanom,2019,medium_business,405.0,80339990.0
+Nakhon Phanom,2019,residential,204426.0,247820142.0
+Nakhon Phanom,2019,small_business,13469.0,86048835.0
+Nakhon Phanom,2019,specific_business,50.0,7215946.0
+Nakhon Phanom,2020,large_business,13.0,30679788.909999996
+Nakhon Phanom,2020,medium_business,428.0,80344786.11
+Nakhon Phanom,2020,residential,210749.0,266380171.34
+Nakhon Phanom,2020,small_business,13637.0,87490554.52
+Nakhon Phanom,2020,specific_business,52.0,6478136.23
+Nakhon Phanom,2021,large_business,14.0,32215899.23
+Nakhon Phanom,2021,medium_business,432.0,85987835.58000001
+Nakhon Phanom,2021,residential,217022.0,287480725.03
+Nakhon Phanom,2021,small_business,13737.0,91604387.84
+Nakhon Phanom,2021,specific_business,42.0,5960157.580000001
+Nakhon Phanom,2022,large_business,11.0,29756360.0
+Nakhon Phanom,2022,medium_business,456.0,85042827.0
+Nakhon Phanom,2022,residential,220244.0,281487141.0
+Nakhon Phanom,2022,small_business,13954.0,92560374.0
+Nakhon Phanom,2022,specific_business,55.0,8137126.0
+Nakhon Phanom,2023,large_business,11.0,31841047.0
+Nakhon Phanom,2023,medium_business,508.0,93369953.0
+Nakhon Phanom,2023,residential,222539.0,300197704.0
+Nakhon Phanom,2023,small_business,14475.0,97102238.0
+Nakhon Phanom,2023,specific_business,59.0,10050791.0
+Mukdahan,2018,large_business,15.0,69660580.0
+Mukdahan,2018,medium_business,229.0,43567801.0
+Mukdahan,2018,residential,90566.0,109222358.0
+Mukdahan,2018,small_business,9842.0,55144607.0
+Mukdahan,2018,specific_business,39.0,7413632.0
+Mukdahan,2019,large_business,16.0,73442894.0
+Mukdahan,2019,medium_business,246.0,46704558.0
+Mukdahan,2019,residential,91997.0,118805951.0
+Mukdahan,2019,small_business,9965.0,60136636.0
+Mukdahan,2019,specific_business,42.0,7828351.0
+Mukdahan,2020,large_business,16.0,79304139.0
+Mukdahan,2020,medium_business,250.0,43717545.99
+Mukdahan,2020,residential,94314.0,127537479.30000001
+Mukdahan,2020,small_business,9850.0,60218544.67000001
+Mukdahan,2020,specific_business,42.0,5803102.919999999
+Mukdahan,2021,large_business,15.0,86499286.0
+Mukdahan,2021,medium_business,256.0,47241260.750000015
+Mukdahan,2021,residential,96515.0,138937107.68
+Mukdahan,2021,small_business,9740.0,62152377.94
+Mukdahan,2021,specific_business,38.0,4996970.85
+Mukdahan,2022,large_business,17.0,85197209.0
+Mukdahan,2022,medium_business,266.0,49364729.0
+Mukdahan,2022,residential,98695.0,134744304.0
+Mukdahan,2022,small_business,9798.0,61640642.0
+Mukdahan,2022,specific_business,33.0,6317583.0
+Mukdahan,2023,large_business,19.0,80479954.0
+Mukdahan,2023,medium_business,297.0,52169686.0
+Mukdahan,2023,residential,99675.0,144983348.0
+Mukdahan,2023,small_business,9989.0,64560755.0
+Mukdahan,2023,specific_business,42.0,6804739.0
+Chiang Mai,2018,large_business,100.0,579105764.0
+Chiang Mai,2018,medium_business,2544.0,595560099.0
+Chiang Mai,2018,residential,662681.0,1183995744.0
+Chiang Mai,2018,small_business,70308.0,574809013.0
+Chiang Mai,2018,specific_business,863.0,255853337.0
+Chiang Mai,2019,large_business,103.0,587005607.0
+Chiang Mai,2019,medium_business,2728.0,625022752.0
+Chiang Mai,2019,residential,678615.0,1299913262.0
+Chiang Mai,2019,small_business,72166.0,604705470.0
+Chiang Mai,2019,specific_business,989.0,270168569.0
+Chiang Mai,2020,large_business,113.0,553219477.4499999
+Chiang Mai,2020,medium_business,2719.0,594121473.2099999
+Chiang Mai,2020,residential,698416.0,1382565110.23
+Chiang Mai,2020,small_business,73928.0,587471679.1300001
+Chiang Mai,2020,specific_business,890.0,171936297.95000002
+Chiang Mai,2021,large_business,112.0,533762676.09
+Chiang Mai,2021,medium_business,2706.0,582514430.36
+Chiang Mai,2021,residential,713879.0,1428985704.64
+Chiang Mai,2021,small_business,75944.0,592600200.4
+Chiang Mai,2021,specific_business,693.0,126452246.21
+Chiang Mai,2022,large_business,116.0,536272604.0
+Chiang Mai,2022,medium_business,2819.0,613873563.0
+Chiang Mai,2022,residential,727439.0,1421147485.0
+Chiang Mai,2022,small_business,77813.0,632866146.0
+Chiang Mai,2022,specific_business,838.0,183683592.0
+Chiang Mai,2023,large_business,114.0,550725352.0
+Chiang Mai,2023,medium_business,3072.0,659358322.0
+Chiang Mai,2023,residential,738366.0,1527557542.0
+Chiang Mai,2023,small_business,79223.0,666074424.0
+Chiang Mai,2023,specific_business,971.0,244553338.0
+Lamphun,2018,large_business,85.0,809046249.0
+Lamphun,2018,medium_business,623.0,179828264.0
+Lamphun,2018,residential,168534.0,226210896.0
+Lamphun,2018,small_business,16971.0,120235747.0
+Lamphun,2018,specific_business,58.0,8759754.0
+Lamphun,2019,large_business,86.0,788646742.0
+Lamphun,2019,medium_business,651.0,179004831.0
+Lamphun,2019,residential,172019.0,250691831.0
+Lamphun,2019,small_business,17348.0,125132631.0
+Lamphun,2019,specific_business,64.0,10201561.0
+Lamphun,2020,large_business,88.0,748656074.69
+Lamphun,2020,medium_business,664.0,172212348.97
+Lamphun,2020,residential,176325.0,269227307.96000004
+Lamphun,2020,small_business,17934.0,126639168.13999999
+Lamphun,2020,specific_business,66.0,10062735.58
+Lamphun,2021,large_business,87.0,791877678.0999999
+Lamphun,2021,medium_business,686.0,178176410.82999998
+Lamphun,2021,residential,180219.0,276397899.14
+Lamphun,2021,small_business,18780.0,130165346.15999998
+Lamphun,2021,specific_business,61.0,9761614.319999998
+Lamphun,2022,large_business,89.0,775646217.0
+Lamphun,2022,medium_business,691.0,180634975.0
+Lamphun,2022,residential,182956.0,267188234.0
+Lamphun,2022,small_business,19295.0,131390477.0
+Lamphun,2022,specific_business,65.0,10776471.0
+Lamphun,2023,large_business,88.0,732746106.0
+Lamphun,2023,medium_business,736.0,183346897.0
+Lamphun,2023,residential,182261.0,284229150.0
+Lamphun,2023,small_business,20244.0,133599073.0
+Lamphun,2023,specific_business,73.0,11600851.0
+Lampang,2018,large_business,24.0,265500911.0
+Lampang,2018,medium_business,758.0,180706446.0
+Lampang,2018,residential,248587.0,309943150.0
+Lampang,2018,small_business,26177.0,163689009.0
+Lampang,2018,specific_business,67.0,9550940.0
+Lampang,2019,large_business,25.0,270861151.0
+Lampang,2019,medium_business,788.0,189092807.0
+Lampang,2019,residential,251922.0,335368575.0
+Lampang,2019,small_business,26196.0,169388086.0
+Lampang,2019,specific_business,78.0,10141576.0
+Lampang,2020,large_business,32.0,281833674.90999997
+Lampang,2020,medium_business,797.0,181103652.52999997
+Lampang,2020,residential,258126.0,368508640.73
+Lampang,2020,small_business,25133.0,165440711.06000003
+Lampang,2020,specific_business,64.0,8599648.360000001
+Lampang,2021,large_business,30.0,286336417.38
+Lampang,2021,medium_business,818.0,181883640.01
+Lampang,2021,residential,263045.0,381198013.12
+Lampang,2021,small_business,25123.0,165475379.92999998
+Lampang,2021,specific_business,57.0,6939152.5600000005
+Lampang,2022,large_business,31.0,304287739.0
+Lampang,2022,medium_business,806.0,187198426.0
+Lampang,2022,residential,266785.0,373365696.0
+Lampang,2022,small_business,25067.0,170577579.0
+Lampang,2022,specific_business,62.0,8400496.0
+Lampang,2023,large_business,33.0,291307078.0
+Lampang,2023,medium_business,899.0,188859821.0
+Lampang,2023,residential,268331.0,394871762.0
+Lampang,2023,small_business,24882.0,174591390.0
+Lampang,2023,specific_business,78.0,9504441.0
+Uttaradit,2018,large_business,17.0,51648634.0
+Uttaradit,2018,medium_business,383.0,80684923.0
+Uttaradit,2018,residential,144306.0,216577051.0
+Uttaradit,2018,small_business,12580.0,84436714.0
+Uttaradit,2018,specific_business,31.0,4880501.0
+Uttaradit,2019,large_business,16.0,45537974.0
+Uttaradit,2019,medium_business,425.0,88205168.0
+Uttaradit,2019,residential,145662.0,234875540.0
+Uttaradit,2019,small_business,12619.0,89460887.0
+Uttaradit,2019,specific_business,31.0,4733059.0
+Uttaradit,2020,large_business,15.0,38628067.49
+Uttaradit,2020,medium_business,433.0,89507169.21999998
+Uttaradit,2020,residential,148638.0,256844802.12
+Uttaradit,2020,small_business,12556.0,89901086.43
+Uttaradit,2020,specific_business,33.0,3733017.2599999993
+Uttaradit,2021,large_business,17.0,33460682.050000004
+Uttaradit,2021,medium_business,431.0,91456824.21
+Uttaradit,2021,residential,151470.0,265091756.88
+Uttaradit,2021,small_business,12651.0,89855893.78999999
+Uttaradit,2021,specific_business,33.0,3321796.0999999996
+Uttaradit,2022,large_business,17.0,34485597.0
+Uttaradit,2022,medium_business,452.0,95993165.0
+Uttaradit,2022,residential,153792.0,259438532.0
+Uttaradit,2022,small_business,12461.0,90076517.0
+Uttaradit,2022,specific_business,30.0,3705704.0
+Uttaradit,2023,large_business,20.0,40884301.0
+Uttaradit,2023,medium_business,480.0,99069173.0
+Uttaradit,2023,residential,155309.0,278280085.0
+Uttaradit,2023,small_business,12264.0,93287880.0
+Uttaradit,2023,specific_business,31.0,4672873.0
+Phrae,2018,large_business,14.0,42927931.0
+Phrae,2018,medium_business,409.0,71582575.0
+Phrae,2018,residential,144339.0,184281318.0
+Phrae,2018,small_business,17401.0,94707209.0
+Phrae,2018,specific_business,35.0,4694825.0
+Phrae,2019,large_business,12.0,35103312.0
+Phrae,2019,medium_business,428.0,73520334.0
+Phrae,2019,residential,145889.0,200269447.0
+Phrae,2019,small_business,17755.0,97947856.0
+Phrae,2019,specific_business,38.0,5087685.0
+Phrae,2020,large_business,15.0,33559464.77
+Phrae,2020,medium_business,427.0,72792979.21
+Phrae,2020,residential,148753.0,217700833.32999998
+Phrae,2020,small_business,17352.0,98518246.71000001
+Phrae,2020,specific_business,41.0,4318070.32
+Phrae,2021,large_business,15.0,35329895.69
+Phrae,2021,medium_business,427.0,70511155.64000002
+Phrae,2021,residential,150625.0,223673927.69
+Phrae,2021,small_business,17681.0,100092418.00999999
+Phrae,2021,specific_business,33.0,3928571.96
+Phrae,2022,large_business,15.0,34353589.0
+Phrae,2022,medium_business,441.0,72358958.0
+Phrae,2022,residential,152306.0,218754350.0
+Phrae,2022,small_business,17931.0,102099149.0
+Phrae,2022,specific_business,31.0,4193321.0
+Phrae,2023,large_business,16.0,35391807.0
+Phrae,2023,medium_business,471.0,78933528.0
+Phrae,2023,residential,152828.0,231591422.0
+Phrae,2023,small_business,18015.0,104852871.0
+Phrae,2023,specific_business,37.0,4680140.0
+Nan,2018,large_business,6.0,20059434.0
+Nan,2018,medium_business,292.0,51385227.0
+Nan,2018,residential,146101.0,154681388.0
+Nan,2018,small_business,13455.0,76105984.0
+Nan,2018,specific_business,41.0,4803810.0
+Nan,2019,large_business,5.0,18318047.0
+Nan,2019,medium_business,322.0,53727682.0
+Nan,2019,residential,148585.0,167841251.0
+Nan,2019,small_business,13805.0,79371079.0
+Nan,2019,specific_business,42.0,4886985.0
+Nan,2020,large_business,6.0,17027898.490000002
+Nan,2020,medium_business,327.0,54031213.02
+Nan,2020,residential,151572.0,181674167.15999997
+Nan,2020,small_business,13695.0,80571086.08999999
+Nan,2020,specific_business,50.0,4448836.07
+Nan,2021,large_business,5.0,16892330.34
+Nan,2021,medium_business,331.0,55225894.79999999
+Nan,2021,residential,154617.0,190477171.02
+Nan,2021,small_business,13891.0,83064708.73
+Nan,2021,specific_business,44.0,3901166.1099999994
+Nan,2022,large_business,6.0,17121488.0
+Nan,2022,medium_business,354.0,57779606.0
+Nan,2022,residential,157083.0,192600623.0
+Nan,2022,small_business,13936.0,84997930.0
+Nan,2022,specific_business,61.0,5734834.0
+Nan,2023,large_business,7.0,20256398.0
+Nan,2023,medium_business,412.0,64690493.0
+Nan,2023,residential,159019.0,205541899.0
+Nan,2023,small_business,14090.0,87411524.0
+Nan,2023,specific_business,57.0,6019587.0
+Phayao,2018,large_business,14.0,53338446.0
+Phayao,2018,medium_business,338.0,60537953.0
+Phayao,2018,residential,153092.0,164871717.0
+Phayao,2018,small_business,14014.0,77394356.0
+Phayao,2018,specific_business,46.0,6245943.0
+Phayao,2019,large_business,13.0,54462212.0
+Phayao,2019,medium_business,363.0,62645433.0
+Phayao,2019,residential,154912.0,179895275.0
+Phayao,2019,small_business,14089.0,82459422.0
+Phayao,2019,specific_business,47.0,6983796.0
+Phayao,2020,large_business,14.0,47021466.489999995
+Phayao,2020,medium_business,383.0,61574089.28
+Phayao,2020,residential,158522.0,194649737.29
+Phayao,2020,small_business,13944.0,81393362.89
+Phayao,2020,specific_business,46.0,5981982.720000001
+Phayao,2021,large_business,15.0,42919915.050000004
+Phayao,2021,medium_business,387.0,64928935.22
+Phayao,2021,residential,161592.0,203394096.61
+Phayao,2021,small_business,14352.0,84022347.17999999
+Phayao,2021,specific_business,44.0,6308031.170000001
+Phayao,2022,large_business,15.0,43105497.0
+Phayao,2022,medium_business,389.0,67371287.0
+Phayao,2022,residential,164302.0,202411982.0
+Phayao,2022,small_business,14546.0,87096351.0
+Phayao,2022,specific_business,47.0,7075344.0
+Phayao,2023,large_business,13.0,47014929.0
+Phayao,2023,medium_business,430.0,73788192.0
+Phayao,2023,residential,164781.0,214657430.0
+Phayao,2023,small_business,14640.0,89741437.0
+Phayao,2023,specific_business,49.0,7794850.0
+Chiang Rai,2018,large_business,41.0,258670471.0
+Chiang Rai,2018,medium_business,1102.0,214042642.0
+Chiang Rai,2018,residential,387139.0,487672187.0
+Chiang Rai,2018,small_business,40154.0,237985512.0
+Chiang Rai,2018,specific_business,244.0,51192738.0
+Chiang Rai,2019,large_business,42.0,270062303.0
+Chiang Rai,2019,medium_business,1205.0,227025011.0
+Chiang Rai,2019,residential,395320.0,542557955.0
+Chiang Rai,2019,small_business,41319.0,257036172.0
+Chiang Rai,2019,specific_business,264.0,58248498.0
+Chiang Rai,2020,large_business,45.0,250772066.79000005
+Chiang Rai,2020,medium_business,1239.0,221045755.60000002
+Chiang Rai,2020,residential,405815.0,579231983.13
+Chiang Rai,2020,small_business,41665.0,254606681.54
+Chiang Rai,2020,specific_business,245.0,42081439.35
+Chiang Rai,2021,large_business,45.0,235968859.92
+Chiang Rai,2021,medium_business,1224.0,221879413.01999995
+Chiang Rai,2021,residential,414719.0,614227323.84
+Chiang Rai,2021,small_business,41938.0,266712781.41000003
+Chiang Rai,2021,specific_business,202.0,35648169.29
+Chiang Rai,2022,large_business,45.0,270561169.0
+Chiang Rai,2022,medium_business,1246.0,232859621.0
+Chiang Rai,2022,residential,421760.0,621708184.0
+Chiang Rai,2022,small_business,42428.0,283670732.0
+Chiang Rai,2022,specific_business,239.0,46645218.0
+Chiang Rai,2023,large_business,46.0,268613575.0
+Chiang Rai,2023,medium_business,1428.0,240109883.0
+Chiang Rai,2023,residential,426599.0,660579458.0
+Chiang Rai,2023,small_business,42635.0,297345652.0
+Chiang Rai,2023,specific_business,279.0,53726145.0
+Mae Hong Son,2018,large_business,1.0,629480.0
+Mae Hong Son,2018,medium_business,120.0,18308776.0
+Mae Hong Son,2018,residential,59455.0,58039815.0
+Mae Hong Son,2018,small_business,8514.0,43806298.0
+Mae Hong Son,2018,specific_business,48.0,5152849.0
+Mae Hong Son,2019,large_business,1.0,1108280.0
+Mae Hong Son,2019,medium_business,135.0,20662270.0
+Mae Hong Son,2019,residential,60708.0,61120281.0
+Mae Hong Son,2019,small_business,8942.0,45848644.0
+Mae Hong Son,2019,specific_business,46.0,5119642.0
+Mae Hong Son,2020,large_business,1.0,1137200.0
+Mae Hong Son,2020,medium_business,142.0,21930158.15
+Mae Hong Son,2020,residential,62491.0,66396240.71000001
+Mae Hong Son,2020,small_business,8847.0,44339274.849999994
+Mae Hong Son,2020,specific_business,43.0,3415389.3600000003
+Mae Hong Son,2021,large_business,1.0,1196500.0
+Mae Hong Son,2021,medium_business,140.0,23125771.13
+Mae Hong Son,2021,residential,64174.0,70329231.5
+Mae Hong Son,2021,small_business,8921.0,45225733.42
+Mae Hong Son,2021,specific_business,34.0,2788353.8199999994
+Mae Hong Son,2022,large_business,1.0,1213620.0
+Mae Hong Son,2022,medium_business,143.0,23586481.0
+Mae Hong Son,2022,residential,65516.0,70863620.0
+Mae Hong Son,2022,small_business,8924.0,48370750.0
+Mae Hong Son,2022,specific_business,36.0,3864939.0
+Mae Hong Son,2023,large_business,2.0,1323098.0
+Mae Hong Son,2023,medium_business,158.0,25686867.0
+Mae Hong Son,2023,residential,66166.0,74256680.0
+Mae Hong Son,2023,small_business,9099.0,51643911.0
+Mae Hong Son,2023,specific_business,41.0,4582880.0
+Nakhon Sawan,2018,large_business,58.0,303902111.0
+Nakhon Sawan,2018,medium_business,1217.0,312756038.0
+Nakhon Sawan,2018,residential,314190.0,586353424.0
+Nakhon Sawan,2018,small_business,23626.0,200957305.0
+Nakhon Sawan,2018,specific_business,92.0,14587717.0
+Nakhon Sawan,2019,large_business,67.0,295146710.0
+Nakhon Sawan,2019,medium_business,1277.0,317538068.0
+Nakhon Sawan,2019,residential,318041.0,637851111.0
+Nakhon Sawan,2019,small_business,23941.0,208084759.0
+Nakhon Sawan,2019,specific_business,95.0,15709601.0
+Nakhon Sawan,2020,large_business,64.0,275141387.68
+Nakhon Sawan,2020,medium_business,1310.0,312606128.21
+Nakhon Sawan,2020,residential,325073.0,694344991.8
+Nakhon Sawan,2020,small_business,23816.0,209730805.70999998
+Nakhon Sawan,2020,specific_business,88.0,13566037.850000001
+Nakhon Sawan,2021,large_business,67.0,287843543.84
+Nakhon Sawan,2021,medium_business,1315.0,304286047.40000004
+Nakhon Sawan,2021,residential,331351.0,711721344.8900001
+Nakhon Sawan,2021,small_business,24345.0,207320273.85999998
+Nakhon Sawan,2021,specific_business,91.0,11597525.25
+Nakhon Sawan,2022,large_business,76.0,334212561.0
+Nakhon Sawan,2022,medium_business,1329.0,312987216.0
+Nakhon Sawan,2022,residential,336408.0,686255308.0
+Nakhon Sawan,2022,small_business,24584.0,207188267.0
+Nakhon Sawan,2022,specific_business,87.0,13431362.0
+Nakhon Sawan,2023,large_business,77.0,330106774.0
+Nakhon Sawan,2023,medium_business,1395.0,330912457.0
+Nakhon Sawan,2023,residential,340644.0,748812217.0
+Nakhon Sawan,2023,small_business,25286.0,217219590.0
+Nakhon Sawan,2023,specific_business,105.0,16376818.0
+Uthai Thani,2018,large_business,13.0,27007282.0
+Uthai Thani,2018,medium_business,258.0,43251085.0
+Uthai Thani,2018,residential,99129.0,161890259.0
+Uthai Thani,2018,small_business,6481.0,52096555.0
+Uthai Thani,2018,specific_business,20.0,2834262.0
+Uthai Thani,2019,large_business,14.0,19868522.0
+Uthai Thani,2019,medium_business,273.0,46448633.0
+Uthai Thani,2019,residential,100716.0,176845216.0
+Uthai Thani,2019,small_business,6647.0,55489476.0
+Uthai Thani,2019,specific_business,19.0,2279193.0
+Uthai Thani,2020,large_business,18.0,18596108.21
+Uthai Thani,2020,medium_business,273.0,47908833.68
+Uthai Thani,2020,residential,103269.0,191952747.62
+Uthai Thani,2020,small_business,6831.0,55843165.83
+Uthai Thani,2020,specific_business,22.0,1837327.2599999995
+Uthai Thani,2021,large_business,19.0,29101171.31
+Uthai Thani,2021,medium_business,277.0,47009408.42000001
+Uthai Thani,2021,residential,104826.0,199823227.45
+Uthai Thani,2021,small_business,7071.0,56343100.00999999
+Uthai Thani,2021,specific_business,22.0,1827361.7299999995
+Uthai Thani,2022,large_business,18.0,40274241.0
+Uthai Thani,2022,medium_business,277.0,49121356.0
+Uthai Thani,2022,residential,105332.0,193761157.0
+Uthai Thani,2022,small_business,7102.0,58561645.0
+Uthai Thani,2022,specific_business,22.0,1940479.0
+Uthai Thani,2023,large_business,24.0,34181682.0
+Uthai Thani,2023,medium_business,305.0,56784328.0
+Uthai Thani,2023,residential,106072.0,214419694.0
+Uthai Thani,2023,small_business,7300.0,62839753.0
+Uthai Thani,2023,specific_business,24.0,2143134.0
+Kamphaeng Phet,2018,large_business,46.0,413335524.0
+Kamphaeng Phet,2018,medium_business,626.0,121653711.0
+Kamphaeng Phet,2018,residential,195260.0,332005065.0
+Kamphaeng Phet,2018,small_business,20277.0,139431545.0
+Kamphaeng Phet,2018,specific_business,36.0,5363788.0
+Kamphaeng Phet,2019,large_business,46.0,392529529.0
+Kamphaeng Phet,2019,medium_business,673.0,126939941.0
+Kamphaeng Phet,2019,residential,198058.0,357381639.0
+Kamphaeng Phet,2019,small_business,20947.0,146724463.0
+Kamphaeng Phet,2019,specific_business,40.0,5603913.0
+Kamphaeng Phet,2020,large_business,48.0,352412331.5
+Kamphaeng Phet,2020,medium_business,669.0,129381905.35000001
+Kamphaeng Phet,2020,residential,201851.0,393389849.85
+Kamphaeng Phet,2020,small_business,21235.0,152033954.84
+Kamphaeng Phet,2020,specific_business,43.0,5193359.050000001
+Kamphaeng Phet,2021,large_business,47.0,359306418.26
+Kamphaeng Phet,2021,medium_business,680.0,128604427.46000001
+Kamphaeng Phet,2021,residential,205657.0,408490718.4499999
+Kamphaeng Phet,2021,small_business,21834.0,154390201.26
+Kamphaeng Phet,2021,specific_business,43.0,4721209.54
+Kamphaeng Phet,2022,large_business,49.0,359288155.0
+Kamphaeng Phet,2022,medium_business,696.0,137527585.0
+Kamphaeng Phet,2022,residential,208620.0,396833854.0
+Kamphaeng Phet,2022,small_business,22519.0,157173622.0
+Kamphaeng Phet,2022,specific_business,36.0,4658169.0
+Kamphaeng Phet,2023,large_business,51.0,307066569.0
+Kamphaeng Phet,2023,medium_business,761.0,146641414.0
+Kamphaeng Phet,2023,residential,209807.0,429405189.0
+Kamphaeng Phet,2023,small_business,23236.0,166231505.0
+Kamphaeng Phet,2023,specific_business,47.0,5277314.0
+Tak,2018,large_business,30.0,151631089.0
+Tak,2018,medium_business,596.0,124488168.0
+Tak,2018,residential,141108.0,226104921.0
+Tak,2018,small_business,12496.0,99774222.0
+Tak,2018,specific_business,60.0,9994015.0
+Tak,2019,large_business,31.0,177960230.0
+Tak,2019,medium_business,610.0,129751009.0
+Tak,2019,residential,144435.0,241314265.0
+Tak,2019,small_business,12935.0,105014907.0
+Tak,2019,specific_business,62.0,10252710.0
+Tak,2020,large_business,34.0,175720104.21
+Tak,2020,medium_business,639.0,129557924.0
+Tak,2020,residential,147013.0,263437403.41000003
+Tak,2020,small_business,13293.0,109021676.95999998
+Tak,2020,specific_business,64.0,9064216.379999999
+Tak,2021,large_business,35.0,169397858.86
+Tak,2021,medium_business,635.0,122034533.6
+Tak,2021,residential,150514.0,267958954.66
+Tak,2021,small_business,13738.0,109276312.01
+Tak,2021,specific_business,47.0,6470152.8100000005
+Tak,2022,large_business,34.0,223623973.0
+Tak,2022,medium_business,667.0,134653379.0
+Tak,2022,residential,153902.0,273916629.0
+Tak,2022,small_business,13909.0,116929870.0
+Tak,2022,specific_business,55.0,9113590.0
+Tak,2023,large_business,37.0,234697616.0
+Tak,2023,medium_business,698.0,143538192.0
+Tak,2023,residential,156980.0,292435571.0
+Tak,2023,small_business,14184.0,123368550.0
+Tak,2023,specific_business,67.0,11174836.0
+Sukhothai,2018,large_business,15.0,41739995.0
+Sukhothai,2018,medium_business,455.0,88362108.0
+Sukhothai,2018,residential,175726.0,261311184.0
+Sukhothai,2018,small_business,19117.0,115044907.0
+Sukhothai,2018,specific_business,42.0,5890769.0
+Sukhothai,2019,large_business,16.0,32519270.0
+Sukhothai,2019,medium_business,504.0,96326446.0
+Sukhothai,2019,residential,178439.0,290856784.0
+Sukhothai,2019,small_business,19306.0,121167432.0
+Sukhothai,2019,specific_business,42.0,6171702.0
+Sukhothai,2020,large_business,18.0,29604854.1
+Sukhothai,2020,medium_business,497.0,95439230.53999999
+Sukhothai,2020,residential,183242.0,321422799.24
+Sukhothai,2020,small_business,18998.0,121500408.46000001
+Sukhothai,2020,specific_business,43.0,4787153.47
+Sukhothai,2021,large_business,19.0,31944194.17
+Sukhothai,2021,medium_business,504.0,91360540.28999999
+Sukhothai,2021,residential,187171.0,334894871.27
+Sukhothai,2021,small_business,19300.0,120516743.90999998
+Sukhothai,2021,specific_business,35.0,3661401.67
+Sukhothai,2022,large_business,21.0,32254372.0
+Sukhothai,2022,medium_business,511.0,92613170.0
+Sukhothai,2022,residential,189964.0,324661892.0
+Sukhothai,2022,small_business,19109.0,121100968.0
+Sukhothai,2022,specific_business,40.0,4646857.0
+Sukhothai,2023,large_business,21.0,36117066.0
+Sukhothai,2023,medium_business,542.0,97505369.0
+Sukhothai,2023,residential,191675.0,354816752.0
+Sukhothai,2023,small_business,18983.0,124941932.0
+Sukhothai,2023,specific_business,42.0,5311038.0
+Phitsanulok,2018,large_business,49.0,264320850.0
+Phitsanulok,2018,medium_business,900.0,213240996.0
+Phitsanulok,2018,residential,249613.0,475990565.0
+Phitsanulok,2018,small_business,32458.0,244590649.0
+Phitsanulok,2018,specific_business,204.0,32760812.0
+Phitsanulok,2019,large_business,56.0,260274581.0
+Phitsanulok,2019,medium_business,938.0,225183420.0
+Phitsanulok,2019,residential,253787.0,521417520.0
+Phitsanulok,2019,small_business,32721.0,258238801.0
+Phitsanulok,2019,specific_business,222.0,34592716.0
+Phitsanulok,2020,large_business,60.0,256305674.75
+Phitsanulok,2020,medium_business,957.0,223024815.62
+Phitsanulok,2020,residential,260768.0,574085342.52
+Phitsanulok,2020,small_business,32788.0,260136312.55
+Phitsanulok,2020,specific_business,203.0,29012482.96
+Phitsanulok,2021,large_business,57.0,257696462.56
+Phitsanulok,2021,medium_business,967.0,219709721.26999998
+Phitsanulok,2021,residential,266996.0,600935956.3700001
+Phitsanulok,2021,small_business,32802.0,263341766.92000002
+Phitsanulok,2021,specific_business,184.0,25294897.8
+Phitsanulok,2022,large_business,60.0,274609419.0
+Phitsanulok,2022,medium_business,1018.0,235888799.0
+Phitsanulok,2022,residential,272312.0,589014729.0
+Phitsanulok,2022,small_business,33338.0,269567956.0
+Phitsanulok,2022,specific_business,198.0,30118392.0
+Phitsanulok,2023,large_business,61.0,285538700.0
+Phitsanulok,2023,medium_business,1093.0,257128397.0
+Phitsanulok,2023,residential,275352.0,634349410.0
+Phitsanulok,2023,small_business,33467.0,284189431.0
+Phitsanulok,2023,specific_business,216.0,34058317.0
+Phichit,2018,large_business,34.0,111530489.0
+Phichit,2018,medium_business,466.0,96308872.0
+Phichit,2018,residential,159982.0,270232970.0
+Phichit,2018,small_business,17985.0,104405513.0
+Phichit,2018,specific_business,21.0,3116825.0
+Phichit,2019,large_business,34.0,104885986.0
+Phichit,2019,medium_business,485.0,95647721.0
+Phichit,2019,residential,161967.0,300202131.0
+Phichit,2019,small_business,18028.0,109443173.0
+Phichit,2019,specific_business,24.0,3133161.0
+Phichit,2020,large_business,36.0,102855687.41999999
+Phichit,2020,medium_business,488.0,95027699.05000001
+Phichit,2020,residential,166233.0,339533038.29999995
+Phichit,2020,small_business,17515.0,112606551.35
+Phichit,2020,specific_business,21.0,2570510.15
+Phichit,2021,large_business,39.0,116592279.63
+Phichit,2021,medium_business,482.0,92493656.74999999
+Phichit,2021,residential,171676.0,361190168.83
+Phichit,2021,small_business,17223.0,112323958.24000001
+Phichit,2021,specific_business,21.0,2430413.2
+Phichit,2022,large_business,38.0,123684899.0
+Phichit,2022,medium_business,499.0,93853525.0
+Phichit,2022,residential,174795.0,340629777.0
+Phichit,2022,small_business,17298.0,112784761.0
+Phichit,2022,specific_business,21.0,2750847.0
+Phichit,2023,large_business,37.0,191091730.0
+Phichit,2023,medium_business,551.0,101436540.0
+Phichit,2023,residential,177049.0,370151384.0
+Phichit,2023,small_business,17281.0,115896541.0
+Phichit,2023,specific_business,22.0,2643264.0
+Phetchabun,2018,large_business,35.0,202502831.0
+Phetchabun,2018,medium_business,762.0,185221975.0
+Phetchabun,2018,residential,281543.0,401642004.0
+Phetchabun,2018,small_business,25028.0,163729894.0
+Phetchabun,2018,specific_business,87.0,9498022.0
+Phetchabun,2019,large_business,37.0,203240173.0
+Phetchabun,2019,medium_business,812.0,192320250.0
+Phetchabun,2019,residential,286134.0,444406730.0
+Phetchabun,2019,small_business,25172.0,174022620.0
+Phetchabun,2019,specific_business,97.0,10717474.0
+Phetchabun,2020,large_business,37.0,196841347.96
+Phetchabun,2020,medium_business,821.0,196145734.28
+Phetchabun,2020,residential,292366.0,478194147.45000005
+Phetchabun,2020,small_business,25176.0,175388136.02999997
+Phetchabun,2020,specific_business,101.0,10302153.44
+Phetchabun,2021,large_business,35.0,190707850.32999998
+Phetchabun,2021,medium_business,824.0,192848680.76000002
+Phetchabun,2021,residential,297347.0,494221641.88
+Phetchabun,2021,small_business,25362.0,174019115.39999998
+Phetchabun,2021,specific_business,89.0,8885738.03
+Phetchabun,2022,large_business,37.0,202951960.0
+Phetchabun,2022,medium_business,844.0,204718919.0
+Phetchabun,2022,residential,301332.0,484846914.0
+Phetchabun,2022,small_business,26230.0,180601579.0
+Phetchabun,2022,specific_business,96.0,10745254.0
+Phetchabun,2023,large_business,41.0,230535613.0
+Phetchabun,2023,medium_business,911.0,216573799.0
+Phetchabun,2023,residential,302029.0,523041005.0
+Phetchabun,2023,small_business,27093.0,189423165.0
+Phetchabun,2023,specific_business,113.0,12738091.0
+Ratchaburi,2018,large_business,138.0,1083274897.0
+Ratchaburi,2018,medium_business,1788.0,520393968.0
+Ratchaburi,2018,residential,260759.0,630177495.0
+Ratchaburi,2018,small_business,32823.0,264820047.0
+Ratchaburi,2018,specific_business,114.0,17369214.0
+Ratchaburi,2019,large_business,144.0,941645883.0
+Ratchaburi,2019,medium_business,1904.0,544457657.0
+Ratchaburi,2019,residential,266080.0,675346475.0
+Ratchaburi,2019,small_business,32504.0,273492424.0
+Ratchaburi,2019,specific_business,126.0,18044372.0
+Ratchaburi,2020,large_business,156.0,845017075.69
+Ratchaburi,2020,medium_business,1910.0,531701636.57000005
+Ratchaburi,2020,residential,273822.0,721698953.48
+Ratchaburi,2020,small_business,32943.0,271198279.80999994
+Ratchaburi,2020,specific_business,122.0,15579498.509999998
+Ratchaburi,2021,large_business,157.0,915909241.4699999
+Ratchaburi,2021,medium_business,1928.0,544135278.78
+Ratchaburi,2021,residential,279147.0,754662152.96
+Ratchaburi,2021,small_business,34001.0,268883162.26
+Ratchaburi,2021,specific_business,102.0,13830981.599999998
+Ratchaburi,2022,large_business,153.0,1100505730.0
+Ratchaburi,2022,medium_business,1967.0,545889327.0
+Ratchaburi,2022,residential,283592.0,752294188.0
+Ratchaburi,2022,small_business,34563.0,276738774.0
+Ratchaburi,2022,specific_business,121.0,18034292.0
+Ratchaburi,2023,large_business,165.0,970550576.0
+Ratchaburi,2023,medium_business,2087.0,570624820.0
+Ratchaburi,2023,residential,288535.0,796060088.0
+Ratchaburi,2023,small_business,35366.0,282460799.0
+Ratchaburi,2023,specific_business,132.0,20712182.0
+Kanchanaburi,2018,large_business,76.0,704549431.0
+Kanchanaburi,2018,medium_business,1475.0,319866862.0
+Kanchanaburi,2018,residential,256628.0,552525935.0
+Kanchanaburi,2018,small_business,23082.0,192023802.0
+Kanchanaburi,2018,specific_business,224.0,50267529.0
+Kanchanaburi,2019,large_business,80.0,620343868.0
+Kanchanaburi,2019,medium_business,1538.0,332571799.0
+Kanchanaburi,2019,residential,262376.0,603583336.0
+Kanchanaburi,2019,small_business,23578.0,205101163.0
+Kanchanaburi,2019,specific_business,227.0,52057741.0
+Kanchanaburi,2020,large_business,93.0,544803461.68
+Kanchanaburi,2020,medium_business,1575.0,332844839.68999994
+Kanchanaburi,2020,residential,268481.0,644760429.03
+Kanchanaburi,2020,small_business,23911.0,207694775.76999998
+Kanchanaburi,2020,specific_business,231.0,42363031.18
+Kanchanaburi,2021,large_business,93.0,555047167.02
+Kanchanaburi,2021,medium_business,1591.0,332711106.35
+Kanchanaburi,2021,residential,274436.0,656328462.1700001
+Kanchanaburi,2021,small_business,24847.0,208411257.63000003
+Kanchanaburi,2021,specific_business,230.0,33413977.82
+Kanchanaburi,2022,large_business,92.0,706567233.0
+Kanchanaburi,2022,medium_business,1700.0,363267168.0
+Kanchanaburi,2022,residential,278653.0,645373570.0
+Kanchanaburi,2022,small_business,25577.0,216009134.0
+Kanchanaburi,2022,specific_business,243.0,46923671.0
+Kanchanaburi,2023,large_business,96.0,777616625.0
+Kanchanaburi,2023,medium_business,1873.0,406021652.0
+Kanchanaburi,2023,residential,280007.0,696363922.0
+Kanchanaburi,2023,small_business,26251.0,226495631.0
+Kanchanaburi,2023,specific_business,261.0,52838319.0
+Suphan Buri,2018,large_business,83.0,320457533.0
+Suphan Buri,2018,medium_business,1250.0,302942624.0
+Suphan Buri,2018,residential,236404.0,530410567.0
+Suphan Buri,2018,small_business,22868.0,196313842.0
+Suphan Buri,2018,specific_business,105.0,15743103.0
+Suphan Buri,2019,large_business,85.0,341749561.0
+Suphan Buri,2019,medium_business,1298.0,307814486.0
+Suphan Buri,2019,residential,238867.0,587001135.0
+Suphan Buri,2019,small_business,23495.0,209333402.0
+Suphan Buri,2019,specific_business,102.0,15834049.0
+Suphan Buri,2020,large_business,82.0,324765078.62
+Suphan Buri,2020,medium_business,1328.0,305243549.52
+Suphan Buri,2020,residential,243330.0,625080960.41
+Suphan Buri,2020,small_business,24194.0,211866299.57999998
+Suphan Buri,2020,specific_business,109.0,13395889.98
+Suphan Buri,2021,large_business,81.0,327863101.55
+Suphan Buri,2021,medium_business,1389.0,312504021.6700001
+Suphan Buri,2021,residential,246865.0,637107598.4
+Suphan Buri,2021,small_business,26075.0,215203328.79000002
+Suphan Buri,2021,specific_business,95.0,11803242.649999999
+Suphan Buri,2022,large_business,84.0,350753842.0
+Suphan Buri,2022,medium_business,1431.0,332568101.0
+Suphan Buri,2022,residential,249880.0,617742456.0
+Suphan Buri,2022,small_business,26861.0,219774857.0
+Suphan Buri,2022,specific_business,96.0,13430996.0
+Suphan Buri,2023,large_business,89.0,369552483.0
+Suphan Buri,2023,medium_business,1523.0,345507926.0
+Suphan Buri,2023,residential,252749.0,667111901.0
+Suphan Buri,2023,small_business,27647.0,226344833.0
+Suphan Buri,2023,specific_business,111.0,15135477.0
+Nakhon Pathom,2018,large_business,307.0,33908550.0
+Nakhon Pathom,2018,medium_business,3096.0,71652196.0
+Nakhon Pathom,2018,residential,274508.0,227963795.0
+Nakhon Pathom,2018,small_business,38026.0,79084290.0
+Nakhon Pathom,2018,specific_business,352.0,6532166.0
+Nakhon Pathom,2019,large_business,319.0,2299526022.0
+Nakhon Pathom,2019,medium_business,3223.0,1021142431.0
+Nakhon Pathom,2019,residential,281680.0,924519292.0
+Nakhon Pathom,2019,small_business,38493.0,419516229.0
+Nakhon Pathom,2019,specific_business,391.0,81933774.0
+Nakhon Pathom,2020,large_business,457.0,3056570836.1099997
+Nakhon Pathom,2020,medium_business,4230.0,1268436487.26
+Nakhon Pathom,2020,residential,347789.0,1175980969.86
+Nakhon Pathom,2020,small_business,46236.0,533826598.65000004
+Nakhon Pathom,2020,specific_business,466.0,85528670.00999999
+Nakhon Pathom,2021,large_business,464.0,3137876702.4500003
+Nakhon Pathom,2021,medium_business,4249.0,1228248935.85
+Nakhon Pathom,2021,residential,355252.0,1210092902.12
+Nakhon Pathom,2021,small_business,46596.0,530484238.81999993
+Nakhon Pathom,2021,specific_business,424.0,70553138.22
+Nakhon Pathom,2022,large_business,340.0,2286031579.0
+Nakhon Pathom,2022,medium_business,3435.0,995029689.0
+Nakhon Pathom,2022,residential,301944.0,1023370860.0
+Nakhon Pathom,2022,small_business,40499.0,452301570.0
+Nakhon Pathom,2022,specific_business,383.0,68430033.0
+Nakhon Pathom,2023,large_business,354.0,2267479157.0
+Nakhon Pathom,2023,medium_business,3634.0,1002979775.0
+Nakhon Pathom,2023,residential,309750.0,1079930206.0
+Nakhon Pathom,2023,small_business,41303.0,444196332.0
+Nakhon Pathom,2023,specific_business,417.0,84765570.0
+Samut Sakhon,2018,large_business,717.0,5115710395.0
+Samut Sakhon,2018,medium_business,4862.0,1897439450.0
+Samut Sakhon,2018,residential,210800.0,664379333.0
+Samut Sakhon,2018,small_business,32811.0,490658535.0
+Samut Sakhon,2018,specific_business,346.0,62734466.0
+Samut Sakhon,2019,large_business,732.0,5101438028.0
+Samut Sakhon,2019,medium_business,5034.0,1904358160.0
+Samut Sakhon,2019,residential,215556.0,723751620.0
+Samut Sakhon,2019,small_business,33477.0,504752525.0
+Samut Sakhon,2019,specific_business,369.0,66137499.0
+Samut Sakhon,2020,large_business,628.0,4112601184.1899996
+Samut Sakhon,2020,medium_business,4176.0,1549875919.53
+Samut Sakhon,2020,residential,163717.0,601621559.99
+Samut Sakhon,2020,small_business,27432.0,412423126.38
+Samut Sakhon,2020,specific_business,279.0,48095079.940000005
+Samut Sakhon,2021,large_business,636.0,4238167289.12
+Samut Sakhon,2021,medium_business,4200.0,1585164968.2700002
+Samut Sakhon,2021,residential,168112.0,623246174.83
+Samut Sakhon,2021,small_business,28123.0,419217251.96
+Samut Sakhon,2021,specific_business,272.0,46549108.65
+Samut Sakhon,2022,large_business,772.0,5119412678.0
+Samut Sakhon,2022,medium_business,5286.0,1922093805.0
+Samut Sakhon,2022,residential,232649.0,814963912.0
+Samut Sakhon,2022,small_business,36180.0,541926424.0
+Samut Sakhon,2022,specific_business,373.0,66126559.0
+Samut Sakhon,2023,large_business,778.0,4735580897.0
+Samut Sakhon,2023,medium_business,5600.0,1901616761.0
+Samut Sakhon,2023,residential,238827.0,855777075.0
+Samut Sakhon,2023,small_business,36787.0,543145714.0
+Samut Sakhon,2023,specific_business,404.0,70861666.0
+Samut Songkhram,2018,large_business,28.0,120486147.0
+Samut Songkhram,2018,medium_business,350.0,91284109.0
+Samut Songkhram,2018,residential,59367.0,145968982.0
+Samut Songkhram,2018,small_business,6742.0,56724755.0
+Samut Songkhram,2018,specific_business,57.0,7762724.0
+Samut Songkhram,2019,large_business,29.0,126923701.0
+Samut Songkhram,2019,medium_business,386.0,98647337.0
+Samut Songkhram,2019,residential,60538.0,155885991.0
+Samut Songkhram,2019,small_business,6725.0,58283830.0
+Samut Songkhram,2019,specific_business,59.0,8855619.0
+Samut Songkhram,2020,large_business,33.0,125638201.6
+Samut Songkhram,2020,medium_business,395.0,99611340.58000001
+Samut Songkhram,2020,residential,62100.0,165852195.35
+Samut Songkhram,2020,small_business,6786.0,56035954.39
+Samut Songkhram,2020,specific_business,64.0,8286926.56
+Samut Songkhram,2021,large_business,32.0,136445528.11
+Samut Songkhram,2021,medium_business,389.0,97198437.76999998
+Samut Songkhram,2021,residential,63771.0,172119580.23999998
+Samut Songkhram,2021,small_business,6891.0,55150953.20999999
+Samut Songkhram,2021,specific_business,52.0,6330054.12
+Samut Songkhram,2022,large_business,32.0,152056519.0
+Samut Songkhram,2022,medium_business,401.0,97609304.0
+Samut Songkhram,2022,residential,64739.0,174225478.0
+Samut Songkhram,2022,small_business,6808.0,56531157.0
+Samut Songkhram,2022,specific_business,61.0,9071493.0
+Samut Songkhram,2023,large_business,34.0,170397036.0
+Samut Songkhram,2023,medium_business,414.0,96149323.0
+Samut Songkhram,2023,residential,66023.0,182533716.0
+Samut Songkhram,2023,small_business,6925.0,58476769.0
+Samut Songkhram,2023,specific_business,67.0,10545421.0
+Phetchaburi,2018,large_business,75.0,715204049.0
+Phetchaburi,2018,medium_business,968.0,235014753.0
+Phetchaburi,2018,residential,184793.0,365164846.0
+Phetchaburi,2018,small_business,15457.0,118804999.0
+Phetchaburi,2018,specific_business,172.0,70826594.0
+Phetchaburi,2019,large_business,78.0,651141113.0
+Phetchaburi,2019,medium_business,979.0,240024273.0
+Phetchaburi,2019,residential,188826.0,392138982.0
+Phetchaburi,2019,small_business,15879.0,123791731.0
+Phetchaburi,2019,specific_business,231.0,74202220.0
+Phetchaburi,2020,large_business,84.0,604745909.82
+Phetchaburi,2020,medium_business,998.0,228643875.66999996
+Phetchaburi,2020,residential,194259.0,415935175.51
+Phetchaburi,2020,small_business,16180.0,122750202.03
+Phetchaburi,2020,specific_business,231.0,59104774.81
+Phetchaburi,2021,large_business,85.0,648730237.32
+Phetchaburi,2021,medium_business,987.0,222387711.3
+Phetchaburi,2021,residential,198719.0,426593561.61
+Phetchaburi,2021,small_business,16824.0,123636883.55000001
+Phetchaburi,2021,specific_business,204.0,52358069.15
+Phetchaburi,2022,large_business,82.0,650773085.0
+Phetchaburi,2022,medium_business,1013.0,237099507.0
+Phetchaburi,2022,residential,202317.0,432422450.0
+Phetchaburi,2022,small_business,17103.0,135424458.0
+Phetchaburi,2022,specific_business,234.0,69478566.0
+Phetchaburi,2023,large_business,85.0,561012267.0
+Phetchaburi,2023,medium_business,1082.0,245386644.0
+Phetchaburi,2023,residential,206009.0,459087973.0
+Phetchaburi,2023,small_business,17758.0,142924710.0
+Phetchaburi,2023,specific_business,245.0,77971154.0
+Prachuap Khiri Khan,2018,large_business,59.0,647092732.0
+Prachuap Khiri Khan,2018,medium_business,1129.0,285435867.0
+Prachuap Khiri Khan,2018,residential,201475.0,468844465.0
+Prachuap Khiri Khan,2018,small_business,17441.0,157704785.0
+Prachuap Khiri Khan,2018,specific_business,433.0,146411594.0
+Prachuap Khiri Khan,2019,large_business,67.0,594588473.0
+Prachuap Khiri Khan,2019,medium_business,1118.0,292279678.0
+Prachuap Khiri Khan,2019,residential,206429.0,496897823.0
+Prachuap Khiri Khan,2019,small_business,17891.0,163452997.0
+Prachuap Khiri Khan,2019,specific_business,502.0,150976895.0
+Prachuap Khiri Khan,2020,large_business,64.0,492665560.69000006
+Prachuap Khiri Khan,2020,medium_business,1133.0,271382177.0
+Prachuap Khiri Khan,2020,residential,212479.0,519985479.49
+Prachuap Khiri Khan,2020,small_business,18364.0,161869635.66
+Prachuap Khiri Khan,2020,specific_business,478.0,120427453.17999999
+Prachuap Khiri Khan,2021,large_business,68.0,550721738.19
+Prachuap Khiri Khan,2021,medium_business,1141.0,266658148.83000004
+Prachuap Khiri Khan,2021,residential,217273.0,523895732.40999997
+Prachuap Khiri Khan,2021,small_business,19127.0,160981350.77999997
+Prachuap Khiri Khan,2021,specific_business,392.0,109109231.75
+Prachuap Khiri Khan,2022,large_business,64.0,542370139.0
+Prachuap Khiri Khan,2022,medium_business,1135.0,271174382.0
+Prachuap Khiri Khan,2022,residential,220057.0,530633550.0
+Prachuap Khiri Khan,2022,small_business,19488.0,171264195.0
+Prachuap Khiri Khan,2022,specific_business,444.0,134564042.0
+Prachuap Khiri Khan,2023,large_business,67.0,480722627.0
+Prachuap Khiri Khan,2023,medium_business,1245.0,279932301.0
+Prachuap Khiri Khan,2023,residential,223577.0,569404908.0
+Prachuap Khiri Khan,2023,small_business,19865.0,181314459.0
+Prachuap Khiri Khan,2023,specific_business,476.0,148486045.0
+Nakhon Si Thammarat,2018,large_business,77.0,296076220.0
+Nakhon Si Thammarat,2018,medium_business,1356.0,335247064.0
+Nakhon Si Thammarat,2018,residential,461443.0,800322830.0
+Nakhon Si Thammarat,2018,small_business,32589.0,255455143.0
+Nakhon Si Thammarat,2018,specific_business,132.0,27178915.0
+Nakhon Si Thammarat,2019,large_business,79.0,300705574.0
+Nakhon Si Thammarat,2019,medium_business,1413.0,338517188.0
+Nakhon Si Thammarat,2019,residential,469227.0,836919465.0
+Nakhon Si Thammarat,2019,small_business,33266.0,260891724.0
+Nakhon Si Thammarat,2019,specific_business,147.0,30642675.0
+Nakhon Si Thammarat,2020,large_business,87.0,297147946.66
+Nakhon Si Thammarat,2020,medium_business,1416.0,330608992.00000006
+Nakhon Si Thammarat,2020,residential,481962.0,887128188.94
+Nakhon Si Thammarat,2020,small_business,33790.0,262784798.21
+Nakhon Si Thammarat,2020,specific_business,150.0,28768011.790000003
+Nakhon Si Thammarat,2021,large_business,87.0,296778399.91999996
+Nakhon Si Thammarat,2021,medium_business,1435.0,328254292.2
+Nakhon Si Thammarat,2021,residential,495683.0,937797496.82
+Nakhon Si Thammarat,2021,small_business,34654.0,268880427.91
+Nakhon Si Thammarat,2021,specific_business,140.0,24169859.82
+Nakhon Si Thammarat,2022,large_business,90.0,305149923.0
+Nakhon Si Thammarat,2022,medium_business,1429.0,331620013.0
+Nakhon Si Thammarat,2022,residential,507185.0,931697974.0
+Nakhon Si Thammarat,2022,small_business,35196.0,280310341.0
+Nakhon Si Thammarat,2022,specific_business,163.0,29815734.0
+Nakhon Si Thammarat,2023,large_business,88.0,311106237.0
+Nakhon Si Thammarat,2023,medium_business,1516.0,349755457.0
+Nakhon Si Thammarat,2023,residential,513025.0,962065748.0
+Nakhon Si Thammarat,2023,small_business,36564.0,291289985.0
+Nakhon Si Thammarat,2023,specific_business,180.0,32846708.0
+Krabi,2018,large_business,28.0,71395161.0
+Krabi,2018,medium_business,670.0,160453635.0
+Krabi,2018,residential,140677.0,329130994.0
+Krabi,2018,small_business,9899.0,126054022.0
+Krabi,2018,specific_business,400.0,173672324.0
+Krabi,2019,large_business,26.0,67216140.0
+Krabi,2019,medium_business,699.0,171910534.0
+Krabi,2019,residential,143484.0,341694993.0
+Krabi,2019,small_business,10116.0,129053501.0
+Krabi,2019,specific_business,414.0,179035547.0
+Krabi,2020,large_business,36.0,74511820.65
+Krabi,2020,medium_business,704.0,156701341.64000002
+Krabi,2020,residential,146777.0,347501987.46000004
+Krabi,2020,small_business,10134.0,116204937.88
+Krabi,2020,specific_business,409.0,105190831.19000001
+Krabi,2021,large_business,32.0,78011767.97999999
+Krabi,2021,medium_business,660.0,149544016.64000002
+Krabi,2021,residential,149898.0,344117541.65
+Krabi,2021,small_business,10505.0,108385364.44
+Krabi,2021,specific_business,316.0,72991761.60000001
+Krabi,2022,large_business,36.0,82114320.0
+Krabi,2022,medium_business,696.0,155848881.0
+Krabi,2022,residential,152183.0,346833979.0
+Krabi,2022,small_business,10667.0,119605645.0
+Krabi,2022,specific_business,372.0,123078091.0
+Krabi,2023,large_business,37.0,78423092.0
+Krabi,2023,medium_business,761.0,168139561.0
+Krabi,2023,residential,154591.0,363957557.0
+Krabi,2023,small_business,10840.0,129821570.0
+Krabi,2023,specific_business,406.0,164601159.0
+Phang Nga,2018,large_business,21.0,55900611.0
+Phang Nga,2018,medium_business,543.0,179299802.0
+Phang Nga,2018,residential,83601.0,181707828.0
+Phang Nga,2018,small_business,8918.0,77914109.0
+Phang Nga,2018,specific_business,175.0,131130714.0
+Phang Nga,2019,large_business,24.0,61123653.0
+Phang Nga,2019,medium_business,552.0,176583068.0
+Phang Nga,2019,residential,84632.0,187528116.0
+Phang Nga,2019,small_business,9028.0,80319811.0
+Phang Nga,2019,specific_business,174.0,134207487.0
+Phang Nga,2020,large_business,24.0,54000770.260000005
+Phang Nga,2020,medium_business,553.0,163457624.41
+Phang Nga,2020,residential,86462.0,195461315.85
+Phang Nga,2020,small_business,9110.0,76974353.06000002
+Phang Nga,2020,specific_business,171.0,75142994.91
+Phang Nga,2021,large_business,26.0,54472467.0
+Phang Nga,2021,medium_business,550.0,165306993.12
+Phang Nga,2021,residential,88291.0,194977173.23
+Phang Nga,2021,small_business,9103.0,74894506.96000001
+Phang Nga,2021,specific_business,143.0,54578817.419999994
+Phang Nga,2022,large_business,29.0,58238413.0
+Phang Nga,2022,medium_business,547.0,164674998.0
+Phang Nga,2022,residential,89588.0,192842473.0
+Phang Nga,2022,small_business,9037.0,76960912.0
+Phang Nga,2022,specific_business,157.0,101510300.0
+Phang Nga,2023,large_business,27.0,57115861.0
+Phang Nga,2023,medium_business,577.0,165743621.0
+Phang Nga,2023,residential,90900.0,199574097.0
+Phang Nga,2023,small_business,9289.0,81086347.0
+Phang Nga,2023,specific_business,173.0,136167788.0
+Phuket,2018,large_business,65.0,396628197.0
+Phuket,2018,medium_business,1455.0,391884315.0
+Phuket,2018,residential,172354.0,741451756.0
+Phuket,2018,small_business,28666.0,399719030.0
+Phuket,2018,specific_business,1045.0,869483792.0
+Phuket,2019,large_business,67.0,423916471.0
+Phuket,2019,medium_business,1532.0,417993208.0
+Phuket,2019,residential,178408.0,788945059.0
+Phuket,2019,small_business,28814.0,406033169.0
+Phuket,2019,specific_business,1085.0,889527405.0
+Phuket,2020,large_business,71.0,328420363.77
+Phuket,2020,medium_business,1518.0,327855175.76
+Phuket,2020,residential,184302.0,731223200.14
+Phuket,2020,small_business,29137.0,326258344.54999995
+Phuket,2020,specific_business,1078.0,451088555.34
+Phuket,2021,large_business,70.0,292298774.76
+Phuket,2021,medium_business,1280.0,287760634.14
+Phuket,2021,residential,188082.0,664757973.32
+Phuket,2021,small_business,29513.0,280335951.83000004
+Phuket,2021,specific_business,803.0,352786410.52
+Phuket,2022,large_business,71.0,320567495.0
+Phuket,2022,medium_business,1400.0,333998371.0
+Phuket,2022,residential,188991.0,703350921.0
+Phuket,2022,small_business,28720.0,324610761.0
+Phuket,2022,specific_business,945.0,632428715.0
+Phuket,2023,large_business,71.0,361579089.0
+Phuket,2023,medium_business,1578.0,409618814.0
+Phuket,2023,residential,194358.0,810870233.0
+Phuket,2023,small_business,28905.0,395436777.0
+Phuket,2023,specific_business,1141.0,872431451.0
+Surat Thani,2018,large_business,147.0,857387973.0
+Surat Thani,2018,medium_business,1857.0,548894991.0
+Surat Thani,2018,residential,379507.0,854293779.0
+Surat Thani,2018,small_business,33541.0,346182688.0
+Surat Thani,2018,specific_business,746.0,324525017.0
+Surat Thani,2019,large_business,161.0,911360918.0
+Surat Thani,2019,medium_business,1905.0,533538308.0
+Surat Thani,2019,residential,384860.0,887937804.0
+Surat Thani,2019,small_business,34154.0,364409943.0
+Surat Thani,2019,specific_business,779.0,326071155.0
+Surat Thani,2020,large_business,171.0,911045899.09
+Surat Thani,2020,medium_business,1931.0,507550444.21000004
+Surat Thani,2020,residential,393750.0,911680410.6599998
+Surat Thani,2020,small_business,35035.0,345207404.57
+Surat Thani,2020,specific_business,735.0,190208843.91
+Surat Thani,2021,large_business,166.0,965945841.0500001
+Surat Thani,2021,medium_business,1857.0,492684995.5700001
+Surat Thani,2021,residential,404076.0,912882951.3800001
+Surat Thani,2021,small_business,36599.0,332202286.31
+Surat Thani,2021,specific_business,531.0,132562147.12
+Surat Thani,2022,large_business,169.0,958955697.0
+Surat Thani,2022,medium_business,1947.0,512402438.0
+Surat Thani,2022,residential,412827.0,925457623.0
+Surat Thani,2022,small_business,37880.0,361352076.0
+Surat Thani,2022,specific_business,668.0,231604444.0
+Surat Thani,2023,large_business,175.0,1063214543.0
+Surat Thani,2023,medium_business,2114.0,566221528.0
+Surat Thani,2023,residential,416724.0,1002150583.0
+Surat Thani,2023,small_business,40493.0,399379467.0
+Surat Thani,2023,specific_business,783.0,313316404.0
+Ranong,2018,large_business,29.0,116198797.0
+Ranong,2018,medium_business,323.0,95391290.0
+Ranong,2018,residential,59339.0,105456104.0
+Ranong,2018,small_business,8479.0,67659205.0
+Ranong,2018,specific_business,29.0,5525766.0
+Ranong,2019,large_business,30.0,109985669.0
+Ranong,2019,medium_business,320.0,91670982.0
+Ranong,2019,residential,60090.0,108986021.0
+Ranong,2019,small_business,8187.0,69471157.0
+Ranong,2019,specific_business,31.0,5472748.0
+Ranong,2020,large_business,32.0,115403613.0
+Ranong,2020,medium_business,334.0,89521926.45
+Ranong,2020,residential,61116.0,118866693.31
+Ranong,2020,small_business,8167.0,69717559.74
+Ranong,2020,specific_business,28.0,4118248.2800000007
+Ranong,2021,large_business,32.0,102841476.0
+Ranong,2021,medium_business,324.0,87408923.70000002
+Ranong,2021,residential,61976.0,122277557.45
+Ranong,2021,small_business,8225.0,66122632.94
+Ranong,2021,specific_business,26.0,2846346.2300000004
+Ranong,2022,large_business,30.0,100281249.0
+Ranong,2022,medium_business,349.0,87105778.0
+Ranong,2022,residential,62645.0,122315606.0
+Ranong,2022,small_business,8208.0,67820112.0
+Ranong,2022,specific_business,27.0,3454516.0
+Ranong,2023,large_business,31.0,91918842.0
+Ranong,2023,medium_business,356.0,89783521.0
+Ranong,2023,residential,63266.0,126483470.0
+Ranong,2023,small_business,8218.0,67537882.0
+Ranong,2023,specific_business,30.0,4045350.0
+Chumphon,2018,large_business,37.0,144693861.0
+Chumphon,2018,medium_business,816.0,225553834.0
+Chumphon,2018,residential,181104.0,324190919.0
+Chumphon,2018,small_business,15436.0,120640515.0
+Chumphon,2018,specific_business,70.0,11425422.0
+Chumphon,2019,large_business,39.0,144757523.0
+Chumphon,2019,medium_business,866.0,238729927.0
+Chumphon,2019,residential,184306.0,346593787.0
+Chumphon,2019,small_business,15795.0,127537551.0
+Chumphon,2019,specific_business,77.0,11841477.0
+Chumphon,2020,large_business,44.0,125732640.66000001
+Chumphon,2020,medium_business,899.0,234472950.57999998
+Chumphon,2020,residential,189203.0,374567997.41
+Chumphon,2020,small_business,16251.0,130755928.47999999
+Chumphon,2020,specific_business,71.0,9795198.99
+Chumphon,2021,large_business,48.0,135539394.06
+Chumphon,2021,medium_business,940.0,239103407.74999997
+Chumphon,2021,residential,192921.0,396005329.38
+Chumphon,2021,small_business,17548.0,133573651.87000002
+Chumphon,2021,specific_business,65.0,8626663.78
+Chumphon,2022,large_business,46.0,148367305.0
+Chumphon,2022,medium_business,955.0,241303961.0
+Chumphon,2022,residential,196009.0,394347632.0
+Chumphon,2022,small_business,18651.0,138838081.0
+Chumphon,2022,specific_business,76.0,10580440.0
+Chumphon,2023,large_business,52.0,168586664.0
+Chumphon,2023,medium_business,1088.0,258751311.0
+Chumphon,2023,residential,198504.0,433317915.0
+Chumphon,2023,small_business,20403.0,148496789.0
+Chumphon,2023,specific_business,86.0,12056647.0
+Songkhla,2018,large_business,185.0,1523229515.0
+Songkhla,2018,medium_business,1926.0,537923651.0
+Songkhla,2018,residential,432006.0,910659606.0
+Songkhla,2018,small_business,46981.0,413950629.0
+Songkhla,2018,specific_business,407.0,133020853.0
+Songkhla,2019,large_business,190.0,1474150349.0
+Songkhla,2019,medium_business,1945.0,527115718.0
+Songkhla,2019,residential,440064.0,944533228.0
+Songkhla,2019,small_business,47082.0,416620987.0
+Songkhla,2019,specific_business,433.0,131015030.0
+Songkhla,2020,large_business,197.0,1483906497.0599997
+Songkhla,2020,medium_business,1970.0,500951599.59000003
+Songkhla,2020,residential,449698.0,987807706.9300001
+Songkhla,2020,small_business,46725.0,398932836.7
+Songkhla,2020,specific_business,396.0,80920153.34000002
+Songkhla,2021,large_business,205.0,1514656627.0300002
+Songkhla,2021,medium_business,1926.0,490142273.32000005
+Songkhla,2021,residential,460661.0,1026588334.0100002
+Songkhla,2021,small_business,46845.0,392384942.40999997
+Songkhla,2021,specific_business,329.0,60908510.57
+Songkhla,2022,large_business,197.0,1468105746.0
+Songkhla,2022,medium_business,1951.0,509141176.0
+Songkhla,2022,residential,469404.0,1017343202.0
+Songkhla,2022,small_business,46230.0,407930352.0
+Songkhla,2022,specific_business,357.0,85679378.0
+Songkhla,2023,large_business,201.0,1433050062.0
+Songkhla,2023,medium_business,2041.0,523990495.0
+Songkhla,2023,residential,475229.0,1041037410.0
+Songkhla,2023,small_business,45972.0,417810746.0
+Songkhla,2023,specific_business,414.0,115495586.0
+Satun,2018,large_business,17.0,55330953.0
+Satun,2018,medium_business,375.0,92638868.0
+Satun,2018,residential,88231.0,138173990.0
+Satun,2018,small_business,8093.0,54879435.0
+Satun,2018,specific_business,13.0,1461218.0
+Satun,2019,large_business,17.0,55332686.0
+Satun,2019,medium_business,371.0,91332992.0
+Satun,2019,residential,89451.0,141992411.0
+Satun,2019,small_business,8168.0,55587323.0
+Satun,2019,specific_business,17.0,1798002.0
+Satun,2020,large_business,17.0,54603713.0
+Satun,2020,medium_business,361.0,86957088.13
+Satun,2020,residential,91264.0,150194883.06
+Satun,2020,small_business,7946.0,54261388.11000001
+Satun,2020,specific_business,16.0,1505254.7299999997
+Satun,2021,large_business,16.0,52335791.5
+Satun,2021,medium_business,365.0,91601699.39
+Satun,2021,residential,92745.0,156905774.51999998
+Satun,2021,small_business,7860.0,53745678.91
+Satun,2021,specific_business,16.0,1250224.15
+Satun,2022,large_business,16.0,57392488.0
+Satun,2022,medium_business,372.0,92826852.0
+Satun,2022,residential,94472.0,155235098.0
+Satun,2022,small_business,7815.0,53957542.0
+Satun,2022,specific_business,18.0,1611803.0
+Satun,2023,large_business,16.0,57930917.0
+Satun,2023,medium_business,388.0,93350067.0
+Satun,2023,residential,95114.0,156422533.0
+Satun,2023,small_business,7712.0,54298599.0
+Satun,2023,specific_business,18.0,1872658.0
+Trang,2018,large_business,53.0,229087844.0
+Trang,2018,medium_business,623.0,158889222.0
+Trang,2018,residential,187218.0,353741314.0
+Trang,2018,small_business,15370.0,114385571.0
+Trang,2018,specific_business,57.0,15381003.0
+Trang,2019,large_business,52.0,228857430.0
+Trang,2019,medium_business,623.0,156341675.0
+Trang,2019,residential,188729.0,360610565.0
+Trang,2019,small_business,15730.0,117769400.0
+Trang,2019,specific_business,62.0,14219502.0
+Trang,2020,large_business,54.0,295196595.46
+Trang,2020,medium_business,625.0,152630831.4
+Trang,2020,residential,191833.0,379535974.5400001
+Trang,2020,small_business,15645.0,117474726.60000001
+Trang,2020,specific_business,58.0,10818821.18
+Trang,2021,large_business,54.0,319918559.92999995
+Trang,2021,medium_business,641.0,153730331.19
+Trang,2021,residential,195496.0,391718550.9
+Trang,2021,small_business,15710.0,117146234.66
+Trang,2021,specific_business,63.0,10066086.65
+Trang,2022,large_business,60.0,319727629.0
+Trang,2022,medium_business,671.0,162607310.0
+Trang,2022,residential,198101.0,384991157.0
+Trang,2022,small_business,15826.0,121398434.0
+Trang,2022,specific_business,64.0,12579361.0
+Trang,2023,large_business,64.0,343412938.0
+Trang,2023,medium_business,695.0,161250443.0
+Trang,2023,residential,199704.0,389459649.0
+Trang,2023,small_business,16176.0,125274637.0
+Trang,2023,specific_business,65.0,14271486.0
+Phatthalung,2018,large_business,10.0,55232024.0
+Phatthalung,2018,medium_business,387.0,79138741.0
+Phatthalung,2018,residential,164294.0,248169837.0
+Phatthalung,2018,small_business,15501.0,97838486.0
+Phatthalung,2018,specific_business,27.0,3298761.0
+Phatthalung,2019,large_business,10.0,49518776.0
+Phatthalung,2019,medium_business,402.0,75981329.0
+Phatthalung,2019,residential,167232.0,259968529.0
+Phatthalung,2019,small_business,15753.0,100802702.0
+Phatthalung,2019,specific_business,32.0,3983377.0
+Phatthalung,2020,large_business,11.0,48241132.6
+Phatthalung,2020,medium_business,397.0,75767400.50999999
+Phatthalung,2020,residential,168920.0,274222716.52
+Phatthalung,2020,small_business,15333.0,101689435.82
+Phatthalung,2020,specific_business,27.0,3531480.72
+Phatthalung,2021,large_business,14.0,46652513.07
+Phatthalung,2021,medium_business,406.0,76189090.97999999
+Phatthalung,2021,residential,172941.0,290864648.69
+Phatthalung,2021,small_business,15343.0,105272569.30000001
+Phatthalung,2021,specific_business,25.0,2923711.68
+Phatthalung,2022,large_business,11.0,48349218.0
+Phatthalung,2022,medium_business,431.0,79559414.0
+Phatthalung,2022,residential,175991.0,288344777.0
+Phatthalung,2022,small_business,15495.0,106912689.0
+Phatthalung,2022,specific_business,33.0,3980482.0
+Phatthalung,2023,large_business,13.0,49173024.0
+Phatthalung,2023,medium_business,456.0,83915198.0
+Phatthalung,2023,residential,177709.0,294830470.0
+Phatthalung,2023,small_business,15586.0,108387598.0
+Phatthalung,2023,specific_business,30.0,4348281.0
+Pattani,2018,large_business,30.0,109443821.0
+Pattani,2018,medium_business,389.0,85277917.0
+Pattani,2018,residential,163457.0,211244384.0
+Pattani,2018,small_business,11811.0,83054348.0
+Pattani,2018,specific_business,14.0,5072861.0
+Pattani,2019,large_business,27.0,100501810.0
+Pattani,2019,medium_business,395.0,86259451.0
+Pattani,2019,residential,166122.0,219793366.0
+Pattani,2019,small_business,11946.0,86164352.0
+Pattani,2019,specific_business,19.0,5169523.0
+Pattani,2020,large_business,29.0,94759163.2
+Pattani,2020,medium_business,403.0,86024204.99000001
+Pattani,2020,residential,170423.0,237184286.86
+Pattani,2020,small_business,12103.0,88394660.08000001
+Pattani,2020,specific_business,17.0,4411121.42
+Pattani,2021,large_business,28.0,92737144.67
+Pattani,2021,medium_business,407.0,87242865.85
+Pattani,2021,residential,174381.0,255916629.56
+Pattani,2021,small_business,12202.0,91782444.42
+Pattani,2021,specific_business,14.0,3481727.1999999997
+Pattani,2022,large_business,28.0,93069073.0
+Pattani,2022,medium_business,436.0,90378714.0
+Pattani,2022,residential,178236.0,257659110.0
+Pattani,2022,small_business,12214.0,94211206.0
+Pattani,2022,specific_business,20.0,4764888.0
+Pattani,2023,large_business,27.0,92548291.0
+Pattani,2023,medium_business,462.0,94474557.0
+Pattani,2023,residential,180588.0,262025878.0
+Pattani,2023,small_business,11730.0,94947812.0
+Pattani,2023,specific_business,20.0,5417756.0
+Yala,2018,large_business,14.0,42724280.0
+Yala,2018,medium_business,361.0,91791141.0
+Yala,2018,residential,136291.0,178328168.0
+Yala,2018,small_business,9650.0,79423160.0
+Yala,2018,specific_business,38.0,11005558.0
+Yala,2019,large_business,15.0,43186192.0
+Yala,2019,medium_business,373.0,91463070.0
+Yala,2019,residential,139182.0,185424406.0
+Yala,2019,small_business,9742.0,81515806.0
+Yala,2019,specific_business,41.0,11180692.0
+Yala,2020,large_business,16.0,44725532.22
+Yala,2020,medium_business,379.0,92703114.97000001
+Yala,2020,residential,142938.0,199831721.17
+Yala,2020,small_business,9818.0,79412281.78999999
+Yala,2020,specific_business,36.0,6617711.48
+Yala,2021,large_business,17.0,45705295.93
+Yala,2021,medium_business,384.0,91589761.9
+Yala,2021,residential,146690.0,212199449.52999997
+Yala,2021,small_business,9823.0,80259944.36
+Yala,2021,specific_business,35.0,4858607.970000001
+Yala,2022,large_business,17.0,44929914.0
+Yala,2022,medium_business,411.0,95465999.0
+Yala,2022,residential,149856.0,213582396.0
+Yala,2022,small_business,9782.0,84543942.0
+Yala,2022,specific_business,37.0,8760802.0
+Yala,2023,large_business,18.0,44900285.0
+Yala,2023,medium_business,436.0,97087133.0
+Yala,2023,residential,152456.0,219505514.0
+Yala,2023,small_business,9462.0,87795522.0
+Yala,2023,specific_business,42.0,11194540.0
+Narathiwat,2018,large_business,11.0,31045464.0
+Narathiwat,2018,medium_business,338.0,65783339.0
+Narathiwat,2018,residential,172418.0,225705382.0
+Narathiwat,2018,small_business,12744.0,78548979.0
+Narathiwat,2018,specific_business,21.0,8530898.0
+Narathiwat,2019,large_business,13.0,32984441.0
+Narathiwat,2019,medium_business,364.0,66887711.0
+Narathiwat,2019,residential,175135.0,231900055.0
+Narathiwat,2019,small_business,12936.0,79665364.0
+Narathiwat,2019,specific_business,22.0,8177927.0
+Narathiwat,2020,large_business,13.0,36704993.87
+Narathiwat,2020,medium_business,375.0,66300710.769999996
+Narathiwat,2020,residential,179706.0,246172427.98
+Narathiwat,2020,small_business,12794.0,79670293.32000001
+Narathiwat,2020,specific_business,22.0,3933153.4799999995
+Narathiwat,2021,large_business,14.0,36704156.0
+Narathiwat,2021,medium_business,379.0,67745975.08
+Narathiwat,2021,residential,184405.0,260749987.77999997
+Narathiwat,2021,small_business,12717.0,80692031.09000002
+Narathiwat,2021,specific_business,15.0,2415451.8400000003
+Narathiwat,2022,large_business,14.0,37956205.0
+Narathiwat,2022,medium_business,397.0,71109964.0
+Narathiwat,2022,residential,187664.0,261361581.0
+Narathiwat,2022,small_business,12528.0,86300087.0
+Narathiwat,2022,specific_business,18.0,4479576.0
+Narathiwat,2023,large_business,15.0,40302851.0
+Narathiwat,2023,medium_business,474.0,79631394.0
+Narathiwat,2023,residential,189209.0,265463800.0
+Narathiwat,2023,small_business,11973.0,86584571.0
+Narathiwat,2023,specific_business,21.0,7045202.0
