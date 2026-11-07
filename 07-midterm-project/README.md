@@ -788,29 +788,8 @@ Potential improvements include:
 
 ---
 
-## 20. Pre-Submission Checklist
 
-- [x] Define the prediction problem and target variable.
-- [x] Conduct data preparation and exploratory analysis.
-- [x] Develop and compare multiple regression models.
-- [x] Perform hyperparameter tuning.
-- [x] Evaluate the selected model.
-- [x] Create `train.py` for reproducible training.
-- [x] Generate `model.bin`.
-- [x] Create the Flask prediction API.
-- [x] Implement automated API tests.
-- [x] Confirm local API predictions.
-- [x] Create and test Docker deployment.
-- [ ] Verify exact source-data links and data availability.
-- [ ] Investigate the notebook-versus-script validation MAE difference.
-- [ ] Test a fresh Docker build with the latest model and dependencies.
-- [ ] Complete an end-to-end fresh-clone reproduction test.
-- [ ] Record the final Git commit hash for submission.
-- [ ] Complete peer review requirements.
-
----
-
-## 21. Project Repository
+## 20. Project Repository
 
 **GitHub Repository**
 
@@ -822,7 +801,7 @@ https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp/tree/main
 
 ---
 
-## 22. Conclusion
+## 21. Conclusion
 
 This project demonstrates an end-to-end machine learning workflow for predicting annual electricity consumption across five major sectors in Thailand.
 
@@ -833,3 +812,25 @@ The selected Tuned Random Forest achieved a validation RMSE of approximately **1
 The final model can be served through a Flask REST API and packaged using Docker.
 
 Separating the training workflow from the prediction service supports reproducibility and makes the project easier to maintain, test, and extend.
+
+## 22.Data Sources and Availability
+
+The dataset was obtained from the Ministry of Energy, Thailand — OPS MOEN Data Catalog, under the dataset titled Electricity Consumption (การใช้ไฟฟ้า).
+
+Official Dataset: https://gdcatalog.energy.go.th/dataset/dataset_41_07
+
+The dataset provides annual provincial electricity statistics sourced from the Provincial Electricity Authority (PEA) and Metropolitan Electricity Authority (MEA).
+
+For this project, two categories of data were used:
+
+Number of Electricity Users (จำนวนผู้ใช้ไฟฟ้ารายจังหวัดรายสาขา) — annual electricity-user counts by province and sector.
+
+Electricity Consumption (ปริมาณการใช้ไฟฟ้ารายจังหวัดรายสาขา) — annual electricity consumption by province and sector, measured in kWh.
+
+The analysis covers 2018–2023 (B.E. 2561–2566), using six annual Excel files for each data category, totaling 12 annual files. A separate province-name mapping file is used to standardize province names in English.
+
+The original datasets are provided in XLSX format, with data organized by province, electricity sector, and year.
+
+The dataset catalog identifies the data as publicly accessible and lists its license as Open Data Common.
+
+The original Excel files are combined, cleaned, transformed, and prepared for regression modeling. The resulting dataset contains 2,310 province–year–sector observations across the five selected sectors.
