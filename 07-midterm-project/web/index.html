@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thailand Electricity Prediction</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f6fb;
+      color: #172a43;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    header {
+      background: #17365d;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(23px, 4vw, 32px);
+    }
+
+    header p {
+      margin: 0;
+      color: #d6e6f7;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px #152f5010;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 21px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 18px 0 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #cdd7e5;
+      border-radius: 8px;
+      font: inherit;
+      background: white;
+      color: #172a43;
+    }
+
+    input:focus,
+    select:focus {
+      outline: 2px solid #8cb8ed;
+      border-color: #2468af;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: #1769b5;
+      color: white;
+      font: inherit;
+      font-weight: 600;
+      padding: 15px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #115392;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .muted {
+      color: #657489;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .error {
+      color: #b42318;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .result {
+      border-left: 5px solid #1a9b76;
+      background: #f0faf6;
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    .result small {
+      color: #527265;
+    }
+
+    .value {
+      font-size: clamp(25px, 5vw, 36px);
+      font-weight: 750;
+      color: #12654e;
+      overflow-wrap: anywhere;
+      margin: 12px 0;
+    }
+
+    .details {
+      margin-top: 20px;
+      border-top: 1px solid #e3e9f1;
+      padding-top: 12px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 9px 0;
+    }
+
+    .detail-row span {
+      color: #657489;
+    }
+
+    .detail-row strong {
+      text-align: right;
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px 20px 32px;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>⚡ Thailand Electricity Prediction</h1>
+    <p>
+      Annual Electricity Consumption Prediction
+      Using Machine Learning
+    </p>
+  </header>
+
+  <main>
+
+    <!-- Prediction Form -->
+    <section class="card">
+
+      <h2>Prediction Inputs</h2>
+
+      <p class="muted">
+        Select a province, choose an electricity sector,
+        and enter the number of electricity users to
+        estimate annual electricity consumption.
+      </p>
+
+      <form id="predictionForm">
+
+        <!-- Province Dropdown -->
+        <label for="province">Province</label>
+
+        <select id="province" required disabled>
+          <option value="">Loading provinces...</option>
+        </select>
+
+        <p class="muted">
+          Province names are loaded from the trained model.
+        </p>
+
+        <!-- Electricity Sector -->
+        <label for="sector">Electricity Sector</label>
+
+        <select id="sector" required>
+          <option value="residential">Residential</option>
+          <option value="small_business">Small Business</option>
+          <option value="medium_business">Medium Business</option>
+          <option value="large_business">Large Business</option>
+          <option value="specific_business">Specific Business</option>
+        </select>
+
+        <!-- Number of Users -->
+        <label for="users">Number of Electricity Users</label>
+
+        <input id="users" type="number" min="1" step="1" value="500000" required>
+
+        <!-- Prediction Button -->
+        <button type="submit" id="predictButton" disabled>
+          Predict Electricity Consumption
+        </button>
+
+      </form>
+
+      <p id="error" class="error hidden" role="alert"></p>
+
+    </section>
+
+
+    <!-- Prediction Result -->
+    <section class="card hidden" id="resultCard" aria-live="polite">
+
+      <h2>Prediction Result</h2>
+
+      <div class="result">
+
+        <small>
+          Estimated Annual Electricity Consumption
+        </small>
+
+        <div id="predictionValue" class="value">
+          —
+        </div>
+
+        <strong>kWh / year</strong>
+
+      </div>
+
+      <div class="details">
+
+        <div class="detail-row">
+          <span>Province</span>
+          <strong id="resultProvince">—</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Electricity Sector</span>
+          <strong id="resultSector">—</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Number of Users</span>
+          <strong id="resultUsers">—</strong>
+        </div>
+
+      </div>
+
+      <p class="muted">
+        This is a machine learning estimate based on
+        historical electricity consumption data.
+        It is not an official electricity demand forecast.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    Thailand Electricity Consumption Prediction
+    <p>
+      Random Forest Regression · Flask API · Render Cloud
+    </p>
+  </footer>
+
+
+  <script>
+
+    // HTML elements
+    const form = document.getElementById("predictionForm");
+    const provinceSelect = document.getElementById("province");
+    const sectorSelect = document.getElementById("sector");
+    const usersInput = document.getElementById("users");
+    const button = document.getElementById("predictButton");
+    const errorBox = document.getElementById("error");
+    const resultCard = document.getElementById("resultCard");
+
+
+    // Display error message
+    function showError(message) {
+      errorBox.textContent = message;
+      errorBox.classList.remove("hidden");
+    }
+
+
+    // Load provinces from Flask API
+    async function loadProvinces() {
+
+      provinceSelect.disabled = true;
+      button.disabled = true;
+
+      try {
+
+        const response = await fetch("/options");
+
+        if (!response.ok) {
+          throw new Error("Cannot load province options.");
+        }
+
+        const data = await response.json();
+
+        if (
+          !Array.isArray(data.provinces) ||
+          data.provinces.length === 0
+        ) {
+          throw new Error("No provinces were returned by the API.");
+        }
+
+        // Clear previous dropdown options
+        provinceSelect.replaceChildren();
+
+        // Add each province
+        data.provinces.forEach(province => {
+
+          const option = document.createElement("option");
+
+          option.value = province;
+          option.textContent = province;
+
+          provinceSelect.appendChild(option);
+
+        });
+
+        // Default province
+        if (data.provinces.includes("Chiang Mai")) {
+          provinceSelect.value = "Chiang Mai";
+        }
+
+        // Enable form
+        provinceSelect.disabled = false;
+        button.disabled = false;
+
+        errorBox.classList.add("hidden");
+
+      } catch (error) {
+
+        provinceSelect.replaceChildren();
+
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = "Unable to load provinces";
+
+        provinceSelect.appendChild(option);
+
+        showError(
+          "Unable to load province data. " +
+          "Please check that the Flask API is running."
+        );
+
+        console.error(error);
+      }
+    }
+
+
+    // Submit prediction request
+    form.addEventListener("submit", async (event) => {
+
+      event.preventDefault();
+
+      const province = provinceSelect.value;
+      const sector = sectorSelect.value;
+      const users = Number(usersInput.value);
+
+      errorBox.classList.add("hidden");
+      resultCard.classList.add("hidden");
+
+      // Validate user inputs
+      if (
+        !province ||
+        !Number.isSafeInteger(users) ||
+        users <= 0
+      ) {
+
+        showError(
+          "Please select a province and enter a " +
+          "valid positive whole number of users."
+        );
+
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = "Predicting...";
+
+      try {
+
+        // Send data to Flask Prediction API
+        const response = await fetch("/predict", {
+
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json"
+          },
+
+          body: JSON.stringify({
+            province_en: province,
+            sector: sector,
+            number_of_users: users
+          })
+
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            data.error ||
+            data.message ||
+            "Prediction request failed."
+          );
+        }
+
+        // Read prediction
+        const prediction = Number(
+          data.predicted_electricity_kwh
+        );
+
+        if (!Number.isFinite(prediction)) {
+          throw new Error("Invalid prediction returned by API.");
+        }
+
+        // Display prediction value
+        document.getElementById("predictionValue")
+          .textContent = prediction.toLocaleString(
+            "en-US",
+            {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            }
+          );
+
+        // Display input details
+        document.getElementById("resultProvince")
+          .textContent = province;
+
+        document.getElementById("resultSector")
+          .textContent =
+          sectorSelect.options[
+            sectorSelect.selectedIndex
+          ].textContent;
+
+        document.getElementById("resultUsers")
+          .textContent = users.toLocaleString("en-US");
+
+        // Show result card
+        resultCard.classList.remove("hidden");
+
+        resultCard.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest"
+        });
+
+      } catch (error) {
+
+        showError(error.message);
+
+      } finally {
+
+        button.disabled = false;
+        button.textContent =
+          "Predict Electricity Consumption";
+
+      }
+    });
+
+
+    // Load provinces when the page opens
+    loadProvinces();
+
+  </script>
+
+</body>
+
+</html>

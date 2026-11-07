@@ -17,9 +17,11 @@ RUN pipenv sync --system
 # Copy application and trained model
 COPY predict.py model.bin ./
 
+# Copy Web Interface
+COPY web/ ./web/
+
 # Expose API port
 EXPOSE 5000
 
 # Run Flask API using Waitress
 CMD ["waitress-serve", "--host=0.0.0.0", "--port=5000", "predict:app"]
-
