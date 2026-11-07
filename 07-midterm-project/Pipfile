@@ -9,6 +9,7 @@ pandas = "*"
 numpy = "*"
 waitress = "*"
 scikit-learn = "==1.6.1"
+openpyxl = "*"
 
 [dev-packages]
 
