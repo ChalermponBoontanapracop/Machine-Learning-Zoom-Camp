@@ -11,6 +11,10 @@ The trained model is deployed as a **live Web Application** using Flask, Docker,
 
 **[Launch Thailand Electricity Prediction](https://thailand-electricity-api.onrender.com/)**
 
+### Web Application Preview
+
+![Thailand Electricity Prediction Web Application](images/Web-App.png)
+
 Users can interact with the trained Machine Learning model through a web interface without installing Python or running the model locally.
 
 The application allows users to:
