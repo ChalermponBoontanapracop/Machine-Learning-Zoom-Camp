@@ -1,166 +1,508 @@
+
 # Thailand Electricity Consumption Prediction Across Five Major Sectors
 
-A machine learning project that predicts **annual electricity consumption (kWh)** for a given province and electricity-user sector in Thailand. The project includes data preparation, exploratory analysis, regression model development, evaluation, and a Flask prediction API packaged with Docker.
+A machine learning project that predicts **annual electricity consumption (kWh)** for a given province and electricity-user sector in Thailand.
 
-## Project overview
+The project covers data preparation, exploratory data analysis (EDA), regression modeling, model evaluation, and deployment through a Flask REST API packaged with Docker.
 
-The analysis uses 12 annual electricity-consumer and electricity-consumption Excel files (six for users and six for kWh), plus a province-name mapping file, covering **2018–2023** and **77 provinces**. The original data includes 12 electricity sectors; the modeling scope focuses on five major sectors:
+The final selected algorithm is a **Tuned Random Forest Regressor**.
 
-- `residential`
-- `small_business`
-- `medium_business`
-- `large_business`
-- `specific_business`
+## 1. Project Overview
 
-Each modeling observation represents a **province × year × sector** combination. The target is the **total annual electricity consumption in kWh** for that combination, not consumption per household or per user.
+Electricity consumption varies across provinces and economic sectors due to differences in population, business activity, and the number of electricity users.
 
-### Inputs and prediction target
+This project investigates the relationship between electricity consumption and the number of electricity users across five major sectors in Thailand.
 
-| Field | Description |
-| --- | --- |
-| `province_en` | Province name in English |
-| `sector` | One of the five selected electricity sectors |
-| `number_of_users` | Number of electricity users in the province and sector |
-| `electricity_kwh` | Annual electricity consumption; prediction target |
+The objective is to develop a machine learning model capable of estimating annual electricity consumption using:
 
-Province and sector are one-hot encoded. The model also uses the number of users and sector-specific user interaction features. The saved encoder and feature order are reused during inference.
+- Province
+- Electricity-user sector
+- Number of electricity users
 
-## Key findings from the executed notebook
+The predictions may support exploratory electricity-demand analysis and comparisons across provinces and sectors. They should not be treated as official electricity-demand forecasts.
 
-The following results are taken from the **saved cell outputs of the Colab analysis notebook**, rather than estimated values. They describe the dataset and models used in that notebook run.
+### Selected Electricity Sectors
 
-### Sector coverage (2018–2023)
+The original dataset includes 12 electricity-user sectors. This project focuses on five major sectors:
 
-The five selected sectors account for **96.34% of recorded electricity consumption** across the 12 original sectors (approximately **1,104.25 billion kWh** of **1,146.17 billion kWh**). The excluded categories account for approximately **3.66%**. The selected modeling table contains **2,310 observations** (77 provinces × 6 years × 5 sectors).
+1. Residential
+2. Small Business
+3. Medium Business
+4. Large Business
+5. Specific Business
 
-| Selected sector | Share of all recorded sector consumption |
-| --- | ---: |
+These five sectors account for approximately **96.34% of recorded electricity consumption** across the 12 original sectors during 2018–2023.
+
+The prediction target is the **total annual electricity consumption in kWh** for a province and sector, rather than consumption per household or individual user.
+
+---
+
+## 2. Dataset Description
+
+### Data Coverage
+
+| Description | Details |
+|---|---|
+| Country | Thailand |
+| Period | 2018–2023 |
+| Geographic coverage | 77 provinces |
+| Original sectors | 12 |
+| Selected sectors | 5 |
+| Target variable | Annual electricity consumption (kWh) |
+| Main numerical feature | Number of electricity users |
+| Modeling observations | 2,310 |
+
+Each observation represents one combination of:
+
+**Province × Year × Electricity Sector**
+
+The original data consists of:
+
+- Six annual Excel files containing electricity-consumer counts
+- Six annual Excel files containing electricity consumption in kWh
+- One province-name mapping file
+
+The annual spreadsheets are combined into a structured dataset for machine learning.
+
+### Data Sources and Availability
+
+The project uses provincial electricity statistics for Thailand, prepared from the annual consumer-count and consumption spreadsheets used in the analysis.
+
+The original data files and province-name mapping are required to reproduce the dataset preparation and model training.
+
+The exact source URLs, publication details, and reuse permissions should be verified against the original downloaded files before final submission.
+
+### Selected Sectors and Electricity Consumption
+
+| Sector | Share of total recorded electricity consumption |
+|---|---:|
 | Large Business | 38.65% |
 | Residential | 27.31% |
 | Medium Business | 16.10% |
 | Small Business | 11.33% |
 | Specific Business | 2.95% |
-| **Selected five sectors** | **96.34%** |
+| **Total selected sectors** | **96.34%** |
 
-These percentages are measured against all **recorded** sectors over the full six-year period, not solely within the five selected sectors. Some province-level or historical measurements are incomplete; coverage should not be interpreted as a guarantee of complete electricity-demand accounting.
+The percentages are calculated against recorded electricity consumption across all 12 original sectors during 2018–2023.
 
-### Model comparison — 2022 validation
+The five selected sectors represent approximately **1,104.25 billion kWh** of **1,146.17 billion kWh** recorded across all sectors.
+
+Historical data may contain incomplete observations, and these totals should not be interpreted as complete national electricity-demand accounting.
+
+---
+
+## 3. Features and Target Variable
+
+The machine learning model uses the following input variables:
+
+| Variable | Type | Description |
+|---|---|---|
+| `province_en` | Categorical | Province name in English |
+| `sector` | Categorical | Electricity-user sector |
+| `number_of_users` | Numerical | Number of electricity users |
+| `electricity_kwh` | Numerical | Annual electricity consumption (target) |
+
+### Feature Engineering
+
+Categorical features are transformed using **One-Hot Encoding**.
+
+The model uses:
+
+- Encoded province features
+- Encoded sector features
+- Number of electricity users
+- Sector-specific user interaction features
+
+The interaction features help the model capture differences in electricity consumption associated with user counts across sectors.
+
+The saved encoder and feature order are reused during prediction to maintain consistency between training and inference.
+
+---
+
+## 4. Data Preparation and Exploratory Data Analysis
+
+The notebook documents the following preparation steps:
+
+1. Load annual Excel datasets.
+2. Standardize province names.
+3. Combine annual electricity-consumer and consumption data.
+4. Transform sector columns into structured observations.
+5. Select the five major electricity sectors.
+6. Investigate missing values and data consistency.
+7. Analyze electricity consumption distributions.
+8. Explore relationships between electricity users and consumption.
+9. Investigate historical anomalies.
+10. Prepare training, validation, and test datasets.
+
+### Historical Anomaly Detection
+
+The analysis screens potential historical anomalies using a **±50% year-over-year change threshold**.
+
+This threshold helps identify unusual changes in electricity consumption that require further investigation.
+
+An anomaly flag does not necessarily mean that the original observation is incorrect.
+
+### Historical Median Adjustment
+
+The modeling approach applies a historical median adjustment to selected anomalous training observations.
+
+During the saved analysis:
+
+- Potential anomalies identified: 25
+- Training observations adjusted: 25
+
+The adjustment is applied to training targets only.
+
+The original source data remains unchanged.
+
+This approach is a modeling assumption rather than a verified correction of errors in the original statistics.
+
+---
+
+## 5. Training, Validation, and Test Split
+
+The dataset is divided chronologically to evaluate how well the model performs on later observations.
+
+| Dataset | Years | Purpose |
+|---|---|---|
+| Training | 2018–2021 | Train models |
+| Validation | 2022 | Compare models and select hyperparameters |
+| Test | 2023 | Evaluate final model performance |
+
+The split avoids randomly mixing earlier and later annual observations.
+
+This is especially relevant when the intended application involves estimating electricity consumption for later periods.
+
+### Dataset Size
+
+| Dataset | Observations |
+|---|---:|
+| Training | 1,540 |
+| Validation | 385 |
+| Test | 385 |
+| **Total** | **2,310** |
+
+The 2023 test data is not used by `train.py` to fit or select the model.
+
+However, the original notebook results should be interpreted with the limitation that 2023 may have been examined during earlier project iterations.
+
+---
+
+## 6. Machine Learning Models
+
+The project compares three regression algorithms across four model configurations.
+
+### Models Evaluated
+
+1. Linear Regression
+2. Ridge Regression with regularization tuning
+3. Random Forest Regression (baseline)
+4. Random Forest Regression with hyperparameter tuning
+
+### Evaluation Metrics
+
+Three metrics are used:
+
+**Mean Absolute Error (MAE)**
+
+Measures the average absolute difference between predicted and actual electricity consumption.
+
+**Root Mean Squared Error (RMSE)**
+
+Measures prediction error while placing greater emphasis on larger errors.
+
+**R² Score**
+
+Measures how much variation in the target is explained by the model on the evaluated dataset.
+
+RMSE is used as the primary metric for model selection.
+
+---
+
+## 7. Model Comparison
+
+### Validation Results — 2022
+
+The following comparison results are from the saved outputs of the analysis notebook.
 
 | Model | MAE (million kWh) | RMSE (million kWh) | R² |
-| --- | ---: | ---: | ---: |
+|---|---:|---:|---:|
 | Linear Regression | 138.03 | 271.48 | 0.9467 |
 | Ridge Regression (tuned) | 137.86 | 271.47 | 0.9467 |
 | Random Forest (baseline) | 43.92 | 141.62 | 0.9855 |
 | **Random Forest (tuned)** | **38.42** | **113.16** | **0.9907** |
 
-The tuned Random Forest achieved the lowest **validation RMSE** in the comparison. The selected search result used `n_estimators=300`, `max_depth=40`, `min_samples_split=2`, `min_samples_leaf=1`, and `max_features="sqrt"`.
+The Tuned Random Forest achieved the lowest validation RMSE among the evaluated models.
 
-### Final evaluation — 2023
+### Selected Hyperparameters
 
-| Metric | Tuned Random Forest, 2023 test |
-| --- | ---: |
-| MAE | **53.67 million kWh** |
-| RMSE | **143.37 million kWh** |
-| R² | **0.9859** |
-
-Test error was higher than validation error, although the model retained a high R². The test set includes **385 province–sector observations**. The notebook's 2023 results should be considered with the limitation that this year may have been examined during earlier project iterations; it may not constitute a fully untouched holdout.
-
-### Model interpretation
-
-Permutation importance on the 2022 validation data highlighted `number_of_users`, `users_large_business`, `province_en_Bangkok`, and `sector_large_business` among the most influential **encoded features**. Because feature groups overlap or correlate, these scores describe the trained model's predictive dependence, **not causal effects** or unique contributions of the original variables.
-
-## Data preparation and modeling
-
-The notebook covers loading and integrating yearly spreadsheets, province-name mapping, data quality checks, wide-to-long transformation, sector selection, exploratory data analysis, and historical anomaly investigation. Potential historical anomalies are screened using an exploratory **±50% year-over-year change** threshold and handled with a **historical median adjustment applied only to training targets**. In the saved notebook run, **25 training observations were flagged and adjusted**. Flags are screening indicators, not confirmed errors; the original source files remain unchanged.
-
-Data is separated chronologically:
-
-| Partition | Years | Use |
-| --- | --- | --- |
-| Training | 2018–2021 | Fit models and preprocessing |
-| Validation | 2022 | Evaluate tuning choices and select a model |
-| Test | 2023 | Report final performance |
-
-The notebook evaluates four candidates:
-
-1. Linear Regression (baseline)
-2. Ridge Regression (tuned regularization)
-3. Random Forest Regression (baseline)
-4. Random Forest Regression (hyperparameter tuned)
-
-The models are assessed using **MAE, RMSE, and R²**. The model is selected primarily on validation RMSE. The project also examines predictions and errors by sector and province and investigates feature importance. The performance figures above are transcribed from the executed notebook outputs. A successful API response demonstrates serving functionality, not model accuracy.
-
-## Repository structure
-
-```text
-thailand-electricity-prediction/
-├── README.md
-├── notebook.ipynb          # Data preparation, analysis, training and evaluation
-├── predict.py              # Flask API
-├── model.bin               # Serialized fitted model, encoder and feature metadata
-├── Pipfile                 # Python dependencies
-├── Pipfile.lock            # Locked dependency versions
-├── Dockerfile              # Docker image definition
-└── .dockerignore           # Docker build exclusions
+```python
+{
+    "n_estimators": 300,
+    "max_depth": 40,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt"
+}
 ```
 
-The `notebook.ipynb` file can be added from the completed analysis notebook. `model.bin` must be produced by the training notebook and placed next to `predict.py`. Do not load untrusted pickle files.
+### Reproducible Training Script Results
 
-## Run locally with Pipenv
+The independently executed `train.py` produced the following 2022 validation results:
 
-Requirements: Python and Pipenv, with a version of scikit-learn compatible with the saved model. The saved model used in local testing was created with **scikit-learn 1.6.1**; use that version when loading the existing `model.bin`.
+| Metric | Result |
+|---|---:|
+| MAE | 38.15 million kWh |
+| RMSE | 113.16 million kWh |
+| R² | 0.9907 |
 
-Open a terminal in the project directory and install the locked dependencies:
+The training script reported:
+
+- Training observations: 1,540
+- Validation observations: 385
+- Historical median adjustments: 25
+
+The validation MAE differs slightly between the saved notebook output (38.42 million kWh) and the latest `train.py` execution (38.15 million kWh).
+
+Both results are retained here to distinguish the original notebook evaluation from the latest training-script execution. This difference should be investigated before treating both workflows as producing identical results.
+
+---
+
+## 8. Final Model Evaluation
+
+### Test Results — 2023
+
+The following results were obtained from the saved notebook evaluation of the Tuned Random Forest.
+
+| Metric | 2023 Test Result |
+|---|---:|
+| MAE | 53.67 million kWh |
+| RMSE | 143.37 million kWh |
+| R² | 0.9859 |
+
+The test RMSE is higher than the validation RMSE.
+
+Nevertheless, the model retains a high R² on the 2023 observations.
+
+These results are historical notebook outputs and are not a newly executed independent test of the latest `train.py` artifact.
+
+### Model Interpretation
+
+Permutation importance was examined using the validation dataset.
+
+Influential encoded features included:
+
+- `number_of_users`
+- `users_large_business`
+- `province_en_Bangkok`
+- `sector_large_business`
+
+These results suggest that electricity-user counts and sector-related features are important to the model's predictions.
+
+However, feature importance does not establish causation, particularly where encoded features and interaction variables are correlated.
+
+---
+
+## 9. Project Structure
+
+The project is stored in the `07-midterm-project` directory.
+
+```text
+07-midterm-project/
+├── raw data/                 # Original electricity datasets, when included
+├── notebook.ipynb            # EDA, modeling and evaluation
+├── train.py                  # Reproducible model training
+├── predict.py                # Flask prediction API
+├── test.py                   # API test script
+├── model.bin                 # Saved model and preprocessing artifacts
+├── Pipfile                   # Python dependencies
+├── Pipfile.lock              # Locked dependency versions
+├── Dockerfile                # Docker configuration
+├── .dockerignore             # Docker build exclusions
+├── .gitignore                # Git exclusions
+└── README.md                 # Project documentation
+```
+
+The notebook contains the exploratory analysis and model development.
+
+The `train.py` script provides a reproducible training workflow.
+
+The `predict.py` application loads `model.bin` and serves predictions through a Flask API.
+
+The `test.py` script checks the API endpoints and input validation.
+
+---
+
+## 10. Environment Setup
+
+### Requirements
+
+- Python 3.11
+- Pipenv
+- Docker Desktop (for container deployment)
+
+The project uses the following main Python libraries:
+
+- pandas
+- numpy
+- scikit-learn
+- openpyxl
+- Flask
+- Waitress
+
+The original saved deployment model was tested with scikit-learn 1.6.1. When loading a saved model, use compatible dependency versions from the project lockfile.
+
+### Install Pipenv
 
 ```powershell
 python -m pip install pipenv
+```
+
+### Install Project Dependencies
+
+Open PowerShell in the project directory.
+
+```powershell
 python -m pipenv sync
 ```
 
-If you are setting up dependencies from scratch instead of an existing lockfile:
+This command installs the dependencies specified in `Pipfile.lock`.
+
+The updated lockfile must include `openpyxl`, which is required for reading the original Excel datasets.
+
+If installing dependencies from scratch, the project requires the packages listed above. For reproducibility, the committed `Pipfile` and `Pipfile.lock` should be used instead of independently installing arbitrary versions.
+
+---
+
+## 11. Train the Model
+
+The `train.py` script reproduces the final selected model training workflow without requiring manual execution of the notebook.
+
+### Training Workflow
+
+1. Load the annual electricity datasets.
+2. Standardize and combine the data.
+3. Select the five major sectors.
+4. Apply historical median adjustment to training observations.
+5. Prepare the numerical and categorical features.
+6. Encode province and sector information.
+7. Train the selected Tuned Random Forest.
+8. Evaluate predictions on 2022 validation data.
+9. Save the fitted model and preprocessing metadata to `model.bin`.
+
+### Data Requirements
+
+The original Excel datasets and province-name mapping must be accessible to the training script.
+
+The training script should be run with its expected input filenames and directory structure. If local source files are unavailable, any configured download URLs must remain accessible.
+
+A complete fresh-clone reproduction requires verified data-source links or inclusion of the necessary source files where redistribution is permitted.
+
+### Run Training
+
+Open PowerShell in the project directory.
 
 ```powershell
-python -m pipenv install flask pandas numpy "scikit-learn==1.6.1" waitress
+python -m pipenv run python train.py
 ```
 
-Run the API locally:
+The script generates:
+
+```text
+model.bin
+```
+
+The artifact contains the fitted model and the metadata required by the prediction application.
+
+**Important:** Running `train.py` overwrites the existing `model.bin`. Back up the artifact before retraining if the original version must be preserved.
+
+### Latest Verified Training Execution
+
+The script successfully completed training with:
+
+```text
+Potential anomalies: 25
+Median-adjusted rows: 25
+Training observations: 1540
+Validation observations: 385
+Test observations (not used): 385
+
+2022 validation MAE: 38146902.46
+2022 validation RMSE: 113160100.36
+2022 validation R2: 0.9907
+
+Saved: model.bin
+```
+
+The test set from 2023 was not used to fit or select the model in this training run.
+
+---
+
+## 12. Run the Flask API Locally
+
+The prediction service is implemented in `predict.py`.
+
+The API loads the saved model and preprocessing artifacts from `model.bin`.
+
+### Start the Server
 
 ```powershell
 python -m pipenv run python predict.py
 ```
 
-By default the Flask development server listens at `http://127.0.0.1:5000`. For local use with Waitress:
+The Flask development server runs at:
+
+```text
+http://127.0.0.1:5000
+```
+
+The development server is intended for local testing.
+
+### Run with Waitress
+
+For a production-style local WSGI server:
 
 ```powershell
 python -m pipenv run waitress-serve --host=127.0.0.1 --port=5000 predict:app
 ```
 
-## Run with Docker
+---
 
-Requirements: Docker Desktop with a running Docker Engine. The `Dockerfile` installs the locked dependencies and starts the API with Waitress.
+## 13. API Endpoints
 
-Build the image:
-
-```powershell
-docker build -t thailand-electricity-api .
-```
-
-Run the container:
-
-```powershell
-docker run --rm -p 5000:5000 thailand-electricity-api
-```
-
-The API can then be reached from the host computer at `http://127.0.0.1:5000`. Stop the container with **Ctrl+C**.
-
-## API endpoints
+The API provides two endpoints.
 
 | Method | Endpoint | Description |
-| --- | --- | --- |
-| `GET` | `/ping` | Health check; returns `{"message":"PONG"}` |
-| `POST` | `/predict` | Predicts annual electricity consumption from a JSON input |
+|---|---|---|
+| GET | `/ping` | Health check |
+| POST | `/predict` | Predict annual electricity consumption |
 
-### Example prediction request
+### Health Check
+
+Request:
+
+```http
+GET /ping
+```
+
+Expected response:
+
+```json
+{
+  "message": "PONG"
+}
+```
+
+### Prediction Endpoint
+
+Request:
+
+```http
+POST /predict
+Content-Type: application/json
+```
+
+Example JSON body:
 
 ```json
 {
@@ -170,7 +512,7 @@ The API can then be reached from the host computer at `http://127.0.0.1:5000`. S
 }
 ```
 
-Example response from the tested saved model:
+Example response:
 
 ```json
 {
@@ -181,41 +523,313 @@ Example response from the tested saved model:
 }
 ```
 
-This is approximately **1.241 billion kWh per year**. It is one example prediction, not a forecast for an entire province across all sectors.
+This represents approximately **1.241 billion kWh per year** for the specified province, sector, and number of users.
 
-### Test in Windows PowerShell
+It is not a prediction of the province's total electricity consumption across all sectors.
 
-Leave the API running in one terminal. Open another terminal:
+---
+
+## 14. Test the Prediction API
+
+Start the Flask application in one terminal.
 
 ```powershell
-# Health check
-Invoke-RestMethod -Uri "http://127.0.0.1:5000/ping" -Method GET
-
-# Prediction request
-$inputData = @{
-    province_en = "Chiang Mai"
-    sector = "residential"
-    number_of_users = 500000
-} | ConvertTo-Json
-
-Invoke-RestMethod `
-    -Uri "http://127.0.0.1:5000/predict" `
-    -Method POST `
-    -ContentType "application/json" `
-    -Body $inputData
+python -m pipenv run python predict.py
 ```
 
-The prediction was checked successfully using the Flask test client, the local Windows server, and the Docker container, with matching output for this example request.
+Open another PowerShell terminal in the same project directory.
 
-## Limitations
+Run:
 
-- The project uses only **five selected sectors**, so its predictions do not represent total electricity use across all 12 original sectors.
-- Annual observations provide limited temporal detail; the model does not forecast monthly demand or account explicitly for temperature, weather, tariffs, and other external factors.
-- Predictions depend on the quality and representativeness of the provided `number_of_users` value and the historical data.
-- Historical anomaly flags are not proof of data-entry errors. Median adjustment is a modeling assumption and should be reviewed against source records.
-- For a completely independent test, no decisions should be made using 2023 results. If that year was consulted during earlier experimentation, state this limitation in the evaluation report.
-- The API currently runs locally or inside Docker; running a Docker container on a personal computer does **not** make the service publicly accessible on the internet.
+```powershell
+python -m pipenv run python test.py
+```
 
-## Next steps
+### Verified Test Results
 
-Add reproducible `train.py` and automated `test.py` scripts, document the underlying data sources with exact citations and licenses, and consider cloud deployment after checking API validation, model-version compatibility, and security settings.
+The API was tested after regenerating `model.bin` using `train.py`.
+
+```text
+PASS: /ping
+PASS: /predict
+Predicted annual electricity consumption: 1,240,984,762.18 kWh
+PASS: invalid input rejected
+
+All API tests passed.
+```
+
+The tests confirm that:
+
+- The Flask server responds to health checks.
+- The prediction endpoint accepts valid input.
+- The model returns a numerical prediction.
+- Invalid input is rejected.
+
+Successful API tests demonstrate serving functionality, but do not independently establish predictive accuracy.
+
+---
+
+## 15. Docker Deployment
+
+The project includes a Dockerfile to package the prediction service and its dependencies.
+
+Docker provides a consistent environment for running the application on other machines.
+
+### Requirements
+
+- Docker Desktop installed
+- Docker Engine running
+
+### Build Docker Image
+
+Run the following command from the project directory:
+
+```powershell
+docker build -t thailand-electricity-api .
+```
+
+### Run Docker Container
+
+```powershell
+docker run --rm -p 5000:5000 thailand-electricity-api
+```
+
+The prediction API will be accessible at:
+
+```text
+http://127.0.0.1:5000
+```
+
+The Docker configuration uses Waitress to serve the Flask application.
+
+### Test Docker Deployment
+
+With the Docker container running, open another terminal.
+
+```powershell
+python -m pipenv run python test.py
+```
+
+The same test script can be used to check API behavior through the Docker container.
+
+The earlier Docker deployment was tested successfully. A fresh Docker build using the latest `model.bin` and updated dependency lockfile remains part of the final reproducibility checklist.
+
+### Stop the Container
+
+Press:
+
+```text
+Ctrl+C
+```
+
+---
+
+## 16. Model Deployment Architecture
+
+```text
+Original Electricity Datasets
+             |
+             v
+    Data Preparation
+             |
+             v
+    Feature Engineering
+             |
+             v
+   Random Forest Training
+          train.py
+             |
+             v
+          model.bin
+             |
+             v
+      Flask Application
+         predict.py
+             |
+             v
+       REST API Endpoint
+          /predict
+             |
+             v
+     Electricity Prediction
+             |
+             v
+        JSON Response
+```
+
+The training and prediction workflows are separated so that the API can load the fitted model without retraining it for every request.
+
+---
+
+## 17. Reproducibility
+
+The project aims to support reproducibility through:
+
+- A documented analysis notebook
+- A separate training script
+- Saved dependency versions
+- A serialized model artifact
+- A prediction application
+- Automated API tests
+- Docker configuration
+- Setup and execution instructions
+
+### Reproduction Steps
+
+1. Clone the GitHub repository.
+2. Open `07-midterm-project`.
+3. Ensure the required source datasets are available.
+4. Install dependencies with Pipenv.
+5. Run `train.py` to generate `model.bin`.
+6. Start the prediction API.
+7. Run `test.py`.
+8. Build and run the Docker image.
+9. Test the containerized API.
+
+### Clone Repository
+
+```powershell
+git clone https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp.git
+
+cd Machine-Learning-Zoom-Camp\07-midterm-project
+```
+
+### Install Dependencies
+
+```powershell
+python -m pipenv sync
+```
+
+### Train Model
+
+```powershell
+python -m pipenv run python train.py
+```
+
+### Start API
+
+```powershell
+python -m pipenv run python predict.py
+```
+
+### Run Tests
+
+In a second terminal:
+
+```powershell
+python -m pipenv run python test.py
+```
+
+These commands describe the intended reproducible workflow. Complete end-to-end verification from a fresh clone is still required before final submission.
+
+---
+
+## 18. Limitations
+
+### Limited Time Coverage
+
+The dataset covers six annual observations per province and sector from 2018–2023.
+
+The limited historical period restricts the model's ability to capture long-term changes and different economic conditions.
+
+### Selected Electricity Sectors
+
+The model includes five major sectors rather than all 12 sectors.
+
+Its predictions should not be interpreted as total electricity demand across all sectors.
+
+### Limited External Features
+
+The current model does not explicitly include:
+
+- Temperature
+- Weather conditions
+- Electricity tariffs
+- Household income
+- Population changes
+- Economic growth indicators
+
+These variables may improve future predictions if suitable data becomes available.
+
+### Historical Anomalies
+
+Historical median adjustments rely on analytical assumptions.
+
+The identified anomalies have not necessarily been verified as errors against the original data sources.
+
+### Model Generalization
+
+Performance on historical observations does not guarantee equivalent accuracy for future years or substantially different electricity-user patterns.
+
+### Test Set Independence
+
+The 2023 test results are reported from the saved notebook. Because this period may have been examined during earlier development, the results should not be represented as a fully untouched independent test without further verification.
+
+### Local Deployment
+
+The Flask API currently runs locally or inside Docker.
+
+Running a Docker container on a personal computer does not automatically make the API publicly accessible over the internet.
+
+---
+
+## 19. Future Improvements
+
+Potential improvements include:
+
+1. Expand the dataset with additional annual observations.
+2. Integrate temperature, population, and economic indicators.
+3. Compare additional regression algorithms.
+4. Evaluate rolling or expanding-window cross-validation.
+5. Investigate alternative approaches to historical anomaly handling.
+6. Develop cloud deployment for remote API access.
+7. Build an optional web interface for interactive predictions.
+8. Improve prediction explainability and model monitoring.
+
+---
+
+## 20. Pre-Submission Checklist
+
+- [x] Define the prediction problem and target variable.
+- [x] Conduct data preparation and exploratory analysis.
+- [x] Develop and compare multiple regression models.
+- [x] Perform hyperparameter tuning.
+- [x] Evaluate the selected model.
+- [x] Create `train.py` for reproducible training.
+- [x] Generate `model.bin`.
+- [x] Create the Flask prediction API.
+- [x] Implement automated API tests.
+- [x] Confirm local API predictions.
+- [x] Create and test Docker deployment.
+- [ ] Verify exact source-data links and data availability.
+- [ ] Investigate the notebook-versus-script validation MAE difference.
+- [ ] Test a fresh Docker build with the latest model and dependencies.
+- [ ] Complete an end-to-end fresh-clone reproduction test.
+- [ ] Record the final Git commit hash for submission.
+- [ ] Complete peer review requirements.
+
+---
+
+## 21. Project Repository
+
+**GitHub Repository**
+
+https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp
+
+**Project Directory**
+
+https://github.com/ChalermponBoontanapracop/Machine-Learning-Zoom-Camp/tree/main/07-midterm-project
+
+---
+
+## 22. Conclusion
+
+This project demonstrates an end-to-end machine learning workflow for predicting annual electricity consumption across five major sectors in Thailand.
+
+The work includes dataset preparation, exploratory analysis, feature engineering, regression model comparison, hyperparameter tuning, evaluation, and deployment.
+
+The selected Tuned Random Forest achieved a validation RMSE of approximately **113.16 million kWh**, with an R² of approximately **0.9907** on the 2022 validation dataset.
+
+The final model can be served through a Flask REST API and packaged using Docker.
+
+Separating the training workflow from the prediction service supports reproducibility and makes the project easier to maintain, test, and extend.
