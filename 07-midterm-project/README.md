@@ -1,4 +1,3 @@
-
 # Thailand Electricity Consumption Prediction Across Five Major Sectors
 
 A machine learning project that predicts **annual electricity consumption (kWh)** for a given province and electricity-user sector in Thailand.
@@ -6,6 +5,8 @@ A machine learning project that predicts **annual electricity consumption (kWh)*
 The project covers data preparation, exploratory data analysis (EDA), regression modeling, model evaluation, and deployment through a Flask REST API packaged with Docker.
 
 The final selected algorithm is a **Tuned Random Forest Regressor**.
+
+---
 
 ## 1. Project Overview
 
@@ -66,11 +67,22 @@ The annual spreadsheets are combined into a structured dataset for machine learn
 
 ### Data Sources and Availability
 
-The project uses provincial electricity statistics for Thailand, prepared from the annual consumer-count and consumption spreadsheets used in the analysis.
+The dataset was obtained from the **Ministry of Energy, Thailand — OPS MOEN Data Catalog**, under the dataset titled **Electricity Consumption (การใช้ไฟฟ้า)**.
 
-The original data files and province-name mapping are required to reproduce the dataset preparation and model training.
+**Official Dataset:** https://gdcatalog.energy.go.th/dataset/dataset_41_07
 
-The exact source URLs, publication details, and reuse permissions should be verified against the original downloaded files before final submission.
+The dataset provides annual provincial electricity statistics sourced from the Provincial Electricity Authority (PEA) and Metropolitan Electricity Authority (MEA).
+
+For this project, two categories of data were used:
+
+1. **Number of Electricity Users (จำนวนผู้ใช้ไฟฟ้ารายจังหวัดรายสาขา):** Annual electricity-user counts by province and sector.
+2. **Electricity Consumption (ปริมาณการใช้ไฟฟ้ารายจังหวัดรายสาขา):** Annual electricity consumption by province and sector, measured in kWh.
+
+The analysis covers **2018–2023 (B.E. 2561–2566)**, using six annual Excel files for each data category, totaling 12 annual files. A separate province-name mapping file is used to standardize province names in English.
+
+The original Excel files are combined, cleaned, transformed, and prepared for regression modeling. The resulting dataset contains **2,310 province–year–sector observations** across the five selected sectors.
+
+The source dataset is publicly accessible through the official data catalog. The project's `raw data` directory contains the data files used for training and reproducibility.
 
 ### Selected Sectors and Electricity Consumption
 
@@ -262,9 +274,33 @@ The training script reported:
 - Validation observations: 385
 - Historical median adjustments: 25
 
-The validation MAE differs slightly between the saved notebook output (38.42 million kWh) and the latest `train.py` execution (38.15 million kWh).
+### Evaluation Consistency — Notebook vs. Training Script
 
-Both results are retained here to distinguish the original notebook evaluation from the latest training-script execution. This difference should be investigated before treating both workflows as producing identical results.
+To assess reproducibility, the selected Tuned Random Forest was evaluated using both the original analysis notebook (`notebook.ipynb`) and the standalone training script (`train.py`).
+
+Both workflows used the 2022 validation dataset and produced closely aligned evaluation results.
+
+| Evaluation Metric | Analysis Notebook | Training Script (`train.py`) | Difference |
+|---|---:|---:|---:|
+| MAE (million kWh) | 38.42 | 38.15 | 0.27 |
+| RMSE (million kWh) | 113.16 | 113.16 | ~0.00 |
+| R² | 0.9907 | 0.9907 | ~0.0000 |
+
+**Evaluation Notes**
+
+The two workflows produced approximately the same RMSE and R², indicating similar overall predictive performance on the 2022 validation dataset.
+
+A small difference was observed in MAE, with the training script producing approximately **0.27 million kWh (0.7%)** lower error than the original notebook.
+
+The exact cause of this difference has not been verified. Therefore, the results are reported separately rather than treated as identical.
+
+**Reproducibility Verification**
+
+The `train.py` script was successfully executed from a fresh GitHub clone. The reproducibility test confirmed that the project could install its dependencies, load the datasets, train the selected model, generate `model.bin`, and serve predictions through the Flask API.
+
+The repeated training execution reproduced the training script's reported validation metrics.
+
+Overall, the evaluation results support the selection of the Tuned Random Forest while transparently documenting the small difference between the notebook and standalone training workflows.
 
 ---
 
@@ -309,7 +345,7 @@ The project is stored in the `07-midterm-project` directory.
 
 ```text
 07-midterm-project/
-├── raw data/                 # Original electricity datasets, when included
+├── raw data/                 # Original electricity datasets
 ├── notebook.ipynb            # EDA, modeling and evaluation
 ├── train.py                  # Reproducible model training
 ├── predict.py                # Flask prediction API
@@ -368,9 +404,9 @@ python -m pipenv sync
 
 This command installs the dependencies specified in `Pipfile.lock`.
 
-The updated lockfile must include `openpyxl`, which is required for reading the original Excel datasets.
+The updated lockfile includes `openpyxl`, which is required for reading the original Excel datasets.
 
-If installing dependencies from scratch, the project requires the packages listed above. For reproducibility, the committed `Pipfile` and `Pipfile.lock` should be used instead of independently installing arbitrary versions.
+For reproducibility, the committed `Pipfile` and `Pipfile.lock` should be used instead of independently installing arbitrary dependency versions.
 
 ---
 
@@ -394,9 +430,13 @@ The `train.py` script reproduces the final selected model training workflow with
 
 The original Excel datasets and province-name mapping must be accessible to the training script.
 
-The training script should be run with its expected input filenames and directory structure. If local source files are unavailable, any configured download URLs must remain accessible.
+The source data used for this project is available through the official Ministry of Energy data catalog:
 
-A complete fresh-clone reproduction requires verified data-source links or inclusion of the necessary source files where redistribution is permitted.
+https://gdcatalog.energy.go.th/dataset/dataset_41_07
+
+The repository also contains the `raw data` directory used for training.
+
+The training script should be run with its expected input filenames and directory structure.
 
 ### Run Training
 
@@ -588,6 +628,14 @@ Run the following command from the project directory:
 docker build -t thailand-electricity-api .
 ```
 
+A fresh build without Docker cache can also be performed:
+
+```powershell
+docker build --no-cache -t thailand-electricity-api .
+```
+
+The no-cache build was successfully completed using the updated `model.bin` and project dependencies.
+
 ### Run Docker Container
 
 ```powershell
@@ -602,17 +650,49 @@ http://127.0.0.1:5000
 
 The Docker configuration uses Waitress to serve the Flask application.
 
-### Test Docker Deployment
-
-With the Docker container running, open another terminal.
+If port 5000 is already occupied on the host machine, another host port can be used:
 
 ```powershell
-python -m pipenv run python test.py
+docker run --rm -p 5001:5000 thailand-electricity-api
 ```
 
-The same test script can be used to check API behavior through the Docker container.
+In this configuration, the API is accessible at:
 
-The earlier Docker deployment was tested successfully. A fresh Docker build using the latest `model.bin` and updated dependency lockfile remains part of the final reproducibility checklist.
+```text
+http://127.0.0.1:5001
+```
+
+### Docker Deployment Verification
+
+The Docker image was successfully rebuilt using the updated model artifact and latest dependencies.
+
+The container was tested using port 5001 on the host machine, mapped to port 5000 inside Docker.
+
+**Verification Results**
+
+| Test | Endpoint | Result |
+|---|---|---|
+| Container startup | Waitress server | Passed |
+| Health Check | `GET /ping` | Passed |
+| Prediction | `POST /predict` | Passed |
+
+### Verified Docker Prediction
+
+The prediction endpoint was tested with the following input:
+
+```json
+{
+  "province_en": "Chiang Mai",
+  "sector": "residential",
+  "number_of_users": 500000
+}
+```
+
+**Prediction Result:** 1,240,984,762.18 kWh per year.
+
+The Docker API returned the same prediction as the locally tested Flask application.
+
+This confirms that the updated model artifact can be loaded and used successfully through the containerized prediction service.
 
 ### Stop the Container
 
@@ -630,13 +710,13 @@ Ctrl+C
 Original Electricity Datasets
              |
              v
-    Data Preparation
+     Data Preparation
              |
              v
-    Feature Engineering
+     Feature Engineering
              |
              v
-   Random Forest Training
+    Random Forest Training
           train.py
              |
              v
@@ -663,7 +743,7 @@ The training and prediction workflows are separated so that the API can load the
 
 ## 17. Reproducibility
 
-The project aims to support reproducibility through:
+The project supports reproducibility through:
 
 - A documented analysis notebook
 - A separate training script
@@ -720,7 +800,51 @@ In a second terminal:
 python -m pipenv run python test.py
 ```
 
-These commands describe the intended reproducible workflow. Complete end-to-end verification from a fresh clone is still required before final submission.
+### Fresh Clone Reproducibility Verification
+
+A fresh-clone reproducibility test was successfully completed using the project files downloaded directly from GitHub.
+
+The repository was cloned into a separate directory to verify that the machine learning workflow could be reproduced without relying on the original project folder.
+
+**Verification Results**
+
+| Verification Step | Result |
+|---|---|
+| Clone GitHub Repository | Passed |
+| Verify Required Project Files | Passed |
+| Install Dependencies from `Pipfile.lock` | Passed |
+| Load Electricity Datasets | Passed |
+| Execute `train.py` | Passed |
+| Generate `model.bin` | Passed |
+| Start Flask Prediction API | Passed |
+| API Health Check | Passed |
+| API Prediction Test | Passed |
+| Invalid Input Validation | Passed |
+
+### Reproduced Validation Metrics — 2022
+
+| Metric | Result |
+|---|---:|
+| MAE | 38.15 million kWh |
+| RMSE | 113.16 million kWh |
+| R² | 0.9907 |
+| Training observations | 1,540 |
+| Validation observations | 385 |
+| Historical median adjustments | 25 |
+
+The fresh-clone training execution reproduced the validation results obtained from the standalone training script.
+
+The Flask API successfully loaded the newly generated model artifact and returned the expected prediction for the test request.
+
+These results confirm that the project's training and local prediction workflows can be reproduced using the files and instructions provided in the GitHub repository.
+
+### Verified Git Commit
+
+```text
+51322265deb3d4ac61ec4d6ba5581899a93c18e8
+```
+
+This commit identifies the repository version used during the successful fresh-clone test.
 
 ---
 
@@ -788,7 +912,6 @@ Potential improvements include:
 
 ---
 
-
 ## 20. Project Repository
 
 **GitHub Repository**
@@ -812,25 +935,3 @@ The selected Tuned Random Forest achieved a validation RMSE of approximately **1
 The final model can be served through a Flask REST API and packaged using Docker.
 
 Separating the training workflow from the prediction service supports reproducibility and makes the project easier to maintain, test, and extend.
-
-## 22.Data Sources and Availability
-
-The dataset was obtained from the Ministry of Energy, Thailand — OPS MOEN Data Catalog, under the dataset titled Electricity Consumption (การใช้ไฟฟ้า).
-
-Official Dataset: https://gdcatalog.energy.go.th/dataset/dataset_41_07
-
-The dataset provides annual provincial electricity statistics sourced from the Provincial Electricity Authority (PEA) and Metropolitan Electricity Authority (MEA).
-
-For this project, two categories of data were used:
-
-Number of Electricity Users (จำนวนผู้ใช้ไฟฟ้ารายจังหวัดรายสาขา) — annual electricity-user counts by province and sector.
-
-Electricity Consumption (ปริมาณการใช้ไฟฟ้ารายจังหวัดรายสาขา) — annual electricity consumption by province and sector, measured in kWh.
-
-The analysis covers 2018–2023 (B.E. 2561–2566), using six annual Excel files for each data category, totaling 12 annual files. A separate province-name mapping file is used to standardize province names in English.
-
-The original datasets are provided in XLSX format, with data organized by province, electricity sector, and year.
-
-The dataset catalog identifies the data as publicly accessible and lists its license as Open Data Common.
-
-The original Excel files are combined, cleaned, transformed, and prepared for regression modeling. The resulting dataset contains 2,310 province–year–sector observations across the five selected sectors.
