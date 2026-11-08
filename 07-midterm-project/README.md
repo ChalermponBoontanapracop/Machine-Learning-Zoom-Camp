@@ -132,9 +132,13 @@ The analysis examines:
 
 - Distribution of electricity consumption.
 - Differences between electricity sectors.
+  ![distribution](images/Distribution.png)
 - Variation in electricity consumption across provinces.
+   ![distribution](images/Electricity-Consumption-Province.png)
 - Relationships between the number of electricity users and electricity consumption.
+   ![distribution](images/Consumption-Sector.png).
 - Potential outliers and differences in consumption scale.
+  ![distribution](images/Distribution1.png)
 
 ### 3.3 Feature Engineering
 
@@ -172,6 +176,8 @@ The validation dataset is used for model comparison and tuning, while the test d
 ## 4. Machine Learning Models
 
 Three regression algorithms were explored:
+![linear](images/Linear-Regression-Preddiction.png)
+![linear](images/Random-Forest-Prediction.png)
 
 ### Linear Regression
 
@@ -190,7 +196,7 @@ It can capture nonlinear relationships and interactions between electricity sect
 ### Final Model Selection
 
 **Random Forest Regression** was selected as the final deployed model based on its validation performance.
-
+![linear](images/Random-Forest-Prediction-Final.png)
 The selected model was subsequently saved for use in the prediction API and web application.
 
 ---
